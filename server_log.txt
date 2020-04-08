@@ -34,3 +34,295 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [18:07:40] ----------------------------------
 
 [18:07:40] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:25:17] filterscripts = ""  (string)
+[19:25:17] 
+[19:25:17] Server Plugins
+[19:25:17] --------------
+[19:25:17]  Loaded 0 plugins.
+
+[19:25:17] 
+[19:25:17] Filterscripts
+[19:25:17] ---------------
+[19:25:17]   Loaded 0 filterscripts.
+
+[19:25:17] Script[gamemodes/sqrGM.amx]: Run time error 19: "File or function is not found"
+[19:25:17] Number of vehicle models: 0
+Console input: exit
+[19:25:30] --- Server Shutting Down.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:26:03] filterscripts = ""  (string)
+[19:26:03] 
+[19:26:03] Server Plugins
+[19:26:03] --------------
+[19:26:03]  Loading plugin: mysql
+[19:26:03]  >> plugin.mysql: R39-6 successfully loaded.
+[19:26:03]   Loaded.
+[19:26:03]  Loading plugin: sscanf
+[19:26:03] 
+
+[19:26:03]  ===============================
+
+[19:26:03]       sscanf plugin loaded.     
+
+[19:26:03]          Version:  2.8.2        
+
+[19:26:03]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:26:03]  ===============================
+
+[19:26:03]   Loaded.
+[19:26:03]  Loaded 2 plugins.
+
+[19:26:03] 
+[19:26:03] Filterscripts
+[19:26:03] ---------------
+[19:26:03]   Loaded 0 filterscripts.
+
+[19:26:03] No se pudo conectar a la base de datos.
+[19:26:03] 
+----------------------------------
+[19:26:03] San Quebrado V 0
+[19:26:03] ----------------------------------
+
+[19:26:03] Number of vehicle models: 0
+Console input: exit
+[19:26:12] --- Server Shutting Down.
+[19:26:12] plugin.mysql: Unloading plugin...
+[19:26:12] plugin.mysql: Plugin unloaded.
+[19:26:12] 
+
+[19:26:12]  ===============================
+
+[19:26:12]      sscanf plugin unloaded.    
+
+[19:26:12]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:29:06] filterscripts = ""  (string)
+[19:29:06] 
+[19:29:06] Server Plugins
+[19:29:06] --------------
+[19:29:06]  Loading plugin: mysql
+[19:29:06]  >> plugin.mysql: R39-6 successfully loaded.
+[19:29:06]   Loaded.
+[19:29:06]  Loading plugin: sscanf
+[19:29:06] 
+
+[19:29:06]  ===============================
+
+[19:29:06]       sscanf plugin loaded.     
+
+[19:29:06]          Version:  2.8.2        
+
+[19:29:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:29:06]  ===============================
+
+[19:29:06]   Loaded.
+[19:29:06]  Loaded 2 plugins.
+
+[19:29:06] 
+[19:29:06] Filterscripts
+[19:29:06] ---------------
+[19:29:06]   Loaded 0 filterscripts.
+
+[19:29:06] Conexión exitosa
+[19:29:06] 
+----------------------------------
+[19:29:06] San Quebrado V 0
+[19:29:06] ----------------------------------
+
+[19:29:06] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:30:52] filterscripts = ""  (string)
+[19:30:52] 
+[19:30:52] Server Plugins
+[19:30:52] --------------
+[19:30:52]  Loading plugin: mysql
+[19:30:52]  >> plugin.mysql: R39-6 successfully loaded.
+[19:30:52]   Loaded.
+[19:30:52]  Loading plugin: sscanf
+[19:30:52] 
+
+[19:30:52]  ===============================
+
+[19:30:52]       sscanf plugin loaded.     
+
+[19:30:52]          Version:  2.8.2        
+
+[19:30:52]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:30:52]  ===============================
+
+[19:30:52]   Loaded.
+[19:30:52]  Loaded 2 plugins.
+
+[19:30:52] 
+[19:30:52] Filterscripts
+[19:30:52] ---------------
+[19:30:52]   Loaded 0 filterscripts.
+
+[19:30:52] Conexión exitosa
+[19:30:52] 
+----------------------------------
+[19:30:52] San Quebrado V 0
+[19:30:52] ----------------------------------
+
+[19:30:52] Number of vehicle models: 0
+Console input: exit
+[19:30:55] --- Server Shutting Down.
+[19:30:55] plugin.mysql: Unloading plugin...
+[19:30:55] plugin.mysql: Plugin unloaded.
+[19:30:55] 
+
+[19:30:55]  ===============================
+
+[19:30:55]      sscanf plugin unloaded.    
+
+[19:30:55]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:33:20] filterscripts = ""  (string)
+[19:33:20] 
+[19:33:20] Server Plugins
+[19:33:20] --------------
+[19:33:20]  Loading plugin: mysql
+[19:33:20]  >> plugin.mysql: R39-6 successfully loaded.
+[19:33:20]   Loaded.
+[19:33:20]  Loading plugin: sscanf
+[19:33:20] 
+
+[19:33:20]  ===============================
+
+[19:33:20]       sscanf plugin loaded.     
+
+[19:33:20]          Version:  2.8.2        
+
+[19:33:20]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:33:20]  ===============================
+
+[19:33:20]   Loaded.
+[19:33:20]  Loaded 2 plugins.
+
+[19:33:20] 
+[19:33:20] Filterscripts
+[19:33:20] ---------------
+[19:33:20]   Loaded 0 filterscripts.
+
+[19:33:20] Conexión exitosa
+[19:33:20] 
+----------------------------------
+[19:33:20] San Quebrado V 0
+[19:33:20] ----------------------------------
+
+[19:33:20] Number of vehicle models: 0
+Console input: exit
+[19:33:22] --- Server Shutting Down.
+[19:33:22] plugin.mysql: Unloading plugin...
+[19:33:22] plugin.mysql: Plugin unloaded.
+[19:33:22] 
+
+[19:33:22]  ===============================
+
+[19:33:22]      sscanf plugin unloaded.    
+
+[19:33:22]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:33:26] filterscripts = ""  (string)
+[19:33:26] 
+[19:33:26] Server Plugins
+[19:33:26] --------------
+[19:33:26]  Loading plugin: mysql
+[19:33:26]  >> plugin.mysql: R39-6 successfully loaded.
+[19:33:26]   Loaded.
+[19:33:26]  Loading plugin: sscanf
+[19:33:26] 
+
+[19:33:26]  ===============================
+
+[19:33:26]       sscanf plugin loaded.     
+
+[19:33:26]          Version:  2.8.2        
+
+[19:33:26]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:33:26]  ===============================
+
+[19:33:26]   Loaded.
+[19:33:26]  Loaded 2 plugins.
+
+[19:33:26] 
+[19:33:26] Filterscripts
+[19:33:26] ---------------
+[19:33:26]   Loaded 0 filterscripts.
+
+[19:33:26] Conexión exitosa
+[19:33:26] 
+----------------------------------
+[19:33:26] San Quebrado V 0
+[19:33:26] ----------------------------------
+
+[19:33:26] Number of vehicle models: 0
+Console input: exit
+[19:33:29] --- Server Shutting Down.
+[19:33:29] plugin.mysql: Unloading plugin...
+[19:33:29] plugin.mysql: Plugin unloaded.
+[19:33:29] 
+
+[19:33:29]  ===============================
+
+[19:33:29]      sscanf plugin unloaded.    
+
+[19:33:29]  ===============================
+
