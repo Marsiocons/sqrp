@@ -1,0 +1,36 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:02:41] Error: Your password must be changed from the default password, please change it.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:07:40] filterscripts = ""  (string)
+[18:07:40] 
+[18:07:40] Server Plugins
+[18:07:40] --------------
+[18:07:40]  Loaded 0 plugins.
+
+[18:07:40] 
+[18:07:40] Filterscripts
+[18:07:40] ---------------
+[18:07:40]   Loaded 0 filterscripts.
+
+[18:07:40] 
+----------------------------------
+[18:07:40] San Quebrado V 0
+[18:07:40] ----------------------------------
+
+[18:07:40] Number of vehicle models: 0
