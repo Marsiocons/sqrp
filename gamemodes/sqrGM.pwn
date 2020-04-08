@@ -1,4 +1,7 @@
 #include <a_samp>
+#include <sscanf2>
+#include <zcmd>
+#include <a_mysql>
 
 #define function:%0(%1) forward %0(%1); public %0(%1)
 
