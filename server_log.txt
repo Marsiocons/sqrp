@@ -326,3 +326,904 @@ Console input: exit
 
 [19:33:29]  ===============================
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:15:42] filterscripts = ""  (string)
+[22:15:42] 
+[22:15:42] Server Plugins
+[22:15:42] --------------
+[22:15:42]  Loading plugin: mysql
+[22:15:42]  >> plugin.mysql: R39-6 successfully loaded.
+[22:15:42]   Loaded.
+[22:15:42]  Loading plugin: sscanf
+[22:15:42] 
+
+[22:15:42]  ===============================
+
+[22:15:42]       sscanf plugin loaded.     
+
+[22:15:42]          Version:  2.8.2        
+
+[22:15:42]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:15:42]  ===============================
+
+[22:15:42]   Loaded.
+[22:15:42]  Loaded 2 plugins.
+
+[22:15:42] 
+[22:15:42] Filterscripts
+[22:15:42] ---------------
+[22:15:42]   Loaded 0 filterscripts.
+
+[22:15:42] No se pudo conectar a la base de datos.
+[22:15:42] 
+----------------------------------
+[22:15:42] San Quebrado V 0
+[22:15:42] ----------------------------------
+
+[22:15:42] Number of vehicle models: 0
+[22:16:08] [connection] 127.0.0.1:53874 requests connection cookie.
+[22:16:09] [connection] incoming connection: 127.0.0.1:53874 id: 0
+[22:16:09] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:16:17] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:16:28] --- Server Shutting Down.
+[22:16:28] plugin.mysql: Unloading plugin...
+[22:16:28] plugin.mysql: Plugin unloaded.
+[22:16:28] 
+
+[22:16:28]  ===============================
+
+[22:16:28]      sscanf plugin unloaded.    
+
+[22:16:28]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:18:49] filterscripts = ""  (string)
+[22:18:49] 
+[22:18:49] Server Plugins
+[22:18:49] --------------
+[22:18:49]  Loading plugin: mysql
+[22:18:49]  >> plugin.mysql: R39-6 successfully loaded.
+[22:18:49]   Loaded.
+[22:18:49]  Loading plugin: sscanf
+[22:18:49] 
+
+[22:18:49]  ===============================
+
+[22:18:49]       sscanf plugin loaded.     
+
+[22:18:49]          Version:  2.8.2        
+
+[22:18:49]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:18:49]  ===============================
+
+[22:18:49]   Loaded.
+[22:18:49]  Loaded 2 plugins.
+
+[22:18:50] 
+[22:18:50] Filterscripts
+[22:18:50] ---------------
+[22:18:50]   Loaded 0 filterscripts.
+
+[22:18:50] No se pudo conectar a la base de datos.
+[22:18:50] 
+----------------------------------
+[22:18:50] San Quebrado V 0
+[22:18:50] ----------------------------------
+
+[22:18:50] Number of vehicle models: 0
+[22:19:10] [connection] 127.0.0.1:53032 requests connection cookie.
+[22:19:11] [connection] incoming connection: 127.0.0.1:53032 id: 0
+[22:19:11] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:19:18] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:19:28] --- Server Shutting Down.
+[22:19:28] plugin.mysql: Unloading plugin...
+[22:19:28] plugin.mysql: Plugin unloaded.
+[22:19:28] 
+
+[22:19:28]  ===============================
+
+[22:19:28]      sscanf plugin unloaded.    
+
+[22:19:28]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:20:07] filterscripts = ""  (string)
+[22:20:07] 
+[22:20:07] Server Plugins
+[22:20:07] --------------
+[22:20:07]  Loading plugin: mysql
+[22:20:07]  >> plugin.mysql: R39-6 successfully loaded.
+[22:20:07]   Loaded.
+[22:20:07]  Loading plugin: sscanf
+[22:20:07] 
+
+[22:20:07]  ===============================
+
+[22:20:07]       sscanf plugin loaded.     
+
+[22:20:07]          Version:  2.8.2        
+
+[22:20:07]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:20:07]  ===============================
+
+[22:20:07]   Loaded.
+[22:20:07]  Loaded 2 plugins.
+
+[22:20:08] 
+[22:20:08] Filterscripts
+[22:20:08] ---------------
+[22:20:08]   Loaded 0 filterscripts.
+
+[22:20:08] No se pudo conectar a la base de datos.
+[22:20:08] 
+----------------------------------
+[22:20:08] San Quebrado V 0
+[22:20:08] ----------------------------------
+
+[22:20:08] Number of vehicle models: 0
+Console input: exit
+[22:20:15] --- Server Shutting Down.
+[22:20:15] plugin.mysql: Unloading plugin...
+[22:20:15] plugin.mysql: Plugin unloaded.
+[22:20:15] 
+
+[22:20:15]  ===============================
+
+[22:20:15]      sscanf plugin unloaded.    
+
+[22:20:15]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:21:33] filterscripts = ""  (string)
+[22:21:33] 
+[22:21:33] Server Plugins
+[22:21:33] --------------
+[22:21:33]  Loading plugin: mysql
+[22:21:33]  >> plugin.mysql: R39-6 successfully loaded.
+[22:21:33]   Loaded.
+[22:21:33]  Loading plugin: sscanf
+[22:21:33] 
+
+[22:21:33]  ===============================
+
+[22:21:33]       sscanf plugin loaded.     
+
+[22:21:33]          Version:  2.8.2        
+
+[22:21:33]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:21:33]  ===============================
+
+[22:21:33]   Loaded.
+[22:21:33]  Loaded 2 plugins.
+
+[22:21:33] 
+[22:21:33] Filterscripts
+[22:21:33] ---------------
+[22:21:33]   Loaded 0 filterscripts.
+
+[22:21:33] Conexión exitosa
+[22:21:33] 
+----------------------------------
+[22:21:33] San Quebrado V 0
+[22:21:33] ----------------------------------
+
+[22:21:33] Number of vehicle models: 0
+[22:22:14] [connection] 127.0.0.1:50004 requests connection cookie.
+[22:22:15] [connection] incoming connection: 127.0.0.1:50004 id: 0
+[22:22:16] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:22:32] [part] Marcio_Skeight has left the server (0:1)
+[22:22:54] [connection] 127.0.0.1:50005 requests connection cookie.
+[22:22:55] [connection] incoming connection: 127.0.0.1:50005 id: 0
+[22:22:56] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:23:11] [part] Marcio_Skeight has left the server (0:1)
+Console input: eexit
+Console input: exit
+[22:23:22] --- Server Shutting Down.
+[22:23:22] plugin.mysql: Unloading plugin...
+[22:23:22] plugin.mysql: Plugin unloaded.
+[22:23:22] 
+
+[22:23:22]  ===============================
+
+[22:23:22]      sscanf plugin unloaded.    
+
+[22:23:22]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:25:07] filterscripts = ""  (string)
+[22:25:07] 
+[22:25:07] Server Plugins
+[22:25:07] --------------
+[22:25:07]  Loading plugin: mysql
+[22:25:07]  >> plugin.mysql: R39-6 successfully loaded.
+[22:25:07]   Loaded.
+[22:25:07]  Loading plugin: sscanf
+[22:25:07] 
+
+[22:25:07]  ===============================
+
+[22:25:07]       sscanf plugin loaded.     
+
+[22:25:07]          Version:  2.8.2        
+
+[22:25:07]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:25:07]  ===============================
+
+[22:25:07]   Loaded.
+[22:25:07]  Loaded 2 plugins.
+
+[22:25:07] 
+[22:25:07] Filterscripts
+[22:25:07] ---------------
+[22:25:07]   Loaded 0 filterscripts.
+
+[22:25:07] Conexión exitosa
+[22:25:07] 
+----------------------------------
+[22:25:07] San Quebrado V 0
+[22:25:07] ----------------------------------
+
+[22:25:07] Number of vehicle models: 0
+[22:25:32] [connection] 127.0.0.1:59081 requests connection cookie.
+[22:25:33] [connection] incoming connection: 127.0.0.1:59081 id: 0
+[22:25:34] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:25:39] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:25:44] --- Server Shutting Down.
+[22:25:44] plugin.mysql: Unloading plugin...
+[22:25:44] plugin.mysql: Plugin unloaded.
+[22:25:44] 
+
+[22:25:44]  ===============================
+
+[22:25:44]      sscanf plugin unloaded.    
+
+[22:25:44]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:32:24] filterscripts = ""  (string)
+[22:32:24] 
+[22:32:24] Server Plugins
+[22:32:24] --------------
+[22:32:24]  Loading plugin: mysql
+[22:32:24]  >> plugin.mysql: R39-6 successfully loaded.
+[22:32:24]   Loaded.
+[22:32:24]  Loading plugin: sscanf
+[22:32:24] 
+
+[22:32:24]  ===============================
+
+[22:32:24]       sscanf plugin loaded.     
+
+[22:32:24]          Version:  2.8.2        
+
+[22:32:24]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:32:24]  ===============================
+
+[22:32:24]   Loaded.
+[22:32:24]  Loaded 2 plugins.
+
+[22:32:24] 
+[22:32:24] Filterscripts
+[22:32:24] ---------------
+[22:32:24]   Loaded 0 filterscripts.
+
+[22:32:24] Conexión exitosa
+[22:32:24] 
+----------------------------------
+[22:32:24] San Quebrado V 0
+[22:32:24] ----------------------------------
+
+[22:32:24] Number of vehicle models: 0
+[22:32:48] [connection] 127.0.0.1:57762 requests connection cookie.
+[22:32:49] [connection] incoming connection: 127.0.0.1:57762 id: 0
+[22:32:49] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:32:53] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:34:22] --- Server Shutting Down.
+[22:34:22] plugin.mysql: Unloading plugin...
+[22:34:22] plugin.mysql: Plugin unloaded.
+[22:34:22] 
+
+[22:34:23]  ===============================
+
+[22:34:23]      sscanf plugin unloaded.    
+
+[22:34:23]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:34:41] filterscripts = ""  (string)
+[22:34:41] 
+[22:34:41] Server Plugins
+[22:34:41] --------------
+[22:34:41]  Loading plugin: mysql
+[22:34:41]  >> plugin.mysql: R39-6 successfully loaded.
+[22:34:41]   Loaded.
+[22:34:41]  Loading plugin: sscanf
+[22:34:41] 
+
+[22:34:41]  ===============================
+
+[22:34:41]       sscanf plugin loaded.     
+
+[22:34:41]          Version:  2.8.2        
+
+[22:34:41]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:34:41]  ===============================
+
+[22:34:41]   Loaded.
+[22:34:41]  Loaded 2 plugins.
+
+[22:34:41] 
+[22:34:41] Filterscripts
+[22:34:41] ---------------
+[22:34:41]   Loaded 0 filterscripts.
+
+[22:34:41] Conexión exitosa
+[22:34:41] 
+----------------------------------
+[22:34:41] San Quebrado V 0
+[22:34:41] ----------------------------------
+
+[22:34:41] Number of vehicle models: 0
+[22:35:01] [connection] 127.0.0.1:61119 requests connection cookie.
+[22:35:02] [connection] incoming connection: 127.0.0.1:61119 id: 0
+[22:35:02] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:35:08] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:35:47] --- Server Shutting Down.
+[22:35:47] plugin.mysql: Unloading plugin...
+[22:35:47] plugin.mysql: Plugin unloaded.
+[22:35:47] 
+
+[22:35:47]  ===============================
+
+[22:35:47]      sscanf plugin unloaded.    
+
+[22:35:47]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:36:38] filterscripts = ""  (string)
+[22:36:38] 
+[22:36:38] Server Plugins
+[22:36:38] --------------
+[22:36:38]  Loading plugin: mysql
+[22:36:38]  >> plugin.mysql: R39-6 successfully loaded.
+[22:36:38]   Loaded.
+[22:36:38]  Loading plugin: sscanf
+[22:36:38] 
+
+[22:36:38]  ===============================
+
+[22:36:38]       sscanf plugin loaded.     
+
+[22:36:38]          Version:  2.8.2        
+
+[22:36:38]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:36:38]  ===============================
+
+[22:36:38]   Loaded.
+[22:36:38]  Loaded 2 plugins.
+
+[22:36:39] 
+[22:36:39] Filterscripts
+[22:36:39] ---------------
+[22:36:39]   Loaded 0 filterscripts.
+
+[22:36:39] Conexión exitosa
+[22:36:39] 
+----------------------------------
+[22:36:39] San Quebrado V 0
+[22:36:39] ----------------------------------
+
+[22:36:39] Number of vehicle models: 0
+[22:36:59] [connection] 127.0.0.1:53880 requests connection cookie.
+[22:37:00] [connection] incoming connection: 127.0.0.1:53880 id: 0
+[22:37:00] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:37:03] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:37:41] --- Server Shutting Down.
+[22:37:41] plugin.mysql: Unloading plugin...
+[22:37:41] plugin.mysql: Plugin unloaded.
+[22:37:41] 
+
+[22:37:41]  ===============================
+
+[22:37:41]      sscanf plugin unloaded.    
+
+[22:37:41]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:38:03] filterscripts = ""  (string)
+[22:38:03] 
+[22:38:03] Server Plugins
+[22:38:03] --------------
+[22:38:03]  Loading plugin: mysql
+[22:38:03]  >> plugin.mysql: R39-6 successfully loaded.
+[22:38:03]   Loaded.
+[22:38:03]  Loading plugin: sscanf
+[22:38:03] 
+
+[22:38:03]  ===============================
+
+[22:38:03]       sscanf plugin loaded.     
+
+[22:38:03]          Version:  2.8.2        
+
+[22:38:03]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:38:03]  ===============================
+
+[22:38:03]   Loaded.
+[22:38:03]  Loaded 2 plugins.
+
+[22:38:03] 
+[22:38:03] Filterscripts
+[22:38:03] ---------------
+[22:38:03]   Loaded 0 filterscripts.
+
+[22:38:03] Conexión exitosa
+[22:38:03] 
+----------------------------------
+[22:38:03] San Quebrado V 0
+[22:38:03] ----------------------------------
+
+[22:38:03] Number of vehicle models: 0
+[22:38:24] [connection] 127.0.0.1:63095 requests connection cookie.
+[22:38:25] [connection] incoming connection: 127.0.0.1:63095 id: 0
+[22:38:26] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:38:37] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:39:09] --- Server Shutting Down.
+[22:39:09] plugin.mysql: Unloading plugin...
+[22:39:09] plugin.mysql: Plugin unloaded.
+[22:39:09] 
+
+[22:39:09]  ===============================
+
+[22:39:09]      sscanf plugin unloaded.    
+
+[22:39:09]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:39:32] filterscripts = ""  (string)
+[22:39:32] 
+[22:39:32] Server Plugins
+[22:39:32] --------------
+[22:39:32]  Loading plugin: mysql
+[22:39:32]  >> plugin.mysql: R39-6 successfully loaded.
+[22:39:32]   Loaded.
+[22:39:32]  Loading plugin: sscanf
+[22:39:32] 
+
+[22:39:32]  ===============================
+
+[22:39:32]       sscanf plugin loaded.     
+
+[22:39:32]          Version:  2.8.2        
+
+[22:39:32]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:39:32]  ===============================
+
+[22:39:32]   Loaded.
+[22:39:32]  Loaded 2 plugins.
+
+[22:39:32] 
+[22:39:32] Filterscripts
+[22:39:32] ---------------
+[22:39:32]   Loaded 0 filterscripts.
+
+[22:39:32] Conexión exitosa
+[22:39:32] 
+----------------------------------
+[22:39:32] San Quebrado V 0
+[22:39:32] ----------------------------------
+
+[22:39:32] Number of vehicle models: 0
+[22:39:53] [connection] 127.0.0.1:63096 requests connection cookie.
+[22:39:54] [connection] incoming connection: 127.0.0.1:63096 id: 0
+[22:39:54] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:39:56] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:53:44] --- Server Shutting Down.
+[22:53:44] plugin.mysql: Unloading plugin...
+[22:53:44] plugin.mysql: Plugin unloaded.
+[22:53:44] 
+
+[22:53:44]  ===============================
+
+[22:53:44]      sscanf plugin unloaded.    
+
+[22:53:44]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:53:46] filterscripts = ""  (string)
+[22:53:46] 
+[22:53:46] Server Plugins
+[22:53:46] --------------
+[22:53:46]  Loading plugin: mysql
+[22:53:46]  >> plugin.mysql: R39-6 successfully loaded.
+[22:53:46]   Loaded.
+[22:53:46]  Loading plugin: sscanf
+[22:53:46] 
+
+[22:53:46]  ===============================
+
+[22:53:46]       sscanf plugin loaded.     
+
+[22:53:46]          Version:  2.8.2        
+
+[22:53:46]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:53:46]  ===============================
+
+[22:53:46]   Loaded.
+[22:53:46]  Loaded 2 plugins.
+
+[22:53:46] 
+[22:53:46] Filterscripts
+[22:53:46] ---------------
+[22:53:46]   Loaded 0 filterscripts.
+
+[22:53:46] Conexión exitosa
+[22:53:46] 
+----------------------------------
+[22:53:46] San Quebrado V 0
+[22:53:46] ----------------------------------
+
+[22:53:46] Number of vehicle models: 0
+[22:54:09] [connection] 127.0.0.1:61395 requests connection cookie.
+[22:54:10] [connection] incoming connection: 127.0.0.1:61395 id: 0
+[22:54:10] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:54:28] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:54:32] --- Server Shutting Down.
+[22:54:32] plugin.mysql: Unloading plugin...
+[22:54:32] plugin.mysql: Plugin unloaded.
+[22:54:32] 
+
+[22:54:32]  ===============================
+
+[22:54:32]      sscanf plugin unloaded.    
+
+[22:54:32]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:58:38] filterscripts = ""  (string)
+[22:58:38] 
+[22:58:38] Server Plugins
+[22:58:38] --------------
+[22:58:38]  Loading plugin: mysql
+[22:58:38]  >> plugin.mysql: R39-6 successfully loaded.
+[22:58:38]   Loaded.
+[22:58:38]  Loading plugin: sscanf
+[22:58:38] 
+
+[22:58:38]  ===============================
+
+[22:58:38]       sscanf plugin loaded.     
+
+[22:58:38]          Version:  2.8.2        
+
+[22:58:38]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:58:38]  ===============================
+
+[22:58:38]   Loaded.
+[22:58:38]  Loaded 2 plugins.
+
+[22:58:38] 
+[22:58:38] Filterscripts
+[22:58:38] ---------------
+[22:58:38]   Loaded 0 filterscripts.
+
+[22:58:38] Conexión exitosa
+[22:58:38] 
+----------------------------------
+[22:58:38] San Quebrado V 0
+[22:58:38] ----------------------------------
+
+[22:58:38] Number of vehicle models: 0
+[22:59:02] [connection] 127.0.0.1:56420 requests connection cookie.
+[22:59:03] [connection] incoming connection: 127.0.0.1:56420 id: 0
+[22:59:03] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:59:12] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[22:59:47] --- Server Shutting Down.
+[22:59:47] plugin.mysql: Unloading plugin...
+[22:59:47] plugin.mysql: Plugin unloaded.
+[22:59:47] 
+
+[22:59:47]  ===============================
+
+[22:59:47]      sscanf plugin unloaded.    
+
+[22:59:47]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:00:08] filterscripts = ""  (string)
+[23:00:08] 
+[23:00:08] Server Plugins
+[23:00:08] --------------
+[23:00:08]  Loading plugin: mysql
+[23:00:08]  >> plugin.mysql: R39-6 successfully loaded.
+[23:00:08]   Loaded.
+[23:00:08]  Loading plugin: sscanf
+[23:00:08] 
+
+[23:00:08]  ===============================
+
+[23:00:08]       sscanf plugin loaded.     
+
+[23:00:08]          Version:  2.8.2        
+
+[23:00:08]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:00:08]  ===============================
+
+[23:00:08]   Loaded.
+[23:00:08]  Loaded 2 plugins.
+
+[23:00:08] 
+[23:00:08] Filterscripts
+[23:00:08] ---------------
+[23:00:08]   Loaded 0 filterscripts.
+
+[23:00:08] Conexión exitosa
+[23:00:08] 
+----------------------------------
+[23:00:08] San Quebrado V 0
+[23:00:08] ----------------------------------
+
+[23:00:08] Number of vehicle models: 0
+[23:00:28] [connection] 127.0.0.1:58523 requests connection cookie.
+[23:00:29] [connection] incoming connection: 127.0.0.1:58523 id: 0
+[23:00:29] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:00:36] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[23:02:46] --- Server Shutting Down.
+[23:02:46] plugin.mysql: Unloading plugin...
+[23:02:46] plugin.mysql: Plugin unloaded.
+[23:02:46] 
+
+[23:02:46]  ===============================
+
+[23:02:46]      sscanf plugin unloaded.    
+
+[23:02:46]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:03:07] filterscripts = ""  (string)
+[23:03:07] 
+[23:03:07] Server Plugins
+[23:03:07] --------------
+[23:03:07]  Loading plugin: mysql
+[23:03:07]  >> plugin.mysql: R39-6 successfully loaded.
+[23:03:07]   Loaded.
+[23:03:07]  Loading plugin: sscanf
+[23:03:07] 
+
+[23:03:07]  ===============================
+
+[23:03:07]       sscanf plugin loaded.     
+
+[23:03:07]          Version:  2.8.2        
+
+[23:03:07]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:03:07]  ===============================
+
+[23:03:07]   Loaded.
+[23:03:07]  Loaded 2 plugins.
+
+[23:03:07] 
+[23:03:07] Filterscripts
+[23:03:07] ---------------
+[23:03:07]   Loaded 0 filterscripts.
+
+[23:03:07] Conexión exitosa
+[23:03:07] 
+----------------------------------
+[23:03:07] San Quebrado V 0
+[23:03:07] ----------------------------------
+
+[23:03:07] Number of vehicle models: 0
+[23:03:28] [connection] 127.0.0.1:53613 requests connection cookie.
+[23:03:29] [connection] incoming connection: 127.0.0.1:53613 id: 0
+[23:03:29] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:03:37] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[23:06:29] --- Server Shutting Down.
+[23:06:30] plugin.mysql: Unloading plugin...
+[23:06:30] plugin.mysql: Plugin unloaded.
+[23:06:30] 
+
+[23:06:30]  ===============================
+
+[23:06:30]      sscanf plugin unloaded.    
+
+[23:06:30]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:06:31] filterscripts = ""  (string)
+[23:06:31] 
+[23:06:31] Server Plugins
+[23:06:31] --------------
+[23:06:31]  Loading plugin: mysql
+[23:06:31]  >> plugin.mysql: R39-6 successfully loaded.
+[23:06:31]   Loaded.
+[23:06:31]  Loading plugin: sscanf
+[23:06:31] 
+
+[23:06:31]  ===============================
+
+[23:06:31]       sscanf plugin loaded.     
+
+[23:06:31]          Version:  2.8.2        
+
+[23:06:31]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:06:31]  ===============================
+
+[23:06:31]   Loaded.
+[23:06:31]  Loaded 2 plugins.
+
+[23:06:31] 
+[23:06:31] Filterscripts
+[23:06:31] ---------------
+[23:06:31]   Loaded 0 filterscripts.
+
+[23:06:31] Conexión exitosa
+[23:06:31] 
+----------------------------------
+[23:06:31] San Quebrado V 0
+[23:06:31] ----------------------------------
+
+[23:06:31] Number of vehicle models: 0
+[23:06:51] [connection] 127.0.0.1:59874 requests connection cookie.
+[23:06:52] [connection] incoming connection: 127.0.0.1:59874 id: 0
+[23:06:52] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:07:25] [part] Marcio_Skeight has left the server (0:1)
+Console input: exit
+[23:15:02] --- Server Shutting Down.
+[23:15:02] plugin.mysql: Unloading plugin...
+[23:15:02] plugin.mysql: Plugin unloaded.
+[23:15:02] 
+
+[23:15:02]  ===============================
+
+[23:15:02]      sscanf plugin unloaded.    
+
+[23:15:02]  ===============================
+
