@@ -4,3 +4,20 @@ stock getName(playerid)
 	GetPlayerName(playerid, name, sizeof(name));
 	return name;
 }
+stock isVehicleCamionero(playerid)
+{
+	new validado;
+
+    new vehicleid = GetPlayerVehicleID(playerid);
+    if (IsPlayerInAnyVehicle(playerid))
+    {
+        if (GetVehicleModel(vehicleid) == 440)
+		{
+		validado = 1;
+		}else
+		{
+		validado = 0;
+		}
+    }
+    return validado;
+}

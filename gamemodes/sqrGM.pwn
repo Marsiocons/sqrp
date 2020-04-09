@@ -44,7 +44,7 @@ public OnGameModeExit()
     mysql_close(db_conn);
 }
 public OnPlayerConnect(playerid)
-{
+{	
 	new Query[300];
 	mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s'", getName(playerid));
 	mysql_tquery(db_conn, Query, "Login", "i", playerid);

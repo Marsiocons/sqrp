@@ -1,0 +1,1 @@
+new Float: coorPickCamioneros[3] = { -550.339477, 2593.603271, 53.934780 };
