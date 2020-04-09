@@ -18,6 +18,8 @@ new db_conn;
 #define function:%0(%1) forward %0(%1); public %0(%1)
 #define SCM SendClientMessage
 
+new maxErrorPassword;
+
 main()
 {
 	print("\n----------------------------------");
@@ -45,7 +47,7 @@ public OnPlayerConnect(playerid)
 {
 	new Query[300];
 	mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s'", getName(playerid));
-	mysql_tquery(db_conn, Query, "registro", "i", playerid);
+	mysql_tquery(db_conn, Query, "Login", "i", playerid);
 	return 1;
 }
 
@@ -55,11 +57,15 @@ public OnPlayerSpawn(playerid)
 	return 1;
 }
 
-function:registro(playerid)
+function:Login(playerid)
 {
 	new rows, fields;
 	cache_get_data(rows, fields, db_conn);
-	if (!rows)
+	if (rows)
+	{
+		SCM(playerid, 0xFFFFFA, "Usuario registrado.")	
+		SCM(playerid, 0xFFFFFA, "Usa /login [contraseña].")	
+	}else
 	{
 		SCM(playerid, 0xFFFFFF, "Usuario no registrado");
 		SCM(playerid, 0xFFFFFF, "Usa /registrar [contraseña]");
@@ -71,7 +77,7 @@ CMD:registrar(playerid, params[])
 	new password[40];
 	if(sscanf(params, "s[40]", password))
     {
-        return SendClientMessage(playerid, 0xFACC2E, "Usa: /registrar [password]");
+        return SCM(playerid, 0xFACC2E, "Usa: /registrar [password]");
     } else
     {
 		new Query[300];
@@ -85,4 +91,41 @@ CMD:registrar(playerid, params[])
 function:OnPlayerRegister(playerid)
 {
 	SCM(playerid, 0xFFFFFF, "Usuario registrado");
+}
+
+CMD:login(playerid, params[])
+{
+	new password[40];
+	new Query[300];
+
+	if(sscanf(params, "s[40]", password))
+    {
+        return SCM(playerid, 0xFACC2E, "Usa: /login [password]");
+    } else
+	{
+		mysql_format(db_conn, Query, sizeof(Query), "SELECT id FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", getName(playerid), password);
+	    mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
+	}
+	return 1;
+}
+
+function:OnPlayerLoginIn(playerid)
+{
+	if (maxErrorPassword == 2)
+		{
+			SendClientMessage(playerid,0xFFFFFC, "Intentaste demasiadas veces.");
+			Kick(playerid)
+		}
+
+	new rows, fields;
+	cache_get_data(rows, fields, db_conn);
+
+	if (rows)
+	{
+		SCM(playerid,0xFFFFFC, "Sesión iniciada.");
+	}else
+	{
+		SCM(playerid,0xFFFFFC, "Contraseña erronea, intente de nuevo.");
+		maxErrorPassword++;
+	}
 }
