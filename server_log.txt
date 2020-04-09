@@ -1227,3 +1227,55 @@ Console input: exit
 
 [23:15:02]  ===============================
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:15:43] filterscripts = ""  (string)
+[23:15:43] 
+[23:15:43] Server Plugins
+[23:15:43] --------------
+[23:15:43]  Loading plugin: mysql
+[23:15:43]  >> plugin.mysql: R39-6 successfully loaded.
+[23:15:43]   Loaded.
+[23:15:43]  Loading plugin: sscanf
+[23:15:43] 
+
+[23:15:43]  ===============================
+
+[23:15:43]       sscanf plugin loaded.     
+
+[23:15:43]          Version:  2.8.2        
+
+[23:15:43]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:15:43]  ===============================
+
+[23:15:43]   Loaded.
+[23:15:43]  Loaded 2 plugins.
+
+[23:15:43] 
+[23:15:43] Filterscripts
+[23:15:43] ---------------
+[23:15:43]   Loaded 0 filterscripts.
+
+[23:15:43] Conexión exitosa
+[23:15:43] 
+----------------------------------
+[23:15:43] San Quebrado V 0
+[23:15:43] ----------------------------------
+
+[23:15:43] Number of vehicle models: 0
+[23:16:05] [connection] 127.0.0.1:58467 requests connection cookie.
+[23:16:06] [connection] incoming connection: 127.0.0.1:58467 id: 0
+[23:16:06] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:16:17] [part] Marcio_Skeight has left the server (0:1)
+[23:17:13] [connection] 127.0.0.1:65300 requests connection cookie.
+[23:17:14] [connection] incoming connection: 127.0.0.1:65300 id: 0
+[23:17:14] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:17:27] [part] Marcio_Skeight has left the server (0:1)
