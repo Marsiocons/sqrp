@@ -4,7 +4,7 @@
 #include <a_mysql>
 #include "../include/utilitis.inc"
 
-//--------------------------------------------------------------------
+//======================= MySQL Connection ==========================================//
 
 #define MYSQL_HOST  "localhost"
 #define MYSQL_USER  "root"
@@ -13,7 +13,17 @@
 
 new db_conn;
 
-//---------------------------------------------------------------------
+//===================================================================================//
+
+//============================== DEFINE =============================================//
+
+
+#define function:%0(%1) forward %0(%1); public %0(%1)
+#define SCM SendClientMessage
+
+//===================================================================================//
+
+//================================= Player Info =====================================//
 
 enum PlayerData
 {
@@ -32,12 +42,9 @@ bool:dbLoggedIn
 
 new PlayerInfo[MAX_PLAYERS][PlayerData];
 
-//---------------------------------------------------------------------
+//===================================================================================//
 
-#define function:%0(%1) forward %0(%1); public %0(%1)
-#define SCM SendClientMessage
-
-new maxErrorPassword;
+//=============================== MAIN ==============================================//
 
 main()
 {
@@ -45,6 +52,8 @@ main()
 	print("San Quebrado V 0");
 	print("----------------------------------\n");
 }
+
+//===================================================================================//
 
 public OnGameModeInit()
 {
@@ -74,12 +83,8 @@ public OnPlayerDisconnect(playerid, reason)
 {
 	new Query[300];
 	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i WHERE `id` = %i", GetPVarInt(playerid, "dbTrabajoUno"), PlayerInfo[playerid][dbID]);
-	mysql_tquery(db_conn, Query, "Prueba", "i", playerid); 
+	mysql_tquery(db_conn, Query, "PlayerDisconnect", "i", playerid); 
 	ResetPlayer(playerid);
-}
-function:Prueba(playerid)
-{
-	print("Usuario guardado");
 }
 
 public OnPlayerSpawn(playerid)
@@ -87,6 +92,9 @@ public OnPlayerSpawn(playerid)
 	SetPlayerPos(playerid, -1465.200683, 2608.702148, 55.835937);
 	return 1;
 }
+
+
+//============================ FUNCTIONS ============================================//
 
 function:Bienvenida(playerid)
 {
@@ -103,21 +111,6 @@ function:Bienvenida(playerid)
 	}
 }
 
-CMD:registrar(playerid, params[])
-{
-	new password[40];
-	if(sscanf(params, "s[40]", password))
-    {
-        return SCM(playerid, 0xFACC2E, "Usa: /registrar [password]");
-    } else
-    {
-		new Query[300];
-        mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), password);
-	    mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
-    }
-	return 1;
-}
-
 function:OnPlayerRegister(playerid)
 {
 	SCM(playerid, 0xFFFFFF, "Usuario registrado");
@@ -125,24 +118,10 @@ function:OnPlayerRegister(playerid)
 	format(PlayerInfo[playerid][dbNombre], 32, "%s", GetName(playerid));
 }
 
-CMD:login(playerid, params[])
-{
-	new password[40];
-	new Query[300];
-
-	if(sscanf(params, "s[40]", password))
-    {
-        return SCM(playerid, 0xFACC2E, "Usa: /login [password]");
-    } else
-	{
-		mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", GetName(playerid), password);
-	    mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
-	}
-	return 1;
-}
-
 function:OnPlayerLoginIn(playerid)
 {
+	new maxErrorPassword;
+
 	if (maxErrorPassword == 2)
 		{
 			SendClientMessage(playerid,0xFFFFFC, "Intentaste demasiadas veces.");
@@ -179,3 +158,45 @@ function:ResetPlayer(playerid)
     PlayerInfo[playerid][dbSkin] = 0;
     return 1;
 }
+
+function:PlayerDisconnect(playerid)
+{
+	print("Usuario guardado");
+}
+
+//===================================================================================//
+
+//============================= CMDS ================================================//
+
+CMD:registrar(playerid, params[])
+{
+	new password[40];
+	if(sscanf(params, "s[40]", password))
+    {
+        return SCM(playerid, 0xFACC2E, "Usa: /registrar [password]");
+    } else
+    {
+		new Query[300];
+        mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), password);
+	    mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
+    }
+	return 1;
+}
+
+CMD:login(playerid, params[])
+{
+	new password[40];
+	new Query[300];
+
+	if(sscanf(params, "s[40]", password))
+    {
+        return SCM(playerid, 0xFACC2E, "Usa: /login [password]");
+    } else
+	{
+		mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", GetName(playerid), password);
+	    mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
+	}
+	return 1;
+}
+
+//===================================================================================//
