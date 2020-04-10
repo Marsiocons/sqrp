@@ -28,6 +28,7 @@ CMD:trabajo(playerid, params[])
             SendClientMessage(playerid, 0xFFFFFF, "Obtuviste el trabajo de camionero.");
  	        SendClientMessage(playerid, 0xFFFFFF, "Usa /recorrido camionero");
   	        SendClientMessage(playerid, 0xFFFFFF, "Para empezar a trabajar.");
+            SetPVarInt(playerid, "dbTrabajoUno", 1);
         }else
         {
   	        SendClientMessage(playerid, 0xFFFFFF, "No estás en el lugar adecuado.");
@@ -88,4 +89,18 @@ public OnPlayerEnterCheckpoint(playerid) {
             RECORRIDOCAMIONERO = 1;
         }
     }
+}
+CMD:prueba(playerid, params[])
+{
+    new jobActual;
+    jobActual = GetPVarInt(playerid, "dbTrabajoUno");
+    if (jobActual == 0)
+    {
+        SendClientMessage(playerid, 0xFFFFF, "No tenés trabajos hijo de puta");
+    }
+    if (jobActual == 1)
+    {
+        SendClientMessage(playerid, 0xFFFFF, "Tenés el trabajo de camionero");
+    }
+    return 1;
 }

@@ -4,7 +4,7 @@
 #include <a_mysql>
 #include "../include/utilitis.inc"
 
-// Conexión mysql
+//--------------------------------------------------------------------
 
 #define MYSQL_HOST  "localhost"
 #define MYSQL_USER  "root"
@@ -12,6 +12,25 @@
 #define MYSQL_PASS  "5K4T3F0R1IF3a"
 
 new db_conn;
+
+//---------------------------------------------------------------------
+
+enum PlayerData
+{
+dbID,
+dbNombre[MAX_PLAYER_NAME+1],
+dbTrabajoUno,
+dbTrabajoDos,
+dbVehiculoUno,
+dbVehiculoDos,
+dbDineroMano,
+dbDineroBanco,
+dbRango,
+dbSkin,
+bool:dbLoggedIn
+}
+
+new PlayerInfo[MAX_PLAYERS][PlayerData];
 
 //---------------------------------------------------------------------
 
@@ -45,10 +64,22 @@ public OnGameModeExit()
 }
 public OnPlayerConnect(playerid)
 {	
+	ResetPlayer(playerid);
 	new Query[300];
-	mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s'", getName(playerid));
-	mysql_tquery(db_conn, Query, "Login", "i", playerid);
+	mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s'", GetName(playerid));
+	mysql_tquery(db_conn, Query, "Bienvenida", "i", playerid);
 	return 1;
+}
+public OnPlayerDisconnect(playerid, reason)
+{
+	new Query[300];
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i WHERE `id` = %i", GetPVarInt(playerid, "dbTrabajoUno"), PlayerInfo[playerid][dbID]);
+	mysql_tquery(db_conn, Query, "Prueba", "i", playerid); 
+	ResetPlayer(playerid);
+}
+function:Prueba(playerid)
+{
+	print("Usuario guardado");
 }
 
 public OnPlayerSpawn(playerid)
@@ -57,7 +88,7 @@ public OnPlayerSpawn(playerid)
 	return 1;
 }
 
-function:Login(playerid)
+function:Bienvenida(playerid)
 {
 	new rows, fields;
 	cache_get_data(rows, fields, db_conn);
@@ -81,9 +112,8 @@ CMD:registrar(playerid, params[])
     } else
     {
 		new Query[300];
-        mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", getName(playerid), password);
+        mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), password);
 	    mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
-
     }
 	return 1;
 }
@@ -91,6 +121,8 @@ CMD:registrar(playerid, params[])
 function:OnPlayerRegister(playerid)
 {
 	SCM(playerid, 0xFFFFFF, "Usuario registrado");
+	PlayerInfo[playerid][dbLoggedIn] = true;
+	format(PlayerInfo[playerid][dbNombre], 32, "%s", GetName(playerid));
 }
 
 CMD:login(playerid, params[])
@@ -103,7 +135,7 @@ CMD:login(playerid, params[])
         return SCM(playerid, 0xFACC2E, "Usa: /login [password]");
     } else
 	{
-		mysql_format(db_conn, Query, sizeof(Query), "SELECT id FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", getName(playerid), password);
+		mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", GetName(playerid), password);
 	    mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
 	}
 	return 1;
@@ -123,9 +155,27 @@ function:OnPlayerLoginIn(playerid)
 	if (rows)
 	{
 		SCM(playerid,0xFFFFFC, "Sesión iniciada.");
+		PlayerInfo[playerid][dbLoggedIn] = true;
 	}else
 	{
 		SCM(playerid,0xFFFFFC, "Contraseña erronea, intente de nuevo.");
 		maxErrorPassword++;
 	}
+
+	PlayerInfo[playerid][dbID] = cache_get_field_content_int(0, "id", db_conn);
+	PlayerInfo[playerid][dbNombre] = GetName(playerid);
+	PlayerInfo[playerid][dbTrabajoUno] = cache_get_field_content_int(0, "trabajo_uno", db_conn);
+	
+	/*PlayerInfo[playerid][dbVehiculoUno] = cache_get_field_content_int(5, "vehiculo_uno", db_conn);
+	PlayerInfo[playerid][dbDineroMano] = cache_get_field_content_int(7, "dinero_mano", db_conn);
+	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(8, "dinero_banco", db_conn);*/
+
+	SetPVarInt(playerid, "dbTrabajoUno", PlayerInfo[playerid][dbTrabajoUno]);
+}
+
+function:ResetPlayer(playerid)
+{
+    PlayerInfo[playerid][dbLoggedIn] = false;
+    PlayerInfo[playerid][dbSkin] = 0;
+    return 1;
 }
