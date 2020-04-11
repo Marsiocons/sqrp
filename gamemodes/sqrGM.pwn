@@ -17,9 +17,10 @@ new db_conn;
 
 //============================== DEFINE =============================================//
 
-#define DIALOG_LOGIN (1)
-#define function:%0(%1) forward %0(%1); public %0(%1)
-#define SCM SendClientMessage
+#define   DIALOG_REGISTER (0)
+#define   DIALOG_LOGIN    (1)
+#define   SCM             SendClientMessage
+#define   function:%0(%1) forward %0(%1); public %0(%1)
 
 //===================================================================================//
 
@@ -119,6 +120,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	    		mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
 			}
 		}
+		case DIALOG_REGISTER:
+		{
+			if (!response)
+			{
+				SCM(playerid, 0xAA3333AA, "Fuiste expulsado del servidor por evitar el registro.");
+				KickEx(playerid);
+			}
+			else
+			{
+				new Query[300];
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), inputtext);
+	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
+			}
+		}
 	}
 
 	return 1;
@@ -134,12 +149,11 @@ function:Bienvenida(playerid)
 	if (rows)
 	{
 		SCM(playerid, 0xFFFFFA, "Usuario registrado.")	
-		SCM(playerid, 0xFFFFFA, "Usa /login [contraseña].")	
-		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está¡ registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
+		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
 	}else
 	{
 		SCM(playerid, 0xFFFFFF, "Usuario no registrado");
-		SCM(playerid, 0xFFFFFF, "Usa /registrar [contraseña]");
+		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no está registrada.\n\nIngresa una contraseña válida para continuar.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Registrar", "Cancelar");
 	}
 }
 
@@ -213,25 +227,6 @@ function:SpawnPlayerPlayer(playerid)
 	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkin], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
-	return 1;
-}
-
-//===================================================================================//
-
-//============================= CMDS ================================================//
-
-CMD:registrar(playerid, params[])
-{
-	new password[40];
-	if(sscanf(params, "s[40]", password))
-    {
-        return SCM(playerid, 0xFACC2E, "Usa: /registrar [contraseña]");
-    } else
-    {
-		new Query[300];
-        mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), password);
-	    mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
-    }
 	return 1;
 }
 
