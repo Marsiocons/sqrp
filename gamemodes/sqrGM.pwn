@@ -17,7 +17,7 @@ new db_conn;
 
 //============================== DEFINE =============================================//
 
-
+#define DIALOG_LOGIN (1)
 #define function:%0(%1) forward %0(%1); public %0(%1)
 #define SCM SendClientMessage
 
@@ -63,7 +63,7 @@ public OnGameModeInit()
 		print("No se pudo conectar a la base de datos.");
 	}else
 	{
-		print("ConexiÃ³n exitosa");
+		print("Conexión exitosa");
 	}
 	return 1;
 }
@@ -86,10 +86,41 @@ public OnPlayerDisconnect(playerid, reason)
 	mysql_tquery(db_conn, Query, "PlayerDisconnect", "i", playerid); 
 	ResetPlayer(playerid);
 }
+  
 
-public OnPlayerSpawn(playerid)
+public OnPlayerRequestClass(playerid, classid)
 {
-	SetPlayerPos(playerid, -1465.200683, 2608.702148, 55.835937);
+	if (PlayerInfo[playerid][dbLoggedIn] == false)
+	{
+		SetSpawnInfo( playerid, 0, 0, 563.3157, 3315.2559, 0, 269.15, 0, 0, 0, 0, 0, 0 );
+		TogglePlayerSpectating(playerid, true);
+    	TogglePlayerSpectating(playerid, false);
+		SetPlayerCamera(playerid);
+		return 1;
+	}
+	
+	return 0;
+}
+public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
+{
+	switch (dialogid)
+    {
+		case DIALOG_LOGIN:
+        {
+			if (!response)
+            {
+				SCM(playerid,0xAA3333AA, "Fuiste expulsado del servidor por evitar el login.")
+				KickEx(playerid);
+			}
+			else
+			{
+				new Query[300];
+				mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", GetName(playerid), inputtext);
+	    		mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
+			}
+		}
+	}
+
 	return 1;
 }
 
@@ -103,11 +134,12 @@ function:Bienvenida(playerid)
 	if (rows)
 	{
 		SCM(playerid, 0xFFFFFA, "Usuario registrado.")	
-		SCM(playerid, 0xFFFFFA, "Usa /login [contraseÃ±a].")	
+		SCM(playerid, 0xFFFFFA, "Usa /login [contraseña].")	
+		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está¡ registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
 	}else
 	{
 		SCM(playerid, 0xFFFFFF, "Usuario no registrado");
-		SCM(playerid, 0xFFFFFF, "Usa /registrar [contraseÃ±a]");
+		SCM(playerid, 0xFFFFFF, "Usa /registrar [contraseña]");
 	}
 }
 
@@ -115,7 +147,7 @@ function:OnPlayerRegister(playerid)
 {
 	SCM(playerid, 0xFFFFFF, "Usuario registrado");
 	PlayerInfo[playerid][dbLoggedIn] = true;
-	format(PlayerInfo[playerid][dbNombre], 32, "%s", GetName(playerid));
+	SpawnPlayerPlayer(playerid);
 }
 
 function:OnPlayerLoginIn(playerid)
@@ -125,7 +157,7 @@ function:OnPlayerLoginIn(playerid)
 	if (maxErrorPassword == 2)
 		{
 			SendClientMessage(playerid,0xFFFFFC, "Intentaste demasiadas veces.");
-			Kick(playerid)
+			KickEx(playerid);
 		}
 
 	new rows, fields;
@@ -133,23 +165,30 @@ function:OnPlayerLoginIn(playerid)
 
 	if (rows)
 	{
-		SCM(playerid,0xFFFFFC, "SesiÃ³n iniciada.");
+		SCM(playerid,0xFFFFFC, "Sesión iniciada.");
 		PlayerInfo[playerid][dbLoggedIn] = true;
 	}else
 	{
-		SCM(playerid,0xFFFFFC, "ContraseÃ±a erronea, intente de nuevo.");
+		SCM(playerid,0xAA3333AA, "Contraseña erronea, intente de nuevo.");
 		maxErrorPassword++;
+		return ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
 	}
 
 	PlayerInfo[playerid][dbID] = cache_get_field_content_int(0, "id", db_conn);
 	PlayerInfo[playerid][dbNombre] = GetName(playerid);
 	PlayerInfo[playerid][dbTrabajoUno] = cache_get_field_content_int(0, "trabajo_uno", db_conn);
-	
-	/*PlayerInfo[playerid][dbVehiculoUno] = cache_get_field_content_int(5, "vehiculo_uno", db_conn);
+	PlayerInfo[playerid][dbVehiculoUno] = cache_get_field_content_int(5, "vehiculo_uno", db_conn);
 	PlayerInfo[playerid][dbDineroMano] = cache_get_field_content_int(7, "dinero_mano", db_conn);
-	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(8, "dinero_banco", db_conn);*/
+	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(8, "dinero_banco", db_conn);
 
+	SetPVarString(playerid, "dbNombre", PlayerInfo[playerid][dbNombre]);
 	SetPVarInt(playerid, "dbTrabajoUno", PlayerInfo[playerid][dbTrabajoUno]);
+	SetPVarInt(playerid, "dbVehiculoUno", PlayerInfo[playerid][dbVehiculoUno]);
+	SetPVarInt(playerid, "dbDineroMano", PlayerInfo[playerid][dbDineroMano]);
+	SetPVarInt(playerid, "dbDineroBanco", PlayerInfo[playerid][dbDineroBanco]);
+
+	SpawnPlayerPlayer(playerid);
+	return 1;
 }
 
 function:ResetPlayer(playerid)
@@ -164,6 +203,19 @@ function:PlayerDisconnect(playerid)
 	print("Usuario guardado");
 }
 
+function:SetPlayerCamera(playerid)
+{
+	SetPlayerCameraPos(playerid, 2019.1145, 1202.9185, 42.3246);
+    SetPlayerCameraLookAt(playerid, 2019.9889, 1202.4272, 42.2945);
+}
+function:SpawnPlayerPlayer(playerid)
+{
+	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkin], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+    SpawnPlayer(playerid);
+	SetCameraBehindPlayer(playerid);
+	return 1;
+}
+
 //===================================================================================//
 
 //============================= CMDS ================================================//
@@ -173,29 +225,13 @@ CMD:registrar(playerid, params[])
 	new password[40];
 	if(sscanf(params, "s[40]", password))
     {
-        return SCM(playerid, 0xFACC2E, "Usa: /registrar [password]");
+        return SCM(playerid, 0xFACC2E, "Usa: /registrar [contraseña]");
     } else
     {
 		new Query[300];
         mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), password);
 	    mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
     }
-	return 1;
-}
-
-CMD:login(playerid, params[])
-{
-	new password[40];
-	new Query[300];
-
-	if(sscanf(params, "s[40]", password))
-    {
-        return SCM(playerid, 0xFACC2E, "Usa: /login [password]");
-    } else
-	{
-		mysql_format(db_conn, Query, sizeof(Query), "SELECT * FROM usuarios_data WHERE nombre = '%s' AND password = '%s'", GetName(playerid), password);
-	    mysql_tquery(db_conn, Query, "OnPlayerLoginIn", "i", playerid);
-	}
 	return 1;
 }
 

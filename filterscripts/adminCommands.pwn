@@ -10,6 +10,7 @@ public OnFilterScriptInit()
 
 CMD:vehiculo(playerid, params[])
 {
+    SendClientMessage(playerid, 0xADFFFFAD, "Creaste un vehículo.");
     new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z);
 

@@ -21,3 +21,7 @@ stock isVehicleCamionero(playerid)
     }
     return validado;
 }
+stock KickEx(playerid)
+{
+    return SetTimerEx("KickTimer", 100, false, "i", playerid);
+}

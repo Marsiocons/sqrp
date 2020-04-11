@@ -5,7 +5,7 @@ new cantVehiculos = 0;
 
 public OnFilterScriptInit()
 {
-    print("\n Vehiculos cargados\n");
+    print("\n Vehículos cargados\n");
 	return 1;
 }
 public OnGameModeInit()
@@ -35,6 +35,6 @@ public OnGameModeInit()
     }
 
     new string[32];
-    format(string, sizeof(string), "Cargue %i vehiculos.", cantVehiculos);
+    format(string, sizeof(string), "Cargué %i vehículos.", cantVehiculos);
     print(string);
 }

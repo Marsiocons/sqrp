@@ -31,7 +31,7 @@ CMD:trabajo(playerid, params[])
             SetPVarInt(playerid, "dbTrabajoUno", 1);
         }else
         {
-  	        SendClientMessage(playerid, 0xFFFFFF, "No est√°s en el lugar adecuado.");
+  	        SendClientMessage(playerid, 0xFFFFFF, "No est·s en el lugar adecuado.");
         }
     }
     return 1;
@@ -45,15 +45,21 @@ CMD:recorrido(playerid, params[])
     }
     if (!strcmp(params, "camionero", true))
     {
-        if (isVehicleCamionero(playerid) == 1)
+        if (GetPVarInt(playerid, "dbTrabajoUno") == 1)
         {
-  	        SendClientMessage(playerid, 0xFFFFFF, "Dirigete al punto para cagar el camion.");
-            SetPlayerCheckpoint(playerid, -554.442199, 2617.287841, 53.515625, 10);
-            RECORRIDOCAMIONERO = 0;
+            if (isVehicleCamionero(playerid) == 1)
+            {
+  	            SendClientMessage(playerid, 0xFFFFFF, "Dirigete al punto para cagar el camiÛn.");
+                SetPlayerCheckpoint(playerid, -554.442199, 2617.287841, 53.515625, 10);
+                RECORRIDOCAMIONERO = 0;
+            }else
+            {
+                SendClientMessage(playerid, 0xFFFFFF, "No est·s en el vehÌculo adecuado.");
+	        }
         }else
         {
-            SendClientMessage(playerid, 0xFFFFFF, "No estas en el vehiculo adecuado.");
-	    }
+            SendClientMessage(playerid, 0xFFFFFF, "No tenÈs el trabajo de camionero.");
+        }
     }
     return 1;
 }
@@ -70,7 +76,7 @@ public OnPlayerEnterCheckpoint(playerid) {
         {
             DisablePlayerCheckpoint(playerid);
             SetVehicleToRespawn(GetPlayerVehicleID(playerid));
-            SendClientMessage(playerid, 0xFFFFFF, "Completaste el trabajo, aca esta la paga.");
+            SendClientMessage(playerid, 0xFFFFFF, "Completaste el trabajo, ac· esta la paga.");
             RECORRIDOCAMIONERO = 0;
 
         // Comprobamos si ya carg√≥ el cami√≥n. Desactivamos cp anterior y le decimos al jugador.
@@ -78,29 +84,15 @@ public OnPlayerEnterCheckpoint(playerid) {
         {
             DisablePlayerCheckpoint(playerid);
             SetPlayerCheckpoint(playerid, -554.442199, 2617.287841, 53.515625, 10);
-            SendClientMessage(playerid, 0xFFFFFF, "Bien hecho!, vuelve a la sucursal para devolver el cami√≥n y obtener tu paga.");
+            SendClientMessage(playerid, 0xFFFFFF, "Bien hecho!, volvÈ a la sucursal para devolver el camiÛn y obtener tu paga.");
             RECORRIDOCAMIONERO = 2;
         }else
         {
             // Ac√° empieza todo.
             DisablePlayerCheckpoint(playerid);
             SetPlayerCheckpoint(playerid, -1519.365844, 2572.802490, 55.835937, 10);
-            SendClientMessage(playerid, 0xFFFFFF, "Vehiculo cargado. Ve al punto para entregar la carga.");
+            SendClientMessage(playerid, 0xFFFFFF, "VehÌculo cargado. Ve al punto para entregar la carga.");
             RECORRIDOCAMIONERO = 1;
         }
     }
-}
-CMD:prueba(playerid, params[])
-{
-    new jobActual;
-    jobActual = GetPVarInt(playerid, "dbTrabajoUno");
-    if (jobActual == 0)
-    {
-        SendClientMessage(playerid, 0xFFFFF, "No ten√©s trabajos hijo de puta");
-    }
-    if (jobActual == 1)
-    {
-        SendClientMessage(playerid, 0xFFFFF, "Ten√©s el trabajo de camionero");
-    }
-    return 1;
 }
