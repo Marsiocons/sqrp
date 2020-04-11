@@ -60,4 +60,5 @@ CMD:renunciar(playerid, params[])
         SendClientMessage(playerid, 0xFFFFAA, "Renunciaste a tu trabajo. Ahora estás desempleado");
         SetPVarInt(playerid, "dbTrabajoUno", 0);
     }
+    return 1;
 }
