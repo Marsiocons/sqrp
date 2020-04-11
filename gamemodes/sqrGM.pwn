@@ -24,6 +24,9 @@ new db_conn;
 
 //===================================================================================//
 
+new Text:teleportBox;
+new Text:teleportBoxDos;
+
 //================================= Player Info =====================================//
 
 enum PlayerData
@@ -155,6 +158,7 @@ function:Bienvenida(playerid)
 		SCM(playerid, 0xFFFFFF, "Usuario no registrado");
 		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no está registrada.\n\nIngresa una contraseña válida para continuar.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Registrar", "Cancelar");
 	}
+	ActivateRectangles(playerid, 0);
 }
 
 function:OnPlayerRegister(playerid)
@@ -181,6 +185,7 @@ function:OnPlayerLoginIn(playerid)
 	{
 		SCM(playerid,0xFFFFFC, "Sesión iniciada.");
 		PlayerInfo[playerid][dbLoggedIn] = true;
+
 	}else
 	{
 		SCM(playerid,0xAA3333AA, "Contraseña erronea, intente de nuevo.");
@@ -224,9 +229,49 @@ function:SetPlayerCamera(playerid)
 }
 function:SpawnPlayerPlayer(playerid)
 {
+	ActivateRectangles(playerid, 1);
+
 	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkin], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
+	return 1;
+}
+function:ActivateRectangles(playerid, opcion)
+{
+
+	if (opcion == 1)
+	{
+        //TextDrawHideForPlayer(playerid, teleportBoxDos);
+		//TextDrawHideForPlayer(playerid, teleportBox);
+		TextDrawDestroy(teleportBoxDos);
+		TextDrawDestroy(teleportBox);
+		SCM(playerid, 0xAAFFFFAA, "Desactive las barras.");
+	}
+	if (opcion == 0)
+	{
+		teleportBox = TextDrawCreate(320.0, 0.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
+    	TextDrawAlignment(teleportBox, 2);
+    	TextDrawBackgroundColor(teleportBox, 255);
+    	TextDrawFont(teleportBox, 2);
+    	TextDrawColor(teleportBox, 0xFFFFFF);
+    	TextDrawUseBox(teleportBox, 1);
+    	TextDrawBoxColor(teleportBox, 0x000000AA);
+    	TextDrawSetOutline(teleportBox, 0);
+
+		teleportBoxDos = TextDrawCreate(320.0, 330.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
+    	TextDrawAlignment(teleportBoxDos, 2);
+    	TextDrawBackgroundColor(teleportBoxDos, 255);
+    	TextDrawFont(teleportBoxDos, 2);
+    	TextDrawColor(teleportBoxDos, 0xFFFFFF);
+	    TextDrawUseBox(teleportBoxDos, 1);
+    	TextDrawBoxColor(teleportBoxDos, 0x000000AA);
+	    TextDrawSetOutline(teleportBoxDos, 0);
+
+		TextDrawShowForPlayer(playerid, teleportBox);
+	    TextDrawShowForPlayer(playerid, teleportBoxDos);
+		SCM(playerid, 0xAAFFFFAA, "Active las barras.");
+	}
+	
 	return 1;
 }
 
