@@ -26,6 +26,11 @@ new db_conn;
 
 new Text:teleportBox;
 new Text:teleportBoxDos;
+new Text:tipoBoton[4]; // ANTERIOR 0, MUJER 1, SISGUIENTE 2, HOMBRE 3
+new Text:iniciar;
+
+new skins[2][4] = {{72,134,188,158},{69,131,192,198}};
+new bool:isWoman;
 
 //================================= Player Info =====================================//
 
@@ -40,7 +45,8 @@ dbVehiculoDos,
 dbDineroMano,
 dbDineroBanco,
 dbRango,
-dbSkin,
+dbSkinUno,
+dbSkinDos,
 bool:dbLoggedIn
 }
 
@@ -85,8 +91,9 @@ public OnPlayerConnect(playerid)
 }
 public OnPlayerDisconnect(playerid, reason)
 {
+	PlayerInfo[playerid][dbTrabajoUno] = GetPVarInt(playerid, "dbTrabajoUno");
 	new Query[300];
-	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i WHERE `id` = %i", GetPVarInt(playerid, "dbTrabajoUno"), PlayerInfo[playerid][dbID]);
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i, `skin_uno` = %i WHERE `id` = %i", PlayerInfo[playerid][dbTrabajoUno], PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "PlayerDisconnect", "i", playerid); 
 	ResetPlayer(playerid);
 }
@@ -133,7 +140,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else
 			{
 				new Query[300];
-        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0)", GetName(playerid), inputtext);
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
 	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
 			}
 		}
@@ -141,7 +148,76 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 	return 1;
 }
-
+public OnPlayerClickTextDraw(playerid, Text:clickedid)
+{
+    if(clickedid == tipoBoton[0])
+    {   
+        if(GetPlayerSkin(playerid) == skins[isWoman][0])
+        {
+            SetPlayerSkin(playerid, skins[isWoman][3]);
+        }
+        else
+        {
+            for(new a = 1; a <= 3; a++)
+            {
+                if(GetPlayerSkin(playerid) == skins[isWoman][a])
+                {
+                    SetPlayerSkin(playerid, skins[isWoman][a - 1]);
+                }
+            }
+        }
+        SendClientMessage(playerid, 0xAAFFAA, "Presionaste 'anterior'");
+    }
+    if(clickedid == tipoBoton[2])
+    {
+        if(GetPlayerSkin(playerid) == skins[isWoman][3])
+        {
+            SetPlayerSkin(playerid, skins[isWoman][0]);
+        }
+        else
+        {
+            for(new a = 0; a < 3; a++)
+            {
+                if(GetPlayerSkin(playerid) == skins[isWoman][a])
+                {
+                    SetPlayerSkin(playerid, skins[isWoman][a + 1]);
+                    break;
+                }
+            }
+        }
+        SendClientMessage(playerid, 0xAAFFAA, "Presionaste 'siguiente'");
+    }
+    if(clickedid == tipoBoton[1])
+    {
+        isWoman = true;
+        for(new a = 0; a <= 3; a++)
+        {
+            if(GetPlayerSkin(playerid) == skins[0][a])
+            {
+                SetPlayerSkin(playerid, skins[1][a]);
+            }
+        }
+        
+    }
+    if(clickedid == tipoBoton[3])
+    {
+        isWoman = false;
+        for(new a = 0; a <= 3; a++)
+        {
+            if(GetPlayerSkin(playerid) == skins[1][a])
+            {
+                SetPlayerSkin(playerid, skins[0][a]);
+            }
+        }
+    }
+    if(clickedid == iniciar)
+    {
+		PlayerInfo[playerid][dbSkinUno] = GetPlayerSkin(playerid);
+		PlayerInfo[playerid][dbNombre] = GetName(playerid);
+        SpawnPlayerPlayer(playerid);
+    }
+    return 1;
+}
 
 //============================ FUNCTIONS ============================================//
 
@@ -162,10 +238,12 @@ function:Bienvenida(playerid)
 }
 
 function:OnPlayerRegister(playerid)
-{
+{	
+	PlayerInfo[playerid][dbID] = cache_insert_id();
 	SCM(playerid, 0xFFFFFF, "Usuario registrado");
 	PlayerInfo[playerid][dbLoggedIn] = true;
-	SpawnPlayerPlayer(playerid);
+	ActivateRectangles(playerid, 1);
+	SkinSelector(playerid);
 }
 
 function:OnPlayerLoginIn(playerid)
@@ -196,9 +274,11 @@ function:OnPlayerLoginIn(playerid)
 	PlayerInfo[playerid][dbID] = cache_get_field_content_int(0, "id", db_conn);
 	PlayerInfo[playerid][dbNombre] = GetName(playerid);
 	PlayerInfo[playerid][dbTrabajoUno] = cache_get_field_content_int(0, "trabajo_uno", db_conn);
-	PlayerInfo[playerid][dbVehiculoUno] = cache_get_field_content_int(5, "vehiculo_uno", db_conn);
-	PlayerInfo[playerid][dbDineroMano] = cache_get_field_content_int(7, "dinero_mano", db_conn);
-	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(8, "dinero_banco", db_conn);
+	PlayerInfo[playerid][dbVehiculoUno] = cache_get_field_content_int(0, "vehiculo_uno", db_conn);
+	PlayerInfo[playerid][dbDineroMano] = cache_get_field_content_int(0, "dinero_mano", db_conn);
+	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(0, "dinero_banco", db_conn);
+	PlayerInfo[playerid][dbSkinUno] = cache_get_field_content_int(0, "skin_uno", db_conn);
+
 
 	SetPVarString(playerid, "dbNombre", PlayerInfo[playerid][dbNombre]);
 	SetPVarInt(playerid, "dbTrabajoUno", PlayerInfo[playerid][dbTrabajoUno]);
@@ -206,6 +286,7 @@ function:OnPlayerLoginIn(playerid)
 	SetPVarInt(playerid, "dbDineroMano", PlayerInfo[playerid][dbDineroMano]);
 	SetPVarInt(playerid, "dbDineroBanco", PlayerInfo[playerid][dbDineroBanco]);
 
+	ActivateRectangles(playerid, 1);
 	SpawnPlayerPlayer(playerid);
 	return 1;
 }
@@ -213,7 +294,7 @@ function:OnPlayerLoginIn(playerid)
 function:ResetPlayer(playerid)
 {
     PlayerInfo[playerid][dbLoggedIn] = false;
-    PlayerInfo[playerid][dbSkin] = 0;
+    PlayerInfo[playerid][dbSkinUno] = 0;
     return 1;
 }
 
@@ -229,9 +310,15 @@ function:SetPlayerCamera(playerid)
 }
 function:SpawnPlayerPlayer(playerid)
 {
-	ActivateRectangles(playerid, 1);
+	for (new i = 0; i < 4; i++)
+    {
+        TextDrawDestroy(tipoBoton[i]);
+    }
+    TextDrawDestroy(iniciar);
+    CancelSelectTextDraw(playerid);
+    TogglePlayerControllable(playerid, 1);
 
-	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkin], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinUno], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
 	return 1;
@@ -272,6 +359,75 @@ function:ActivateRectangles(playerid, opcion)
 		SCM(playerid, 0xAAFFFFAA, "Active las barras.");
 	}
 	
+	return 1;
+}
+function:SkinSelector(playerid)
+{
+	new botonesNombre[][] = {
+        "ANTERIOR",
+        "MUJER",
+        "SIGUIENTE",
+        "HOMBRE"
+        };
+    new Float:coorBotones[2] = {360.0,380.0};    
+
+    for(new i = 0; i < 2; i++)
+    {
+        for(new j = 0; j < 2; j++)
+        {
+            if(i == 1) break;
+            tipoBoton[j] = TextDrawCreate(260.0,coorBotones[j],botonesNombre[j]);
+            TextDrawAlignment(tipoBoton[j], 2);
+            TextDrawBackgroundColor(tipoBoton[j], 255);
+            TextDrawFont(tipoBoton[j], 1);
+            TextDrawLetterSize(tipoBoton[j], 0.500000, 1.000000);
+            TextDrawColor(tipoBoton[j], -1);
+            TextDrawSetOutline(tipoBoton[j], 0);
+            TextDrawSetProportional(tipoBoton[j], 1);
+            TextDrawUseBox(tipoBoton[j], 1);
+            TextDrawBoxColor(tipoBoton[j], 255);
+            TextDrawTextSize(tipoBoton[j], 15.000000, 90.000000);
+            TextDrawSetSelectable(tipoBoton[j], 1);
+	        TextDrawShowForPlayer(playerid, tipoBoton[j]);
+            SendClientMessage(playerid, 0xAAFFFFAA, "Cree un boton");
+        } 
+        tipoBoton[i+2] = TextDrawCreate(381.0,coorBotones[i],botonesNombre[i+2]);
+        TextDrawAlignment(tipoBoton[i+2], 2);
+        TextDrawBackgroundColor(tipoBoton[i+2], 255);
+        TextDrawFont(tipoBoton[i+2], 1);
+        TextDrawLetterSize(tipoBoton[i+2], 0.500000, 1.000000);
+        TextDrawColor(tipoBoton[i+2], -1);
+        TextDrawSetOutline(tipoBoton[i+2], 0);
+        TextDrawSetProportional(tipoBoton[i+2], 1);
+        TextDrawUseBox(tipoBoton[i+2], 1);
+        TextDrawBoxColor(tipoBoton[i+2], 255);
+        TextDrawTextSize(tipoBoton[i+2], 15.000000, 90.000000);
+        TextDrawSetSelectable(tipoBoton[i+2], 1);
+        TextDrawShowForPlayer(playerid, tipoBoton[i+2]);
+        SendClientMessage(playerid, 0xAAFFFFAA, "Cree otro boton");
+    }
+    iniciar = TextDrawCreate(320.0, 400, "I N I C I A R");
+    TextDrawAlignment(iniciar, 2);
+    TextDrawBackgroundColor(iniciar, 255);
+    TextDrawFont(iniciar, 1);
+    TextDrawLetterSize(iniciar, 0.500000, 1.300000);
+    TextDrawColor(iniciar, -1);
+    TextDrawSetOutline(iniciar, 0);
+    TextDrawSetProportional(iniciar, 1);
+    TextDrawUseBox(iniciar, 1);
+    TextDrawBoxColor(iniciar, 255);
+    TextDrawTextSize(iniciar, 20.000000, 210.000000);
+    TextDrawSetSelectable(iniciar, 1);
+    TextDrawShowForPlayer(playerid, iniciar);
+    
+    SelectTextDraw(playerid, 0x00FF00FF);
+
+	SetSpawnInfo(playerid, 0, skins[0][0], -1465.704589, 2637.687988, 75.877052, 231.36, 0, 0, 0, 0, 0, 0 );
+    SpawnPlayer(playerid);
+    SetPlayerCameraPos(playerid, -1456.281005, 2632.042968, 77.786529);
+    SetPlayerCameraLookAt(playerid, -1465.704589, 2637.687988, 76.877052-3);
+    
+    TogglePlayerControllable(playerid, 0);
 	return 1;
 }
 

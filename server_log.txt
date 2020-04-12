@@ -1,0 +1,2834 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[15:42:03] 
+[15:42:03] Server Plugins
+[15:42:03] --------------
+[15:42:03]  Loading plugin: mysql
+[15:42:03]  >> plugin.mysql: R39-6 successfully loaded.
+[15:42:03]   Loaded.
+[15:42:03]  Loading plugin: sscanf
+[15:42:03] 
+
+[15:42:03]  ===============================
+
+[15:42:03]       sscanf plugin loaded.     
+
+[15:42:03]          Version:  2.8.2        
+
+[15:42:03]    (c) 2012 Alex "Y_Less" Cole  
+
+[15:42:03]  ===============================
+
+[15:42:03]   Loaded.
+[15:42:03]  Loaded 2 plugins.
+
+[15:42:03] 
+[15:42:03] Filterscripts
+[15:42:03] ---------------
+[15:42:03]   Loading filterscript 'adminCommands.amx'...
+[15:42:03] 
+ Comandos de administrador cargados.
+
+[15:42:03]   Loading filterscript 'playerCommands.amx'...
+[15:42:03] 
+ Comandos de jugadores cargados.
+
+[15:42:03]   Loading filterscript 'vehiculos.amx'...
+[15:42:03] 
+ Vehï¿½culos cargados
+
+[15:42:03]   Loading filterscript 'trabajos.amx'...
+[15:42:03] 
+ Trabajos cargados
+
+[15:42:03]   Loading filterscript 'pickup.amx'...
+[15:42:03] 
+ Pickups cargados
+
+[15:42:03] 
+ Cree un pickup 
+
+[15:42:03] 
+ Cree un Text Label 
+
+[15:42:03] 
+ Cree un Text Label 
+
+[15:42:03] 
+ Cree un Text Label 
+
+[15:42:03]   Loaded 5 filterscripts.
+
+[15:42:03] Conexión exitosa
+[15:42:03] Cargué 22 vehículos.
+[15:42:03] 
+----------------------------------
+[15:42:03] San Quebrado V 0
+[15:42:03] ----------------------------------
+
+[15:42:03] Number of vehicle models: 6
+[15:42:35] [connection] 127.0.0.1:57549 requests connection cookie.
+[15:42:36] [connection] incoming connection: 127.0.0.1:57549 id: 0
+[15:42:36] [join] Carlitos_Bala has joined the server (0:127.0.0.1)
+[15:42:43] [part] Carlitos_Bala has left the server (0:1)
+[15:42:43] Usuario guardado
+[15:43:12] [connection] 127.0.0.1:57550 requests connection cookie.
+[15:43:13] [connection] incoming connection: 127.0.0.1:57550 id: 0
+[15:43:14] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[15:43:38] [part] Pedro_SanVisente has left the server (0:1)
+[15:43:38] Usuario guardado
+Console input: exit
+[15:44:42] --- Server Shutting Down.
+[15:44:43] plugin.mysql: Unloading plugin...
+[15:44:43] plugin.mysql: Plugin unloaded.
+[15:44:43] 
+
+[15:44:43]  ===============================
+
+[15:44:43]      sscanf plugin unloaded.    
+
+[15:44:43]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[15:45:18] 
+[15:45:18] Server Plugins
+[15:45:18] --------------
+[15:45:18]  Loading plugin: mysql
+[15:45:18]  >> plugin.mysql: R39-6 successfully loaded.
+[15:45:18]   Loaded.
+[15:45:18]  Loading plugin: sscanf
+[15:45:18] 
+
+[15:45:18]  ===============================
+
+[15:45:18]       sscanf plugin loaded.     
+
+[15:45:18]          Version:  2.8.2        
+
+[15:45:18]    (c) 2012 Alex "Y_Less" Cole  
+
+[15:45:18]  ===============================
+
+[15:45:18]   Loaded.
+[15:45:18]  Loaded 2 plugins.
+
+[15:45:18] 
+[15:45:18] Filterscripts
+[15:45:18] ---------------
+[15:45:18]   Loading filterscript 'adminCommands.amx'...
+[15:45:18] 
+ Comandos de administrador cargados.
+
+[15:45:18]   Loading filterscript 'playerCommands.amx'...
+[15:45:18] 
+ Comandos de jugadores cargados.
+
+[15:45:18]   Loading filterscript 'vehiculos.amx'...
+[15:45:18] 
+ Vehï¿½culos cargados
+
+[15:45:18]   Loading filterscript 'trabajos.amx'...
+[15:45:18] 
+ Trabajos cargados
+
+[15:45:18]   Loading filterscript 'pickup.amx'...
+[15:45:18] 
+ Pickups cargados
+
+[15:45:18] 
+ Cree un pickup 
+
+[15:45:18] 
+ Cree un Text Label 
+
+[15:45:18] 
+ Cree un Text Label 
+
+[15:45:18] 
+ Cree un Text Label 
+
+[15:45:18]   Loaded 5 filterscripts.
+
+[15:45:18] Conexión exitosa
+[15:45:18] Cargué 22 vehículos.
+[15:45:18] 
+----------------------------------
+[15:45:18] San Quebrado V 0
+[15:45:18] ----------------------------------
+
+[15:45:18] Number of vehicle models: 6
+[15:45:40] [connection] 127.0.0.1:49615 requests connection cookie.
+[15:45:41] [connection] incoming connection: 127.0.0.1:49615 id: 0
+[15:45:41] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[15:45:52] [part] Pedro_SanVisente has left the server (0:1)
+[15:45:52] Usuario guardado
+Console input: exit
+[15:49:47] --- Server Shutting Down.
+[15:49:47] plugin.mysql: Unloading plugin...
+[15:49:47] plugin.mysql: Plugin unloaded.
+[15:49:47] 
+
+[15:49:47]  ===============================
+
+[15:49:47]      sscanf plugin unloaded.    
+
+[15:49:47]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[15:49:48] 
+[15:49:48] Server Plugins
+[15:49:48] --------------
+[15:49:48]  Loading plugin: mysql
+[15:49:48]  >> plugin.mysql: R39-6 successfully loaded.
+[15:49:48]   Loaded.
+[15:49:48]  Loading plugin: sscanf
+[15:49:48] 
+
+[15:49:48]  ===============================
+
+[15:49:48]       sscanf plugin loaded.     
+
+[15:49:48]          Version:  2.8.2        
+
+[15:49:48]    (c) 2012 Alex "Y_Less" Cole  
+
+[15:49:48]  ===============================
+
+[15:49:48]   Loaded.
+[15:49:48]  Loaded 2 plugins.
+
+[15:49:48] 
+[15:49:48] Filterscripts
+[15:49:48] ---------------
+[15:49:48]   Loading filterscript 'adminCommands.amx'...
+[15:49:48] 
+ Comandos de administrador cargados.
+
+[15:49:48]   Loading filterscript 'playerCommands.amx'...
+[15:49:48] 
+ Comandos de jugadores cargados.
+
+[15:49:48]   Loading filterscript 'vehiculos.amx'...
+[15:49:48] 
+ Vehï¿½culos cargados
+
+[15:49:48]   Loading filterscript 'trabajos.amx'...
+[15:49:48] 
+ Trabajos cargados
+
+[15:49:48]   Loading filterscript 'pickup.amx'...
+[15:49:48] 
+ Pickups cargados
+
+[15:49:48] 
+ Cree un pickup 
+
+[15:49:48] 
+ Cree un Text Label 
+
+[15:49:48] 
+ Cree un Text Label 
+
+[15:49:48] 
+ Cree un Text Label 
+
+[15:49:48]   Loaded 5 filterscripts.
+
+[15:49:48] Conexión exitosa
+[15:49:48] Cargué 22 vehículos.
+[15:49:48] 
+----------------------------------
+[15:49:48] San Quebrado V 0
+[15:49:48] ----------------------------------
+
+[15:49:48] Number of vehicle models: 6
+[15:50:08] [connection] 127.0.0.1:52583 requests connection cookie.
+[15:50:09] [connection] incoming connection: 127.0.0.1:52583 id: 0
+[15:50:09] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[15:50:19] [part] Pedro_SanVisente has left the server (0:1)
+[15:50:19] Usuario guardado
+Console input: exit
+[16:04:57] --- Server Shutting Down.
+[16:04:58] plugin.mysql: Unloading plugin...
+[16:04:58] plugin.mysql: Plugin unloaded.
+[16:04:58] 
+
+[16:04:58]  ===============================
+
+[16:04:58]      sscanf plugin unloaded.    
+
+[16:04:58]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:04:59] 
+[16:04:59] Server Plugins
+[16:04:59] --------------
+[16:04:59]  Loading plugin: mysql
+[16:04:59]  >> plugin.mysql: R39-6 successfully loaded.
+[16:04:59]   Loaded.
+[16:04:59]  Loading plugin: sscanf
+[16:04:59] 
+
+[16:04:59]  ===============================
+
+[16:04:59]       sscanf plugin loaded.     
+
+[16:04:59]          Version:  2.8.2        
+
+[16:04:59]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:04:59]  ===============================
+
+[16:04:59]   Loaded.
+[16:04:59]  Loaded 2 plugins.
+
+[16:04:59] 
+[16:04:59] Filterscripts
+[16:04:59] ---------------
+[16:04:59]   Loading filterscript 'adminCommands.amx'...
+[16:04:59] 
+ Comandos de administrador cargados.
+
+[16:04:59]   Loading filterscript 'playerCommands.amx'...
+[16:04:59] 
+ Comandos de jugadores cargados.
+
+[16:04:59]   Loading filterscript 'vehiculos.amx'...
+[16:04:59] 
+ Vehï¿½culos cargados
+
+[16:04:59]   Loading filterscript 'trabajos.amx'...
+[16:04:59] 
+ Trabajos cargados
+
+[16:04:59]   Loading filterscript 'pickup.amx'...
+[16:04:59] 
+ Pickups cargados
+
+[16:04:59] 
+ Cree un pickup 
+
+[16:04:59] 
+ Cree un Text Label 
+
+[16:04:59] 
+ Cree un Text Label 
+
+[16:04:59] 
+ Cree un Text Label 
+
+[16:04:59]   Loaded 5 filterscripts.
+
+[16:04:59] Conexión exitosa
+[16:04:59] Cargué 22 vehículos.
+[16:04:59] 
+----------------------------------
+[16:04:59] San Quebrado V 0
+[16:04:59] ----------------------------------
+
+[16:04:59] Number of vehicle models: 6
+[16:05:18] [connection] 127.0.0.1:52081 requests connection cookie.
+[16:05:19] [connection] incoming connection: 127.0.0.1:52081 id: 0
+[16:05:20] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:06:18] [part] Pedro_SanVisente has left the server (0:1)
+[16:06:18] Usuario guardado
+Console input: exit
+[16:14:24] --- Server Shutting Down.
+[16:14:24] plugin.mysql: Unloading plugin...
+[16:14:24] plugin.mysql: Plugin unloaded.
+[16:14:24] 
+
+[16:14:24]  ===============================
+
+[16:14:24]      sscanf plugin unloaded.    
+
+[16:14:24]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:14:25] 
+[16:14:25] Server Plugins
+[16:14:25] --------------
+[16:14:25]  Loading plugin: mysql
+[16:14:25]  >> plugin.mysql: R39-6 successfully loaded.
+[16:14:25]   Loaded.
+[16:14:25]  Loading plugin: sscanf
+[16:14:25] 
+
+[16:14:25]  ===============================
+
+[16:14:25]       sscanf plugin loaded.     
+
+[16:14:25]          Version:  2.8.2        
+
+[16:14:25]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:14:25]  ===============================
+
+[16:14:25]   Loaded.
+[16:14:25]  Loaded 2 plugins.
+
+[16:14:25] 
+[16:14:25] Filterscripts
+[16:14:25] ---------------
+[16:14:25]   Loading filterscript 'adminCommands.amx'...
+[16:14:25] 
+ Comandos de administrador cargados.
+
+[16:14:25]   Loading filterscript 'playerCommands.amx'...
+[16:14:25] 
+ Comandos de jugadores cargados.
+
+[16:14:25]   Loading filterscript 'vehiculos.amx'...
+[16:14:25] 
+ Vehï¿½culos cargados
+
+[16:14:25]   Loading filterscript 'trabajos.amx'...
+[16:14:25] 
+ Trabajos cargados
+
+[16:14:25]   Loading filterscript 'pickup.amx'...
+[16:14:25] 
+ Pickups cargados
+
+[16:14:25] 
+ Cree un pickup 
+
+[16:14:25] 
+ Cree un Text Label 
+
+[16:14:25] 
+ Cree un Text Label 
+
+[16:14:25] 
+ Cree un Text Label 
+
+[16:14:25]   Loaded 5 filterscripts.
+
+[16:14:25] Conexión exitosa
+[16:14:25] Cargué 22 vehículos.
+[16:14:25] 
+----------------------------------
+[16:14:25] San Quebrado V 0
+[16:14:25] ----------------------------------
+
+[16:14:25] Number of vehicle models: 6
+[16:14:45] [connection] 127.0.0.1:62526 requests connection cookie.
+[16:14:46] [connection] incoming connection: 127.0.0.1:62526 id: 0
+[16:14:47] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:14:54] [part] Pedro_SanVisente has left the server (0:1)
+[16:14:54] Usuario guardado
+Console input: exit
+[16:16:37] --- Server Shutting Down.
+[16:16:37] plugin.mysql: Unloading plugin...
+[16:16:37] plugin.mysql: Plugin unloaded.
+[16:16:37] 
+
+[16:16:37]  ===============================
+
+[16:16:37]      sscanf plugin unloaded.    
+
+[16:16:37]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:16:38] 
+[16:16:38] Server Plugins
+[16:16:38] --------------
+[16:16:38]  Loading plugin: mysql
+[16:16:38]  >> plugin.mysql: R39-6 successfully loaded.
+[16:16:38]   Loaded.
+[16:16:38]  Loading plugin: sscanf
+[16:16:38] 
+
+[16:16:38]  ===============================
+
+[16:16:38]       sscanf plugin loaded.     
+
+[16:16:38]          Version:  2.8.2        
+
+[16:16:38]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:16:38]  ===============================
+
+[16:16:38]   Loaded.
+[16:16:38]  Loaded 2 plugins.
+
+[16:16:38] 
+[16:16:38] Filterscripts
+[16:16:38] ---------------
+[16:16:38]   Loading filterscript 'adminCommands.amx'...
+[16:16:38] 
+ Comandos de administrador cargados.
+
+[16:16:38]   Loading filterscript 'playerCommands.amx'...
+[16:16:38] 
+ Comandos de jugadores cargados.
+
+[16:16:38]   Loading filterscript 'vehiculos.amx'...
+[16:16:38] 
+ Vehï¿½culos cargados
+
+[16:16:38]   Loading filterscript 'trabajos.amx'...
+[16:16:38] 
+ Trabajos cargados
+
+[16:16:38]   Loading filterscript 'pickup.amx'...
+[16:16:38] 
+ Pickups cargados
+
+[16:16:38] 
+ Cree un pickup 
+
+[16:16:38] 
+ Cree un Text Label 
+
+[16:16:38] 
+ Cree un Text Label 
+
+[16:16:38] 
+ Cree un Text Label 
+
+[16:16:38]   Loaded 5 filterscripts.
+
+[16:16:38] Conexión exitosa
+[16:16:38] Cargué 22 vehículos.
+[16:16:38] 
+----------------------------------
+[16:16:38] San Quebrado V 0
+[16:16:38] ----------------------------------
+
+[16:16:38] Number of vehicle models: 6
+[16:16:57] [connection] 127.0.0.1:63210 requests connection cookie.
+[16:16:59] [connection] incoming connection: 127.0.0.1:63210 id: 0
+[16:16:59] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:17:03] [part] Pedro_SanVisente has left the server (0:1)
+[16:17:03] Usuario guardado
+Console input: exit
+[16:19:27] --- Server Shutting Down.
+[16:19:27] plugin.mysql: Unloading plugin...
+[16:19:27] plugin.mysql: Plugin unloaded.
+[16:19:27] 
+
+[16:19:27]  ===============================
+
+[16:19:27]      sscanf plugin unloaded.    
+
+[16:19:27]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:19:35] 
+[16:19:35] Server Plugins
+[16:19:35] --------------
+[16:19:35]  Loading plugin: mysql
+[16:19:35]  >> plugin.mysql: R39-6 successfully loaded.
+[16:19:35]   Loaded.
+[16:19:35]  Loading plugin: sscanf
+[16:19:35] 
+
+[16:19:35]  ===============================
+
+[16:19:35]       sscanf plugin loaded.     
+
+[16:19:35]          Version:  2.8.2        
+
+[16:19:35]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:19:35]  ===============================
+
+[16:19:35]   Loaded.
+[16:19:35]  Loaded 2 plugins.
+
+[16:19:35] 
+[16:19:35] Filterscripts
+[16:19:35] ---------------
+[16:19:35]   Loading filterscript 'adminCommands.amx'...
+[16:19:35] 
+ Comandos de administrador cargados.
+
+[16:19:35]   Loading filterscript 'playerCommands.amx'...
+[16:19:35] 
+ Comandos de jugadores cargados.
+
+[16:19:35]   Loading filterscript 'vehiculos.amx'...
+[16:19:35] 
+ Vehï¿½culos cargados
+
+[16:19:35]   Loading filterscript 'trabajos.amx'...
+[16:19:35] 
+ Trabajos cargados
+
+[16:19:35]   Loading filterscript 'pickup.amx'...
+[16:19:35] 
+ Pickups cargados
+
+[16:19:35] 
+ Cree un pickup 
+
+[16:19:35] 
+ Cree un Text Label 
+
+[16:19:35] 
+ Cree un Text Label 
+
+[16:19:35] 
+ Cree un Text Label 
+
+[16:19:35]   Loaded 5 filterscripts.
+
+[16:19:35] Conexión exitosa
+[16:19:35] Cargué 22 vehículos.
+[16:19:35] 
+----------------------------------
+[16:19:35] San Quebrado V 0
+[16:19:35] ----------------------------------
+
+[16:19:35] Number of vehicle models: 6
+[16:19:59] [connection] 127.0.0.1:58317 requests connection cookie.
+[16:20:01] [connection] incoming connection: 127.0.0.1:58317 id: 0
+[16:20:01] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:20:06] [part] Pedro_SanVisente has left the server (0:1)
+[16:20:06] Usuario guardado
+Console input: exit
+[16:20:12] --- Server Shutting Down.
+[16:20:12] plugin.mysql: Unloading plugin...
+[16:20:12] plugin.mysql: Plugin unloaded.
+[16:20:12] 
+
+[16:20:12]  ===============================
+
+[16:20:12]      sscanf plugin unloaded.    
+
+[16:20:12]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:20:57] 
+[16:20:57] Server Plugins
+[16:20:57] --------------
+[16:20:57]  Loading plugin: mysql
+[16:20:57]  >> plugin.mysql: R39-6 successfully loaded.
+[16:20:57]   Loaded.
+[16:20:57]  Loading plugin: sscanf
+[16:20:57] 
+
+[16:20:57]  ===============================
+
+[16:20:57]       sscanf plugin loaded.     
+
+[16:20:57]          Version:  2.8.2        
+
+[16:20:57]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:20:57]  ===============================
+
+[16:20:57]   Loaded.
+[16:20:57]  Loaded 2 plugins.
+
+[16:20:57] 
+[16:20:57] Filterscripts
+[16:20:57] ---------------
+[16:20:57]   Loading filterscript 'adminCommands.amx'...
+[16:20:57] 
+ Comandos de administrador cargados.
+
+[16:20:57]   Loading filterscript 'playerCommands.amx'...
+[16:20:57] 
+ Comandos de jugadores cargados.
+
+[16:20:57]   Loading filterscript 'vehiculos.amx'...
+[16:20:57] 
+ Vehï¿½culos cargados
+
+[16:20:57]   Loading filterscript 'trabajos.amx'...
+[16:20:57] 
+ Trabajos cargados
+
+[16:20:57]   Loading filterscript 'pickup.amx'...
+[16:20:57] 
+ Pickups cargados
+
+[16:20:57] 
+ Cree un pickup 
+
+[16:20:58] 
+ Cree un Text Label 
+
+[16:20:58] 
+ Cree un Text Label 
+
+[16:20:58] 
+ Cree un Text Label 
+
+[16:20:58]   Loaded 5 filterscripts.
+
+[16:20:58] Conexión exitosa
+[16:20:58] Cargué 22 vehículos.
+[16:20:58] 
+----------------------------------
+[16:20:58] San Quebrado V 0
+[16:20:58] ----------------------------------
+
+[16:20:58] Number of vehicle models: 6
+[16:21:17] [connection] 127.0.0.1:62101 requests connection cookie.
+[16:21:18] [connection] incoming connection: 127.0.0.1:62101 id: 0
+[16:21:19] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:21:22] [part] Pedro_SanVisente has left the server (0:1)
+[16:21:22] Usuario guardado
+Console input: exit
+[16:22:55] --- Server Shutting Down.
+[16:22:55] plugin.mysql: Unloading plugin...
+[16:22:55] plugin.mysql: Plugin unloaded.
+[16:22:55] 
+
+[16:22:55]  ===============================
+
+[16:22:55]      sscanf plugin unloaded.    
+
+[16:22:55]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:24:20] 
+[16:24:20] Server Plugins
+[16:24:20] --------------
+[16:24:20]  Loading plugin: mysql
+[16:24:20]  >> plugin.mysql: R39-6 successfully loaded.
+[16:24:20]   Loaded.
+[16:24:20]  Loading plugin: sscanf
+[16:24:20] 
+
+[16:24:20]  ===============================
+
+[16:24:20]       sscanf plugin loaded.     
+
+[16:24:20]          Version:  2.8.2        
+
+[16:24:20]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:24:20]  ===============================
+
+[16:24:20]   Loaded.
+[16:24:20]  Loaded 2 plugins.
+
+[16:24:20] 
+[16:24:20] Filterscripts
+[16:24:20] ---------------
+[16:24:20]   Loading filterscript 'adminCommands.amx'...
+[16:24:20] 
+ Comandos de administrador cargados.
+
+[16:24:20]   Loading filterscript 'playerCommands.amx'...
+[16:24:20] 
+ Comandos de jugadores cargados.
+
+[16:24:20]   Loading filterscript 'vehiculos.amx'...
+[16:24:20] 
+ Vehï¿½culos cargados
+
+[16:24:20]   Loading filterscript 'trabajos.amx'...
+[16:24:20] 
+ Trabajos cargados
+
+[16:24:20]   Loading filterscript 'pickup.amx'...
+[16:24:20] 
+ Pickups cargados
+
+[16:24:20] 
+ Cree un pickup 
+
+[16:24:21] 
+ Cree un Text Label 
+
+[16:24:21] 
+ Cree un Text Label 
+
+[16:24:21] 
+ Cree un Text Label 
+
+[16:24:21]   Loaded 5 filterscripts.
+
+[16:24:21] Conexión exitosa
+[16:24:21] Cargué 22 vehículos.
+[16:24:21] 
+----------------------------------
+[16:24:21] San Quebrado V 0
+[16:24:21] ----------------------------------
+
+[16:24:21] Number of vehicle models: 6
+[16:24:40] [connection] 127.0.0.1:57584 requests connection cookie.
+[16:24:41] [connection] incoming connection: 127.0.0.1:57584 id: 0
+[16:24:41] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:24:48] [part] Pedro_SanVisente has left the server (0:1)
+[16:24:48] Usuario guardado
+Console input: exit
+[16:24:54] --- Server Shutting Down.
+[16:24:55] plugin.mysql: Unloading plugin...
+[16:24:55] plugin.mysql: Plugin unloaded.
+[16:24:55] 
+
+[16:24:55]  ===============================
+
+[16:24:55]      sscanf plugin unloaded.    
+
+[16:24:55]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:26:22] 
+[16:26:22] Server Plugins
+[16:26:22] --------------
+[16:26:22]  Loading plugin: mysql
+[16:26:22]  >> plugin.mysql: R39-6 successfully loaded.
+[16:26:22]   Loaded.
+[16:26:22]  Loading plugin: sscanf
+[16:26:22] 
+
+[16:26:22]  ===============================
+
+[16:26:22]       sscanf plugin loaded.     
+
+[16:26:22]          Version:  2.8.2        
+
+[16:26:22]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:26:22]  ===============================
+
+[16:26:22]   Loaded.
+[16:26:22]  Loaded 2 plugins.
+
+[16:26:22] 
+[16:26:22] Filterscripts
+[16:26:22] ---------------
+[16:26:22]   Loading filterscript 'adminCommands.amx'...
+[16:26:22] 
+ Comandos de administrador cargados.
+
+[16:26:22]   Loading filterscript 'playerCommands.amx'...
+[16:26:22] 
+ Comandos de jugadores cargados.
+
+[16:26:22]   Loading filterscript 'vehiculos.amx'...
+[16:26:22] 
+ Vehï¿½culos cargados
+
+[16:26:22]   Loading filterscript 'trabajos.amx'...
+[16:26:22] 
+ Trabajos cargados
+
+[16:26:22]   Loading filterscript 'pickup.amx'...
+[16:26:22] 
+ Pickups cargados
+
+[16:26:22] 
+ Cree un pickup 
+
+[16:26:22] 
+ Cree un Text Label 
+
+[16:26:22] 
+ Cree un Text Label 
+
+[16:26:22] 
+ Cree un Text Label 
+
+[16:26:22]   Loaded 5 filterscripts.
+
+[16:26:22] Conexión exitosa
+[16:26:22] Cargué 22 vehículos.
+[16:26:22] 
+----------------------------------
+[16:26:22] San Quebrado V 0
+[16:26:22] ----------------------------------
+
+[16:26:22] Number of vehicle models: 6
+[16:26:42] [connection] 127.0.0.1:64854 requests connection cookie.
+[16:26:43] [connection] incoming connection: 127.0.0.1:64854 id: 0
+[16:26:44] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:26:48] [part] Pedro_SanVisente has left the server (0:1)
+[16:26:48] Usuario guardado
+Console input: exit
+[16:26:54] --- Server Shutting Down.
+[16:26:54] plugin.mysql: Unloading plugin...
+[16:26:54] plugin.mysql: Plugin unloaded.
+[16:26:54] 
+
+[16:26:54]  ===============================
+
+[16:26:54]      sscanf plugin unloaded.    
+
+[16:26:54]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:36:53] 
+[16:36:53] Server Plugins
+[16:36:53] --------------
+[16:36:53]  Loading plugin: mysql
+[16:36:53]  >> plugin.mysql: R39-6 successfully loaded.
+[16:36:53]   Loaded.
+[16:36:53]  Loading plugin: sscanf
+[16:36:53] 
+
+[16:36:53]  ===============================
+
+[16:36:53]       sscanf plugin loaded.     
+
+[16:36:53]          Version:  2.8.2        
+
+[16:36:53]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:36:53]  ===============================
+
+[16:36:53]   Loaded.
+[16:36:53]  Loaded 2 plugins.
+
+[16:36:53] 
+[16:36:53] Filterscripts
+[16:36:53] ---------------
+[16:36:53]   Loading filterscript 'adminCommands.amx'...
+[16:36:53] 
+ Comandos de administrador cargados.
+
+[16:36:53]   Loading filterscript 'playerCommands.amx'...
+[16:36:53] 
+ Comandos de jugadores cargados.
+
+[16:36:53]   Loading filterscript 'vehiculos.amx'...
+[16:36:53] 
+ Vehï¿½culos cargados
+
+[16:36:53]   Loading filterscript 'trabajos.amx'...
+[16:36:53] 
+ Trabajos cargados
+
+[16:36:53]   Loading filterscript 'pickup.amx'...
+[16:36:53] 
+ Pickups cargados
+
+[16:36:53] 
+ Cree un pickup 
+
+[16:36:53] 
+ Cree un Text Label 
+
+[16:36:53] 
+ Cree un Text Label 
+
+[16:36:53] 
+ Cree un Text Label 
+
+[16:36:53]   Loaded 5 filterscripts.
+
+[16:36:53] Conexión exitosa
+[16:36:53] Cargué 22 vehículos.
+[16:36:53] 
+----------------------------------
+[16:36:53] San Quebrado V 0
+[16:36:53] ----------------------------------
+
+[16:36:53] Number of vehicle models: 6
+[16:37:15] [connection] 127.0.0.1:52912 requests connection cookie.
+[16:37:16] [connection] incoming connection: 127.0.0.1:52912 id: 0
+[16:37:16] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:37:28] [part] Pedro_SanVisente has left the server (0:1)
+[16:37:28] Usuario guardado
+Console input: exit
+[16:43:12] --- Server Shutting Down.
+[16:43:12] plugin.mysql: Unloading plugin...
+[16:43:12] plugin.mysql: Plugin unloaded.
+[16:43:12] 
+
+[16:43:12]  ===============================
+
+[16:43:12]      sscanf plugin unloaded.    
+
+[16:43:12]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:43:14] 
+[16:43:14] Server Plugins
+[16:43:14] --------------
+[16:43:14]  Loading plugin: mysql
+[16:43:14]  >> plugin.mysql: R39-6 successfully loaded.
+[16:43:14]   Loaded.
+[16:43:14]  Loading plugin: sscanf
+[16:43:14] 
+
+[16:43:14]  ===============================
+
+[16:43:14]       sscanf plugin loaded.     
+
+[16:43:14]          Version:  2.8.2        
+
+[16:43:14]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:43:14]  ===============================
+
+[16:43:14]   Loaded.
+[16:43:14]  Loaded 2 plugins.
+
+[16:43:14] 
+[16:43:14] Filterscripts
+[16:43:14] ---------------
+[16:43:14]   Loading filterscript 'adminCommands.amx'...
+[16:43:14] 
+ Comandos de administrador cargados.
+
+[16:43:14]   Loading filterscript 'playerCommands.amx'...
+[16:43:14] 
+ Comandos de jugadores cargados.
+
+[16:43:14]   Loading filterscript 'vehiculos.amx'...
+[16:43:14] 
+ Vehï¿½culos cargados
+
+[16:43:14]   Loading filterscript 'trabajos.amx'...
+[16:43:14] 
+ Trabajos cargados
+
+[16:43:14]   Loading filterscript 'pickup.amx'...
+[16:43:14] 
+ Pickups cargados
+
+[16:43:14] 
+ Cree un pickup 
+
+[16:43:14] 
+ Cree un Text Label 
+
+[16:43:14] 
+ Cree un Text Label 
+
+[16:43:14] 
+ Cree un Text Label 
+
+[16:43:14]   Loaded 5 filterscripts.
+
+[16:43:14] Conexión exitosa
+[16:43:14] Cargué 22 vehículos.
+[16:43:14] 
+----------------------------------
+[16:43:14] San Quebrado V 0
+[16:43:14] ----------------------------------
+
+[16:43:14] Number of vehicle models: 6
+[16:43:40] [connection] 127.0.0.1:64203 requests connection cookie.
+[16:43:41] [connection] incoming connection: 127.0.0.1:64203 id: 0
+[16:43:41] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:43:49] [part] Pedro_SanVisente has left the server (0:1)
+[16:43:49] Usuario guardado
+Console input: exit
+[16:45:17] --- Server Shutting Down.
+[16:45:17] plugin.mysql: Unloading plugin...
+[16:45:17] plugin.mysql: Plugin unloaded.
+[16:45:17] 
+
+[16:45:17]  ===============================
+
+[16:45:17]      sscanf plugin unloaded.    
+
+[16:45:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:45:22] 
+[16:45:22] Server Plugins
+[16:45:22] --------------
+[16:45:22]  Loading plugin: mysql
+[16:45:22]  >> plugin.mysql: R39-6 successfully loaded.
+[16:45:22]   Loaded.
+[16:45:22]  Loading plugin: sscanf
+[16:45:22] 
+
+[16:45:22]  ===============================
+
+[16:45:22]       sscanf plugin loaded.     
+
+[16:45:22]          Version:  2.8.2        
+
+[16:45:22]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:45:22]  ===============================
+
+[16:45:22]   Loaded.
+[16:45:22]  Loaded 2 plugins.
+
+[16:45:22] 
+[16:45:22] Filterscripts
+[16:45:22] ---------------
+[16:45:22]   Loading filterscript 'adminCommands.amx'...
+[16:45:22] 
+ Comandos de administrador cargados.
+
+[16:45:22]   Loading filterscript 'playerCommands.amx'...
+[16:45:22] 
+ Comandos de jugadores cargados.
+
+[16:45:22]   Loading filterscript 'vehiculos.amx'...
+[16:45:22] 
+ Vehï¿½culos cargados
+
+[16:45:22]   Loading filterscript 'trabajos.amx'...
+[16:45:22] 
+ Trabajos cargados
+
+[16:45:22]   Loading filterscript 'pickup.amx'...
+[16:45:22] 
+ Pickups cargados
+
+[16:45:22] 
+ Cree un pickup 
+
+[16:45:22] 
+ Cree un Text Label 
+
+[16:45:22] 
+ Cree un Text Label 
+
+[16:45:22] 
+ Cree un Text Label 
+
+[16:45:22]   Loaded 5 filterscripts.
+
+[16:45:22] Conexión exitosa
+[16:45:22] Cargué 22 vehículos.
+[16:45:22] 
+----------------------------------
+[16:45:22] San Quebrado V 0
+[16:45:22] ----------------------------------
+
+[16:45:22] Number of vehicle models: 6
+[16:45:45] [connection] 127.0.0.1:56829 requests connection cookie.
+[16:45:46] [connection] incoming connection: 127.0.0.1:56829 id: 0
+[16:45:46] [join] Pedro_SanVisente has joined the server (0:127.0.0.1)
+[16:46:06] [part] Pedro_SanVisente has left the server (0:1)
+[16:46:06] Usuario guardado
+Console input: exit
+[16:46:10] --- Server Shutting Down.
+[16:46:10] plugin.mysql: Unloading plugin...
+[16:46:10] plugin.mysql: Plugin unloaded.
+[16:46:10] 
+
+[16:46:10]  ===============================
+
+[16:46:10]      sscanf plugin unloaded.    
+
+[16:46:10]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:57:02] 
+[16:57:02] Server Plugins
+[16:57:02] --------------
+[16:57:02]  Loading plugin: mysql
+[16:57:02]  >> plugin.mysql: R39-6 successfully loaded.
+[16:57:02]   Loaded.
+[16:57:02]  Loading plugin: sscanf
+[16:57:02] 
+
+[16:57:02]  ===============================
+
+[16:57:02]       sscanf plugin loaded.     
+
+[16:57:02]          Version:  2.8.2        
+
+[16:57:02]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:57:02]  ===============================
+
+[16:57:02]   Loaded.
+[16:57:02]  Loaded 2 plugins.
+
+[16:57:02] 
+[16:57:02] Filterscripts
+[16:57:02] ---------------
+[16:57:02]   Loading filterscript 'adminCommands.amx'...
+[16:57:02] 
+ Comandos de administrador cargados.
+
+[16:57:02]   Loading filterscript 'playerCommands.amx'...
+[16:57:02] 
+ Comandos de jugadores cargados.
+
+[16:57:02]   Loading filterscript 'vehiculos.amx'...
+[16:57:02] 
+ Vehï¿½culos cargados
+
+[16:57:02]   Loading filterscript 'trabajos.amx'...
+[16:57:02] 
+ Trabajos cargados
+
+[16:57:02]   Loading filterscript 'pickup.amx'...
+[16:57:02] 
+ Pickups cargados
+
+[16:57:02] 
+ Cree un pickup 
+
+[16:57:02] 
+ Cree un Text Label 
+
+[16:57:02] 
+ Cree un Text Label 
+
+[16:57:02] 
+ Cree un Text Label 
+
+[16:57:02]   Loaded 5 filterscripts.
+
+[16:57:02] Conexión exitosa
+[16:57:02] Cargué 22 vehículos.
+[16:57:02] 
+----------------------------------
+[16:57:02] San Quebrado V 0
+[16:57:02] ----------------------------------
+
+[16:57:02] Number of vehicle models: 6
+[16:57:32] [connection] 127.0.0.1:64456 requests connection cookie.
+[16:57:33] [connection] incoming connection: 127.0.0.1:64456 id: 0
+[16:57:33] [join] Azulejo_Blanco has joined the server (0:127.0.0.1)
+[16:58:12] [part] Azulejo_Blanco has left the server (0:1)
+[16:58:12] Usuario guardado
+Console input: exit
+[17:03:17] --- Server Shutting Down.
+[17:03:17] plugin.mysql: Unloading plugin...
+[17:03:17] plugin.mysql: Plugin unloaded.
+[17:03:17] 
+
+[17:03:17]  ===============================
+
+[17:03:17]      sscanf plugin unloaded.    
+
+[17:03:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[17:03:18] 
+[17:03:18] Server Plugins
+[17:03:18] --------------
+[17:03:18]  Loading plugin: mysql
+[17:03:18]  >> plugin.mysql: R39-6 successfully loaded.
+[17:03:18]   Loaded.
+[17:03:18]  Loading plugin: sscanf
+[17:03:18] 
+
+[17:03:18]  ===============================
+
+[17:03:18]       sscanf plugin loaded.     
+
+[17:03:18]          Version:  2.8.2        
+
+[17:03:18]    (c) 2012 Alex "Y_Less" Cole  
+
+[17:03:18]  ===============================
+
+[17:03:18]   Loaded.
+[17:03:18]  Loaded 2 plugins.
+
+[17:03:18] 
+[17:03:18] Filterscripts
+[17:03:18] ---------------
+[17:03:18]   Loading filterscript 'adminCommands.amx'...
+[17:03:18] 
+ Comandos de administrador cargados.
+
+[17:03:18]   Loading filterscript 'playerCommands.amx'...
+[17:03:18] 
+ Comandos de jugadores cargados.
+
+[17:03:18]   Loading filterscript 'vehiculos.amx'...
+[17:03:18] 
+ Vehï¿½culos cargados
+
+[17:03:18]   Loading filterscript 'trabajos.amx'...
+[17:03:18] 
+ Trabajos cargados
+
+[17:03:18]   Loading filterscript 'pickup.amx'...
+[17:03:18] 
+ Pickups cargados
+
+[17:03:18] 
+ Cree un pickup 
+
+[17:03:18] 
+ Cree un Text Label 
+
+[17:03:18] 
+ Cree un Text Label 
+
+[17:03:18] 
+ Cree un Text Label 
+
+[17:03:18]   Loaded 5 filterscripts.
+
+[17:03:18] Conexión exitosa
+[17:03:18] Cargué 22 vehículos.
+[17:03:18] 
+----------------------------------
+[17:03:18] San Quebrado V 0
+[17:03:18] ----------------------------------
+
+[17:03:18] Number of vehicle models: 6
+[17:03:44] [connection] 127.0.0.1:50184 requests connection cookie.
+[17:03:45] [connection] incoming connection: 127.0.0.1:50184 id: 0
+[17:03:45] [join] Pedrito_Caballo has joined the server (0:127.0.0.1)
+[17:03:58] [part] Pedrito_Caballo has left the server (0:1)
+[17:03:58] Usuario guardado
+Console input: exit
+[18:02:21] --- Server Shutting Down.
+[18:02:21] plugin.mysql: Unloading plugin...
+[18:02:21] plugin.mysql: Plugin unloaded.
+[18:02:21] 
+
+[18:02:21]  ===============================
+
+[18:02:21]      sscanf plugin unloaded.    
+
+[18:02:21]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:04:49] 
+[18:04:49] Server Plugins
+[18:04:49] --------------
+[18:04:49]  Loading plugin: mysql
+[18:04:49]  >> plugin.mysql: R39-6 successfully loaded.
+[18:04:49]   Loaded.
+[18:04:49]  Loading plugin: sscanf
+[18:04:49] 
+
+[18:04:49]  ===============================
+
+[18:04:49]       sscanf plugin loaded.     
+
+[18:04:49]          Version:  2.8.2        
+
+[18:04:49]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:04:49]  ===============================
+
+[18:04:49]   Loaded.
+[18:04:49]  Loaded 2 plugins.
+
+[18:04:49] 
+[18:04:49] Filterscripts
+[18:04:49] ---------------
+[18:04:49]   Loading filterscript 'adminCommands.amx'...
+[18:04:49] 
+ Comandos de administrador cargados.
+
+[18:04:49]   Loading filterscript 'playerCommands.amx'...
+[18:04:49] 
+ Comandos de jugadores cargados.
+
+[18:04:49]   Loading filterscript 'vehiculos.amx'...
+[18:04:49] 
+ Vehï¿½culos cargados
+
+[18:04:49]   Loading filterscript 'trabajos.amx'...
+[18:04:49] 
+ Trabajos cargados
+
+[18:04:49]   Loading filterscript 'pickup.amx'...
+[18:04:49] 
+ Pickups cargados
+
+[18:04:49] 
+ Cree un pickup 
+
+[18:04:49] 
+ Cree un Text Label 
+
+[18:04:49] 
+ Cree un Text Label 
+
+[18:04:49] 
+ Cree un Text Label 
+
+[18:04:49]   Loaded 5 filterscripts.
+
+[18:04:49] Conexión exitosa
+[18:04:49] Cargué 22 vehículos.
+[18:04:49] 
+----------------------------------
+[18:04:49] San Quebrado V 0
+[18:04:49] ----------------------------------
+
+[18:04:49] Number of vehicle models: 6
+[18:05:11] [connection] 127.0.0.1:57294 requests connection cookie.
+[18:05:12] [connection] incoming connection: 127.0.0.1:57294 id: 0
+[18:05:13] [join] Antonio_Garibaldi has joined the server (0:127.0.0.1)
+[18:05:34] [part] Antonio_Garibaldi has left the server (0:1)
+[18:05:34] Usuario guardado
+Console input: exit
+[18:05:38] --- Server Shutting Down.
+[18:05:39] plugin.mysql: Unloading plugin...
+[18:05:39] plugin.mysql: Plugin unloaded.
+[18:05:39] 
+
+[18:05:39]  ===============================
+
+[18:05:39]      sscanf plugin unloaded.    
+
+[18:05:39]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:06:45] 
+[18:06:45] Server Plugins
+[18:06:45] --------------
+[18:06:45]  Loading plugin: mysql
+[18:06:45]  >> plugin.mysql: R39-6 successfully loaded.
+[18:06:45]   Loaded.
+[18:06:45]  Loading plugin: sscanf
+[18:06:45] 
+
+[18:06:45]  ===============================
+
+[18:06:45]       sscanf plugin loaded.     
+
+[18:06:45]          Version:  2.8.2        
+
+[18:06:45]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:06:45]  ===============================
+
+[18:06:45]   Loaded.
+[18:06:45]  Loaded 2 plugins.
+
+[18:06:45] 
+[18:06:45] Filterscripts
+[18:06:45] ---------------
+[18:06:45]   Loading filterscript 'adminCommands.amx'...
+[18:06:45] 
+ Comandos de administrador cargados.
+
+[18:06:45]   Loading filterscript 'playerCommands.amx'...
+[18:06:45] 
+ Comandos de jugadores cargados.
+
+[18:06:45]   Loading filterscript 'vehiculos.amx'...
+[18:06:45] 
+ Vehï¿½culos cargados
+
+[18:06:45]   Loading filterscript 'trabajos.amx'...
+[18:06:45] 
+ Trabajos cargados
+
+[18:06:45]   Loading filterscript 'pickup.amx'...
+[18:06:45] 
+ Pickups cargados
+
+[18:06:45] 
+ Cree un pickup 
+
+[18:06:45] 
+ Cree un Text Label 
+
+[18:06:45] 
+ Cree un Text Label 
+
+[18:06:45] 
+ Cree un Text Label 
+
+[18:06:45]   Loaded 5 filterscripts.
+
+[18:06:45] Conexión exitosa
+[18:06:45] Cargué 22 vehículos.
+[18:06:45] 
+----------------------------------
+[18:06:45] San Quebrado V 0
+[18:06:45] ----------------------------------
+
+[18:06:45] Number of vehicle models: 6
+[18:07:07] [connection] 127.0.0.1:58374 requests connection cookie.
+[18:07:08] [connection] incoming connection: 127.0.0.1:58374 id: 0
+[18:07:08] [join] Antonio_Garibaldi has joined the server (0:127.0.0.1)
+[18:07:17] [part] Antonio_Garibaldi has left the server (0:1)
+[18:07:17] Usuario guardado
+[18:08:28] [connection] 127.0.0.1:49454 requests connection cookie.
+[18:08:29] [connection] incoming connection: 127.0.0.1:49454 id: 0
+[18:08:30] [join] Barack_Obama has joined the server (0:127.0.0.1)
+[18:09:58] [part] Barack_Obama has left the server (0:1)
+[18:09:58] Usuario guardado
+[18:10:20] [connection] 127.0.0.1:49456 requests connection cookie.
+[18:10:21] [connection] incoming connection: 127.0.0.1:49456 id: 0
+[18:10:21] [join] Barack_Obama has joined the server (0:127.0.0.1)
+[18:10:26] [part] Barack_Obama has left the server (0:1)
+[18:10:26] Usuario guardado
+Console input: exit
+[18:18:39] --- Server Shutting Down.
+[18:18:39] plugin.mysql: Unloading plugin...
+[18:18:39] plugin.mysql: Plugin unloaded.
+[18:18:39] 
+
+[18:18:39]  ===============================
+
+[18:18:39]      sscanf plugin unloaded.    
+
+[18:18:39]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:23:12] 
+[18:23:12] Server Plugins
+[18:23:12] --------------
+[18:23:12]  Loading plugin: mysql
+[18:23:12]  >> plugin.mysql: R39-6 successfully loaded.
+[18:23:12]   Loaded.
+[18:23:12]  Loading plugin: sscanf
+[18:23:12] 
+
+[18:23:12]  ===============================
+
+[18:23:12]       sscanf plugin loaded.     
+
+[18:23:12]          Version:  2.8.2        
+
+[18:23:12]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:23:12]  ===============================
+
+[18:23:12]   Loaded.
+[18:23:12]  Loaded 2 plugins.
+
+[18:23:12] 
+[18:23:12] Filterscripts
+[18:23:12] ---------------
+[18:23:12]   Loading filterscript 'adminCommands.amx'...
+[18:23:12] 
+ Comandos de administrador cargados.
+
+[18:23:12]   Loading filterscript 'playerCommands.amx'...
+[18:23:12] 
+ Comandos de jugadores cargados.
+
+[18:23:12]   Loading filterscript 'vehiculos.amx'...
+[18:23:12] 
+ Vehï¿½culos cargados
+
+[18:23:12]   Loading filterscript 'trabajos.amx'...
+[18:23:12] 
+ Trabajos cargados
+
+[18:23:12]   Loading filterscript 'pickup.amx'...
+[18:23:12] 
+ Pickups cargados
+
+[18:23:12] 
+ Cree un pickup 
+
+[18:23:12] 
+ Cree un Text Label 
+
+[18:23:12] 
+ Cree un Text Label 
+
+[18:23:12] 
+ Cree un Text Label 
+
+[18:23:12]   Loaded 5 filterscripts.
+
+[18:23:12] Conexión exitosa
+[18:23:12] Cargué 22 vehículos.
+[18:23:12] 
+----------------------------------
+[18:23:12] San Quebrado V 0
+[18:23:12] ----------------------------------
+
+[18:23:12] Number of vehicle models: 6
+[18:24:12] [connection] 127.0.0.1:64825 requests connection cookie.
+[18:24:13] [connection] incoming connection: 127.0.0.1:64825 id: 0
+[18:24:13] [join] Vin_Laden has joined the server (0:127.0.0.1)
+[18:24:24] [part] Vin_Laden has left the server (0:1)
+[18:24:47] [connection] 127.0.0.1:64358 requests connection cookie.
+[18:24:48] [connection] incoming connection: 127.0.0.1:64358 id: 0
+[18:24:48] [join] Vin_Laden has joined the server (0:127.0.0.1)
+[18:24:53] [part] Vin_Laden has left the server (0:1)
+Console input: exit
+[18:29:31] --- Server Shutting Down.
+[18:29:31] plugin.mysql: Unloading plugin...
+[18:29:31] plugin.mysql: Plugin unloaded.
+[18:29:31] 
+
+[18:29:31]  ===============================
+
+[18:29:31]      sscanf plugin unloaded.    
+
+[18:29:31]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:30:55] 
+[18:30:55] Server Plugins
+[18:30:55] --------------
+[18:30:55]  Loading plugin: mysql
+[18:30:55]  >> plugin.mysql: R39-6 successfully loaded.
+[18:30:55]   Loaded.
+[18:30:55]  Loading plugin: sscanf
+[18:30:55] 
+
+[18:30:55]  ===============================
+
+[18:30:55]       sscanf plugin loaded.     
+
+[18:30:55]          Version:  2.8.2        
+
+[18:30:55]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:30:55]  ===============================
+
+[18:30:55]   Loaded.
+[18:30:55]  Loaded 2 plugins.
+
+[18:30:55] 
+[18:30:55] Filterscripts
+[18:30:55] ---------------
+[18:30:55]   Loading filterscript 'adminCommands.amx'...
+[18:30:55] 
+ Comandos de administrador cargados.
+
+[18:30:55]   Loading filterscript 'playerCommands.amx'...
+[18:30:55] 
+ Comandos de jugadores cargados.
+
+[18:30:55]   Loading filterscript 'vehiculos.amx'...
+[18:30:55] 
+ Vehï¿½culos cargados
+
+[18:30:55]   Loading filterscript 'trabajos.amx'...
+[18:30:55] 
+ Trabajos cargados
+
+[18:30:55]   Loading filterscript 'pickup.amx'...
+[18:30:55] 
+ Pickups cargados
+
+[18:30:55] 
+ Cree un pickup 
+
+[18:30:55] 
+ Cree un Text Label 
+
+[18:30:55] 
+ Cree un Text Label 
+
+[18:30:55] 
+ Cree un Text Label 
+
+[18:30:55]   Loaded 5 filterscripts.
+
+[18:30:55] Conexión exitosa
+[18:30:55] Cargué 22 vehículos.
+[18:30:55] 
+----------------------------------
+[18:30:55] San Quebrado V 0
+[18:30:55] ----------------------------------
+
+[18:30:55] Number of vehicle models: 6
+[18:31:14] [connection] 127.0.0.1:57285 requests connection cookie.
+[18:31:15] [connection] incoming connection: 127.0.0.1:57285 id: 0
+[18:31:15] [join] Vin_Laden has joined the server (0:127.0.0.1)
+[18:36:25] [part] Vin_Laden has left the server (0:1)
+[18:36:25] Usuario guardado
+Console input: exit
+[18:38:10] --- Server Shutting Down.
+[18:38:11] plugin.mysql: Unloading plugin...
+[18:38:11] plugin.mysql: Plugin unloaded.
+[18:38:11] 
+
+[18:38:11]  ===============================
+
+[18:38:11]      sscanf plugin unloaded.    
+
+[18:38:11]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:38:28] 
+[18:38:28] Server Plugins
+[18:38:28] --------------
+[18:38:28]  Loading plugin: mysql
+[18:38:28]  >> plugin.mysql: R39-6 successfully loaded.
+[18:38:28]   Loaded.
+[18:38:28]  Loading plugin: sscanf
+[18:38:28] 
+
+[18:38:28]  ===============================
+
+[18:38:28]       sscanf plugin loaded.     
+
+[18:38:28]          Version:  2.8.2        
+
+[18:38:28]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:38:28]  ===============================
+
+[18:38:28]   Loaded.
+[18:38:28]  Loaded 2 plugins.
+
+[18:38:28] 
+[18:38:28] Filterscripts
+[18:38:28] ---------------
+[18:38:28]   Loading filterscript 'adminCommands.amx'...
+[18:38:28] 
+ Comandos de administrador cargados.
+
+[18:38:28]   Loading filterscript 'playerCommands.amx'...
+[18:38:28] 
+ Comandos de jugadores cargados.
+
+[18:38:28]   Loading filterscript 'vehiculos.amx'...
+[18:38:28] 
+ Vehï¿½culos cargados
+
+[18:38:28]   Loading filterscript 'trabajos.amx'...
+[18:38:28] 
+ Trabajos cargados
+
+[18:38:28]   Loading filterscript 'pickup.amx'...
+[18:38:28] 
+ Pickups cargados
+
+[18:38:28] 
+ Cree un pickup 
+
+[18:38:28] 
+ Cree un Text Label 
+
+[18:38:28] 
+ Cree un Text Label 
+
+[18:38:28] 
+ Cree un Text Label 
+
+[18:38:28]   Loaded 5 filterscripts.
+
+[18:38:28] Conexión exitosa
+[18:38:28] Cargué 22 vehículos.
+[18:38:28] 
+----------------------------------
+[18:38:28] San Quebrado V 0
+[18:38:28] ----------------------------------
+
+[18:38:28] Number of vehicle models: 6
+[18:38:50] [connection] 127.0.0.1:53654 requests connection cookie.
+[18:38:51] [connection] incoming connection: 127.0.0.1:53654 id: 0
+[18:38:51] [join] Vin_Laden has joined the server (0:127.0.0.1)
+[18:39:21] [part] Vin_Laden has left the server (0:1)
+[18:39:21] Usuario guardado
+[18:40:53] [connection] 127.0.0.1:53656 requests connection cookie.
+[18:40:54] [connection] incoming connection: 127.0.0.1:53656 id: 0
+[18:40:54] [join] Quiero_Morir has joined the server (0:127.0.0.1)
+[18:41:11] [part] Quiero_Morir has left the server (0:1)
+[18:41:11] Usuario guardado
+Console input: rciy
+Console input: exit
+[18:47:30] --- Server Shutting Down.
+[18:47:30] plugin.mysql: Unloading plugin...
+[18:47:30] plugin.mysql: Plugin unloaded.
+[18:47:30] 
+
+[18:47:30]  ===============================
+
+[18:47:30]      sscanf plugin unloaded.    
+
+[18:47:30]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:47:34] 
+[18:47:34] Server Plugins
+[18:47:34] --------------
+[18:47:34]  Loading plugin: mysql
+[18:47:34]  >> plugin.mysql: R39-6 successfully loaded.
+[18:47:34]   Loaded.
+[18:47:34]  Loading plugin: sscanf
+[18:47:34] 
+
+[18:47:34]  ===============================
+
+[18:47:34]       sscanf plugin loaded.     
+
+[18:47:34]          Version:  2.8.2        
+
+[18:47:34]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:47:34]  ===============================
+
+[18:47:34]   Loaded.
+[18:47:34]  Loaded 2 plugins.
+
+[18:47:34] 
+[18:47:34] Filterscripts
+[18:47:34] ---------------
+[18:47:34]   Loading filterscript 'adminCommands.amx'...
+[18:47:34] 
+ Comandos de administrador cargados.
+
+[18:47:34]   Loading filterscript 'playerCommands.amx'...
+[18:47:34] 
+ Comandos de jugadores cargados.
+
+[18:47:34]   Loading filterscript 'vehiculos.amx'...
+[18:47:34] 
+ Vehï¿½culos cargados
+
+[18:47:34]   Loading filterscript 'trabajos.amx'...
+[18:47:34] 
+ Trabajos cargados
+
+[18:47:34]   Loading filterscript 'pickup.amx'...
+[18:47:34] 
+ Pickups cargados
+
+[18:47:34] 
+ Cree un pickup 
+
+[18:47:34] 
+ Cree un Text Label 
+
+[18:47:34] 
+ Cree un Text Label 
+
+[18:47:34] 
+ Cree un Text Label 
+
+[18:47:34]   Loaded 5 filterscripts.
+
+[18:47:34] Conexión exitosa
+[18:47:34] Cargué 22 vehículos.
+[18:47:34] 
+----------------------------------
+[18:47:34] San Quebrado V 0
+[18:47:34] ----------------------------------
+
+[18:47:34] Number of vehicle models: 6
+[18:48:00] [connection] 127.0.0.1:50519 requests connection cookie.
+[18:48:01] [connection] incoming connection: 127.0.0.1:50519 id: 0
+[18:48:01] [join] Basta_Negro has joined the server (0:127.0.0.1)
+[18:48:16] [part] Basta_Negro has left the server (0:1)
+[18:48:40] [connection] 127.0.0.1:57887 requests connection cookie.
+[18:48:41] [connection] incoming connection: 127.0.0.1:57887 id: 0
+[18:48:41] [join] Basta_Negro has joined the server (0:127.0.0.1)
+[18:48:48] [part] Basta_Negro has left the server (0:1)
+[18:49:37] [connection] 127.0.0.1:56670 requests connection cookie.
+[18:49:38] [connection] incoming connection: 127.0.0.1:56670 id: 0
+[18:49:38] [join] Basta_Negro has joined the server (0:127.0.0.1)
+[18:50:52] [part] Basta_Negro has left the server (0:1)
+[18:51:25] [connection] 127.0.0.1:57485 requests connection cookie.
+[18:51:26] [connection] incoming connection: 127.0.0.1:57485 id: 0
+[18:51:26] [join] Basta_Negro has joined the server (0:127.0.0.1)
+[18:51:42] [part] Basta_Negro has left the server (0:1)
+Console input: exit
+[19:02:20] --- Server Shutting Down.
+[19:02:20] plugin.mysql: Unloading plugin...
+[19:02:20] plugin.mysql: Plugin unloaded.
+[19:02:20] 
+
+[19:02:20]  ===============================
+
+[19:02:20]      sscanf plugin unloaded.    
+
+[19:02:20]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:02:21] 
+[19:02:21] Server Plugins
+[19:02:21] --------------
+[19:02:21]  Loading plugin: mysql
+[19:02:21]  >> plugin.mysql: R39-6 successfully loaded.
+[19:02:21]   Loaded.
+[19:02:21]  Loading plugin: sscanf
+[19:02:21] 
+
+[19:02:21]  ===============================
+
+[19:02:21]       sscanf plugin loaded.     
+
+[19:02:21]          Version:  2.8.2        
+
+[19:02:21]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:02:21]  ===============================
+
+[19:02:21]   Loaded.
+[19:02:21]  Loaded 2 plugins.
+
+[19:02:21] 
+[19:02:21] Filterscripts
+[19:02:21] ---------------
+[19:02:21]   Loading filterscript 'adminCommands.amx'...
+[19:02:21] 
+ Comandos de administrador cargados.
+
+[19:02:21]   Loading filterscript 'playerCommands.amx'...
+[19:02:21] 
+ Comandos de jugadores cargados.
+
+[19:02:21]   Loading filterscript 'vehiculos.amx'...
+[19:02:21] 
+ Vehï¿½culos cargados
+
+[19:02:21]   Loading filterscript 'trabajos.amx'...
+[19:02:21] 
+ Trabajos cargados
+
+[19:02:21]   Loading filterscript 'pickup.amx'...
+[19:02:21] 
+ Pickups cargados
+
+[19:02:21] 
+ Cree un pickup 
+
+[19:02:21] 
+ Cree un Text Label 
+
+[19:02:21] 
+ Cree un Text Label 
+
+[19:02:21] 
+ Cree un Text Label 
+
+[19:02:21]   Loaded 5 filterscripts.
+
+[19:02:21] Conexión exitosa
+[19:02:21] Cargué 22 vehículos.
+[19:02:21] 
+----------------------------------
+[19:02:21] San Quebrado V 0
+[19:02:21] ----------------------------------
+
+[19:02:21] Number of vehicle models: 6
+[19:02:45] [connection] 127.0.0.1:49950 requests connection cookie.
+[19:02:46] [connection] incoming connection: 127.0.0.1:49950 id: 0
+[19:02:46] [join] asdas_asdasd has joined the server (0:127.0.0.1)
+[19:03:17] [part] asdas_asdasd has left the server (0:1)
+Console input: exit
+[19:06:14] --- Server Shutting Down.
+[19:06:14] plugin.mysql: Unloading plugin...
+[19:06:14] plugin.mysql: Plugin unloaded.
+[19:06:14] 
+
+[19:06:14]  ===============================
+
+[19:06:14]      sscanf plugin unloaded.    
+
+[19:06:14]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:06:15] 
+[19:06:15] Server Plugins
+[19:06:15] --------------
+[19:06:15]  Loading plugin: mysql
+[19:06:15]  >> plugin.mysql: R39-6 successfully loaded.
+[19:06:15]   Loaded.
+[19:06:15]  Loading plugin: sscanf
+[19:06:15] 
+
+[19:06:15]  ===============================
+
+[19:06:15]       sscanf plugin loaded.     
+
+[19:06:15]          Version:  2.8.2        
+
+[19:06:15]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:06:15]  ===============================
+
+[19:06:15]   Loaded.
+[19:06:15]  Loaded 2 plugins.
+
+[19:06:15] 
+[19:06:15] Filterscripts
+[19:06:15] ---------------
+[19:06:15]   Loading filterscript 'adminCommands.amx'...
+[19:06:15] 
+ Comandos de administrador cargados.
+
+[19:06:15]   Loading filterscript 'playerCommands.amx'...
+[19:06:15] 
+ Comandos de jugadores cargados.
+
+[19:06:15]   Loading filterscript 'vehiculos.amx'...
+[19:06:15] 
+ Vehï¿½culos cargados
+
+[19:06:15]   Loading filterscript 'trabajos.amx'...
+[19:06:15] 
+ Trabajos cargados
+
+[19:06:15]   Loading filterscript 'pickup.amx'...
+[19:06:15] 
+ Pickups cargados
+
+[19:06:15] 
+ Cree un pickup 
+
+[19:06:15] 
+ Cree un Text Label 
+
+[19:06:15] 
+ Cree un Text Label 
+
+[19:06:15] 
+ Cree un Text Label 
+
+[19:06:15]   Loaded 5 filterscripts.
+
+[19:06:15] Conexión exitosa
+[19:06:15] Cargué 22 vehículos.
+[19:06:15] 
+----------------------------------
+[19:06:15] San Quebrado V 0
+[19:06:15] ----------------------------------
+
+[19:06:15] Number of vehicle models: 6
+[19:06:41] [connection] 127.0.0.1:61276 requests connection cookie.
+[19:06:42] [connection] incoming connection: 127.0.0.1:61276 id: 0
+[19:06:42] [join] dsadas_dsadsa has joined the server (0:127.0.0.1)
+[19:06:57] [part] dsadas_dsadsa has left the server (0:1)
+[19:06:57] Usuario guardado
+Console input: exit
+[19:40:54] --- Server Shutting Down.
+[19:40:55] plugin.mysql: Unloading plugin...
+[19:40:55] plugin.mysql: Plugin unloaded.
+[19:40:55] 
+
+[19:40:55]  ===============================
+
+[19:40:55]      sscanf plugin unloaded.    
+
+[19:40:55]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:40:58] 
+[19:40:58] Server Plugins
+[19:40:58] --------------
+[19:40:58]  Loading plugin: mysql
+[19:40:58]  >> plugin.mysql: R39-6 successfully loaded.
+[19:40:58]   Loaded.
+[19:40:58]  Loading plugin: sscanf
+[19:40:58] 
+
+[19:40:58]  ===============================
+
+[19:40:58]       sscanf plugin loaded.     
+
+[19:40:58]          Version:  2.8.2        
+
+[19:40:58]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:40:58]  ===============================
+
+[19:40:58]   Loaded.
+[19:40:58]  Loaded 2 plugins.
+
+[19:40:59] 
+[19:40:59] Filterscripts
+[19:40:59] ---------------
+[19:40:59]   Loading filterscript 'adminCommands.amx'...
+[19:40:59] 
+ Comandos de administrador cargados.
+
+[19:40:59]   Loading filterscript 'playerCommands.amx'...
+[19:40:59] 
+ Comandos de jugadores cargados.
+
+[19:40:59]   Loading filterscript 'vehiculos.amx'...
+[19:40:59] 
+ Vehï¿½culos cargados
+
+[19:40:59]   Loading filterscript 'trabajos.amx'...
+[19:40:59] 
+ Trabajos cargados
+
+[19:40:59]   Loading filterscript 'pickup.amx'...
+[19:40:59] 
+ Pickups cargados
+
+[19:40:59] 
+ Cree un pickup 
+
+[19:40:59] 
+ Cree un Text Label 
+
+[19:40:59] 
+ Cree un Text Label 
+
+[19:40:59] 
+ Cree un Text Label 
+
+[19:40:59]   Loaded 5 filterscripts.
+
+[19:40:59] Conexión exitosa
+[19:40:59] Cargué 22 vehículos.
+[19:40:59] 
+----------------------------------
+[19:40:59] San Quebrado V 0
+[19:40:59] ----------------------------------
+
+[19:40:59] Number of vehicle models: 6
+[19:41:26] [connection] 127.0.0.1:64301 requests connection cookie.
+[19:41:27] [connection] incoming connection: 127.0.0.1:64301 id: 0
+[19:41:28] [join] dsadas_dsadsa has joined the server (0:127.0.0.1)
+[19:41:33] [part] dsadas_dsadsa has left the server (0:1)
+[19:41:33] Usuario guardado
+[19:42:10] [connection] 127.0.0.1:50923 requests connection cookie.
+[19:42:11] [connection] incoming connection: 127.0.0.1:50923 id: 0
+[19:42:11] [join] asdaqqq_qqqq has joined the server (0:127.0.0.1)
+[19:42:26] [part] asdaqqq_qqqq has left the server (0:1)
+[19:42:26] Usuario guardado
+Console input: exit
+[19:53:38] --- Server Shutting Down.
+[19:53:38] plugin.mysql: Unloading plugin...
+[19:53:38] plugin.mysql: Plugin unloaded.
+[19:53:38] 
+
+[19:53:38]  ===============================
+
+[19:53:38]      sscanf plugin unloaded.    
+
+[19:53:38]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:53:42] 
+[19:53:42] Server Plugins
+[19:53:42] --------------
+[19:53:42]  Loading plugin: mysql
+[19:53:42]  >> plugin.mysql: R39-6 successfully loaded.
+[19:53:42]   Loaded.
+[19:53:42]  Loading plugin: sscanf
+[19:53:42] 
+
+[19:53:42]  ===============================
+
+[19:53:42]       sscanf plugin loaded.     
+
+[19:53:42]          Version:  2.8.2        
+
+[19:53:42]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:53:42]  ===============================
+
+[19:53:42]   Loaded.
+[19:53:42]  Loaded 2 plugins.
+
+[19:53:42] 
+[19:53:42] Filterscripts
+[19:53:42] ---------------
+[19:53:42]   Loading filterscript 'adminCommands.amx'...
+[19:53:42] 
+ Comandos de administrador cargados.
+
+[19:53:42]   Loading filterscript 'playerCommands.amx'...
+[19:53:42] 
+ Comandos de jugadores cargados.
+
+[19:53:42]   Loading filterscript 'vehiculos.amx'...
+[19:53:42] 
+ Vehï¿½culos cargados
+
+[19:53:42]   Loading filterscript 'trabajos.amx'...
+[19:53:42] 
+ Trabajos cargados
+
+[19:53:42]   Loading filterscript 'pickup.amx'...
+[19:53:42] 
+ Pickups cargados
+
+[19:53:42] 
+ Cree un pickup 
+
+[19:53:42] 
+ Cree un Text Label 
+
+[19:53:42] 
+ Cree un Text Label 
+
+[19:53:42] 
+ Cree un Text Label 
+
+[19:53:42]   Loaded 5 filterscripts.
+
+[19:53:42] Conexión exitosa
+[19:53:42] Cargué 22 vehículos.
+[19:53:42] 
+----------------------------------
+[19:53:42] San Quebrado V 0
+[19:53:42] ----------------------------------
+
+[19:53:42] Number of vehicle models: 6
+[19:54:02] [connection] 127.0.0.1:62269 requests connection cookie.
+[19:54:03] [connection] incoming connection: 127.0.0.1:62269 id: 0
+[19:54:03] [join] asdaqqq_qqqq has joined the server (0:127.0.0.1)
+[19:54:06] [part] asdaqqq_qqqq has left the server (0:1)
+[19:54:06] Usuario guardado
+[19:54:32] [connection] 127.0.0.1:62270 requests connection cookie.
+[19:54:33] [connection] incoming connection: 127.0.0.1:62270 id: 0
+[19:54:33] [join] 123312 has joined the server (0:127.0.0.1)
+[19:54:42] [part] 123312 has left the server (0:1)
+[19:54:42] Usuario guardado
+Console input: exit
+[20:15:39] --- Server Shutting Down.
+[20:15:39] plugin.mysql: Unloading plugin...
+[20:15:39] plugin.mysql: Plugin unloaded.
+[20:15:39] 
+
+[20:15:39]  ===============================
+
+[20:15:39]      sscanf plugin unloaded.    
+
+[20:15:39]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:15:40] 
+[20:15:40] Server Plugins
+[20:15:40] --------------
+[20:15:40]  Loading plugin: mysql
+[20:15:40]  >> plugin.mysql: R39-6 successfully loaded.
+[20:15:40]   Loaded.
+[20:15:40]  Loading plugin: sscanf
+[20:15:40] 
+
+[20:15:40]  ===============================
+
+[20:15:40]       sscanf plugin loaded.     
+
+[20:15:40]          Version:  2.8.2        
+
+[20:15:40]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:15:40]  ===============================
+
+[20:15:40]   Loaded.
+[20:15:40]  Loaded 2 plugins.
+
+[20:15:40] 
+[20:15:40] Filterscripts
+[20:15:40] ---------------
+[20:15:40]   Loading filterscript 'adminCommands.amx'...
+[20:15:40] 
+ Comandos de administrador cargados.
+
+[20:15:40]   Loading filterscript 'playerCommands.amx'...
+[20:15:40] 
+ Comandos de jugadores cargados.
+
+[20:15:40]   Loading filterscript 'vehiculos.amx'...
+[20:15:40] 
+ Vehï¿½culos cargados
+
+[20:15:40]   Loading filterscript 'trabajos.amx'...
+[20:15:40] 
+ Trabajos cargados
+
+[20:15:40]   Loading filterscript 'pickup.amx'...
+[20:15:40] 
+ Pickups cargados
+
+[20:15:40] 
+ Cree un pickup 
+
+[20:15:40] 
+ Cree un Text Label 
+
+[20:15:40] 
+ Cree un Text Label 
+
+[20:15:40] 
+ Cree un Text Label 
+
+[20:15:40]   Loaded 5 filterscripts.
+
+[20:15:40] Conexión exitosa
+[20:15:40] Cargué 22 vehículos.
+[20:15:40] 
+----------------------------------
+[20:15:40] San Quebrado V 0
+[20:15:40] ----------------------------------
+
+[20:15:40] Number of vehicle models: 6
+[20:16:06] [connection] 127.0.0.1:53079 requests connection cookie.
+[20:16:07] [connection] incoming connection: 127.0.0.1:53079 id: 0
+[20:16:07] [join] asdasdasdasdas has joined the server (0:127.0.0.1)
+[20:16:25] [part] asdasdasdasdas has left the server (0:1)
+[20:16:25] Usuario guardado
+Console input: exit
+[20:18:02] --- Server Shutting Down.
+[20:18:02] plugin.mysql: Unloading plugin...
+[20:18:02] plugin.mysql: Plugin unloaded.
+[20:18:02] 
+
+[20:18:02]  ===============================
+
+[20:18:02]      sscanf plugin unloaded.    
+
+[20:18:02]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:18:30] 
+[20:18:30] Server Plugins
+[20:18:30] --------------
+[20:18:30]  Loading plugin: mysql
+[20:18:30]  >> plugin.mysql: R39-6 successfully loaded.
+[20:18:30]   Loaded.
+[20:18:30]  Loading plugin: sscanf
+[20:18:30] 
+
+[20:18:30]  ===============================
+
+[20:18:30]       sscanf plugin loaded.     
+
+[20:18:30]          Version:  2.8.2        
+
+[20:18:30]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:18:30]  ===============================
+
+[20:18:30]   Loaded.
+[20:18:30]  Loaded 2 plugins.
+
+[20:18:31] 
+[20:18:31] Filterscripts
+[20:18:31] ---------------
+[20:18:31]   Loading filterscript 'adminCommands.amx'...
+[20:18:31] 
+ Comandos de administrador cargados.
+
+[20:18:31]   Loading filterscript 'playerCommands.amx'...
+[20:18:31] 
+ Comandos de jugadores cargados.
+
+[20:18:31]   Loading filterscript 'vehiculos.amx'...
+[20:18:31] 
+ Vehï¿½culos cargados
+
+[20:18:31]   Loading filterscript 'trabajos.amx'...
+[20:18:31] 
+ Trabajos cargados
+
+[20:18:31]   Loading filterscript 'pickup.amx'...
+[20:18:31] 
+ Pickups cargados
+
+[20:18:31] 
+ Cree un pickup 
+
+[20:18:31] 
+ Cree un Text Label 
+
+[20:18:31] 
+ Cree un Text Label 
+
+[20:18:31] 
+ Cree un Text Label 
+
+[20:18:31]   Loaded 5 filterscripts.
+
+[20:18:31] Conexión exitosa
+[20:18:31] Cargué 22 vehículos.
+[20:18:31] 
+----------------------------------
+[20:18:31] San Quebrado V 0
+[20:18:31] ----------------------------------
+
+[20:18:31] Number of vehicle models: 6
+[20:18:59] [connection] 127.0.0.1:63820 requests connection cookie.
+[20:19:00] [connection] incoming connection: 127.0.0.1:63820 id: 0
+[20:19:00] [join] asdasdasdaspp has joined the server (0:127.0.0.1)
+[20:20:07] [part] asdasdasdaspp has left the server (0:1)
+Console input: exit
+[20:43:17] --- Server Shutting Down.
+[20:43:17] plugin.mysql: Unloading plugin...
+[20:43:17] plugin.mysql: Plugin unloaded.
+[20:43:17] 
+
+[20:43:17]  ===============================
+
+[20:43:17]      sscanf plugin unloaded.    
+
+[20:43:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:44:21] 
+[20:44:21] Server Plugins
+[20:44:21] --------------
+[20:44:21]  Loading plugin: mysql
+[20:44:21]  >> plugin.mysql: R39-6 successfully loaded.
+[20:44:21]   Loaded.
+[20:44:21]  Loading plugin: sscanf
+[20:44:21] 
+
+[20:44:21]  ===============================
+
+[20:44:21]       sscanf plugin loaded.     
+
+[20:44:21]          Version:  2.8.2        
+
+[20:44:21]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:44:21]  ===============================
+
+[20:44:21]   Loaded.
+[20:44:21]  Loaded 2 plugins.
+
+[20:44:22] 
+[20:44:22] Filterscripts
+[20:44:22] ---------------
+[20:44:22]   Loading filterscript 'adminCommands.amx'...
+[20:44:22] 
+ Comandos de administrador cargados.
+
+[20:44:22]   Loading filterscript 'playerCommands.amx'...
+[20:44:22] 
+ Comandos de jugadores cargados.
+
+[20:44:22]   Loading filterscript 'vehiculos.amx'...
+[20:44:22] 
+ Vehï¿½culos cargados
+
+[20:44:22]   Loading filterscript 'trabajos.amx'...
+[20:44:22] 
+ Trabajos cargados
+
+[20:44:22]   Loading filterscript 'pickup.amx'...
+[20:44:22] 
+ Pickups cargados
+
+[20:44:22] 
+ Cree un pickup 
+
+[20:44:22] 
+ Cree un Text Label 
+
+[20:44:22] 
+ Cree un Text Label 
+
+[20:44:22] 
+ Cree un Text Label 
+
+[20:44:22]   Loaded 5 filterscripts.
+
+[20:44:22] Conexión exitosa
+[20:44:22] Cargué 22 vehículos.
+[20:44:22] 
+----------------------------------
+[20:44:22] San Quebrado V 0
+[20:44:22] ----------------------------------
+
+[20:44:22] Number of vehicle models: 6
+[20:44:43] [connection] 127.0.0.1:60641 requests connection cookie.
+[20:44:44] [connection] incoming connection: 127.0.0.1:60641 id: 0
+[20:44:44] [join] CarloPedroPuto has joined the server (0:127.0.0.1)
+[20:44:52] [part] CarloPedroPuto has left the server (0:1)
+[20:44:52] Usuario guardado
+Console input: ping
+Console input: exit
+[20:46:10] --- Server Shutting Down.
+[20:46:10] plugin.mysql: Unloading plugin...
+[20:46:10] plugin.mysql: Plugin unloaded.
+[20:46:10] 
+
+[20:46:10]  ===============================
+
+[20:46:10]      sscanf plugin unloaded.    
+
+[20:46:10]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:46:15] 
+[20:46:15] Server Plugins
+[20:46:15] --------------
+[20:46:15]  Loading plugin: mysql
+[20:46:15]  >> plugin.mysql: R39-6 successfully loaded.
+[20:46:15]   Loaded.
+[20:46:15]  Loading plugin: sscanf
+[20:46:15] 
+
+[20:46:15]  ===============================
+
+[20:46:15]       sscanf plugin loaded.     
+
+[20:46:15]          Version:  2.8.2        
+
+[20:46:15]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:46:15]  ===============================
+
+[20:46:15]   Loaded.
+[20:46:15]  Loaded 2 plugins.
+
+[20:46:15] 
+[20:46:15] Filterscripts
+[20:46:15] ---------------
+[20:46:15]   Loading filterscript 'adminCommands.amx'...
+[20:46:15] 
+ Comandos de administrador cargados.
+
+[20:46:15]   Loading filterscript 'playerCommands.amx'...
+[20:46:15] 
+ Comandos de jugadores cargados.
+
+[20:46:15]   Loading filterscript 'vehiculos.amx'...
+[20:46:15] 
+ Vehï¿½culos cargados
+
+[20:46:15]   Loading filterscript 'trabajos.amx'...
+[20:46:15] 
+ Trabajos cargados
+
+[20:46:15]   Loading filterscript 'pickup.amx'...
+[20:46:15] 
+ Pickups cargados
+
+[20:46:15] 
+ Cree un pickup 
+
+[20:46:15] 
+ Cree un Text Label 
+
+[20:46:15] 
+ Cree un Text Label 
+
+[20:46:15] 
+ Cree un Text Label 
+
+[20:46:15]   Loaded 5 filterscripts.
+
+[20:46:15] Conexión exitosa
+[20:46:15] Cargué 22 vehículos.
+[20:46:15] 
+----------------------------------
+[20:46:15] San Quebrado V 0
+[20:46:15] ----------------------------------
+
+[20:46:15] Number of vehicle models: 6
+[20:47:11] [connection] 127.0.0.1:50654 requests connection cookie.
+[20:47:12] [connection] incoming connection: 127.0.0.1:50654 id: 0
+[20:47:12] [join] CarloPedroPuto has joined the server (0:127.0.0.1)
+[20:47:21] [part] CarloPedroPuto has left the server (0:1)
+[20:47:21] Usuario guardado
+Console input: exit
+[20:48:39] --- Server Shutting Down.
+[20:48:39] plugin.mysql: Unloading plugin...
+[20:48:39] plugin.mysql: Plugin unloaded.
+[20:48:39] 
+
+[20:48:39]  ===============================
+
+[20:48:39]      sscanf plugin unloaded.    
+
+[20:48:39]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:48:45] 
+[20:48:45] Server Plugins
+[20:48:45] --------------
+[20:48:45]  Loading plugin: mysql
+[20:48:45]  >> plugin.mysql: R39-6 successfully loaded.
+[20:48:45]   Loaded.
+[20:48:45]  Loading plugin: sscanf
+[20:48:45] 
+
+[20:48:45]  ===============================
+
+[20:48:45]       sscanf plugin loaded.     
+
+[20:48:45]          Version:  2.8.2        
+
+[20:48:45]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:48:45]  ===============================
+
+[20:48:45]   Loaded.
+[20:48:45]  Loaded 2 plugins.
+
+[20:48:45] 
+[20:48:45] Filterscripts
+[20:48:45] ---------------
+[20:48:45]   Loading filterscript 'adminCommands.amx'...
+[20:48:45] 
+ Comandos de administrador cargados.
+
+[20:48:45]   Loading filterscript 'playerCommands.amx'...
+[20:48:45] 
+ Comandos de jugadores cargados.
+
+[20:48:45]   Loading filterscript 'vehiculos.amx'...
+[20:48:45] 
+ Vehï¿½culos cargados
+
+[20:48:45]   Loading filterscript 'trabajos.amx'...
+[20:48:45] 
+ Trabajos cargados
+
+[20:48:45]   Loading filterscript 'pickup.amx'...
+[20:48:45] 
+ Pickups cargados
+
+[20:48:45] 
+ Cree un pickup 
+
+[20:48:45] 
+ Cree un Text Label 
+
+[20:48:45] 
+ Cree un Text Label 
+
+[20:48:45] 
+ Cree un Text Label 
+
+[20:48:45]   Loaded 5 filterscripts.
+
+[20:48:45] Conexión exitosa
+[20:48:45] Cargué 22 vehículos.
+[20:48:45] 
+----------------------------------
+[20:48:45] San Quebrado V 0
+[20:48:45] ----------------------------------
+
+[20:48:45] Number of vehicle models: 6
+[20:49:05] [connection] 127.0.0.1:53439 requests connection cookie.
+[20:49:06] [connection] incoming connection: 127.0.0.1:53439 id: 0
+[20:49:06] [join] CarloPedroPuto has joined the server (0:127.0.0.1)
+[20:49:14] [part] CarloPedroPuto has left the server (0:1)
+[20:49:14] Usuario guardado
+Console input: exit
+[20:49:19] --- Server Shutting Down.
+[20:49:19] plugin.mysql: Unloading plugin...
+[20:49:19] plugin.mysql: Plugin unloaded.
+[20:49:19] 
+
+[20:49:19]  ===============================
+
+[20:49:19]      sscanf plugin unloaded.    
+
+[20:49:19]  ===============================
+
