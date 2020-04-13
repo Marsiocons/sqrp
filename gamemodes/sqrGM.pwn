@@ -24,13 +24,16 @@ new db_conn;
 
 //===================================================================================//
 
-new Text:teleportBox;
-new Text:teleportBoxDos;
+//=============================== TextDraw ==========================================//
+
+new Text:BarraInicio;
+new Text:BarraInicioDos;
 new Text:tipoBoton[4]; // ANTERIOR 0, MUJER 1, SISGUIENTE 2, HOMBRE 3
 new Text:iniciar;
 
 new skins[2][4] = {{72,134,188,158},{69,131,192,198}};
 new bool:isWoman;
+//===================================================================================//
 
 //================================= Player Info =====================================//
 
@@ -150,7 +153,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 }
 public OnPlayerClickTextDraw(playerid, Text:clickedid)
 {
-    if(clickedid == tipoBoton[0])
+    if(clickedid == tipoBoton[0]) //Anterior
     {   
         if(GetPlayerSkin(playerid) == skins[isWoman][0])
         {
@@ -168,7 +171,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
         }
         SendClientMessage(playerid, 0xAAFFAA, "Presionaste 'anterior'");
     }
-    if(clickedid == tipoBoton[2])
+    if(clickedid == tipoBoton[2]) //Siguiente
     {
         if(GetPlayerSkin(playerid) == skins[isWoman][3])
         {
@@ -187,7 +190,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
         }
         SendClientMessage(playerid, 0xAAFFAA, "Presionaste 'siguiente'");
     }
-    if(clickedid == tipoBoton[1])
+    if(clickedid == tipoBoton[1]) //Mujer
     {
         isWoman = true;
         for(new a = 0; a <= 3; a++)
@@ -199,7 +202,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
         }
         
     }
-    if(clickedid == tipoBoton[3])
+    if(clickedid == tipoBoton[3]) //Hombre
     {
         isWoman = false;
         for(new a = 0; a <= 3; a++)
@@ -210,7 +213,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
             }
         }
     }
-    if(clickedid == iniciar)
+    if(clickedid == iniciar) //Iniciar
     {
 		PlayerInfo[playerid][dbSkinUno] = GetPlayerSkin(playerid);
 		PlayerInfo[playerid][dbNombre] = GetName(playerid);
@@ -234,16 +237,15 @@ function:Bienvenida(playerid)
 		SCM(playerid, 0xFFFFFF, "Usuario no registrado");
 		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no está registrada.\n\nIngresa una contraseña válida para continuar.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Registrar", "Cancelar");
 	}
-	ActivateRectangles(playerid, 0);
+	SetRectangle(playerid, 0);
 }
 
 function:OnPlayerRegister(playerid)
 {	
-	PlayerInfo[playerid][dbID] = cache_insert_id();
-	SCM(playerid, 0xFFFFFF, "Usuario registrado");
-	PlayerInfo[playerid][dbLoggedIn] = true;
-	ActivateRectangles(playerid, 1);
-	SkinSelector(playerid);
+	PlayerInfo[playerid][dbID] = cache_insert_id(); //Obtenemos su ID para después manejar los datos del jugador.
+	PlayerInfo[playerid][dbLoggedIn] = true; //Está logueado.
+	SetRectangle(playerid, 1); // Sacamos las barras de inicio.
+	SkinSelector(playerid); //Llamamos a selector de skins.
 }
 
 function:OnPlayerLoginIn(playerid)
@@ -279,14 +281,8 @@ function:OnPlayerLoginIn(playerid)
 	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(0, "dinero_banco", db_conn);
 	PlayerInfo[playerid][dbSkinUno] = cache_get_field_content_int(0, "skin_uno", db_conn);
 
-
-	SetPVarString(playerid, "dbNombre", PlayerInfo[playerid][dbNombre]);
-	SetPVarInt(playerid, "dbTrabajoUno", PlayerInfo[playerid][dbTrabajoUno]);
-	SetPVarInt(playerid, "dbVehiculoUno", PlayerInfo[playerid][dbVehiculoUno]);
-	SetPVarInt(playerid, "dbDineroMano", PlayerInfo[playerid][dbDineroMano]);
-	SetPVarInt(playerid, "dbDineroBanco", PlayerInfo[playerid][dbDineroBanco]);
-
-	ActivateRectangles(playerid, 1);
+	UpdateDataPlayer(playerid);
+	SetRectangle(playerid, 1);
 	SpawnPlayerPlayer(playerid);
 	return 1;
 }
@@ -323,39 +319,39 @@ function:SpawnPlayerPlayer(playerid)
 	SetCameraBehindPlayer(playerid);
 	return 1;
 }
-function:ActivateRectangles(playerid, opcion)
+function:SetRectangle(playerid, option) // 0 Creamos - 1 Borramos.
 {
 
-	if (opcion == 1)
+	if (option == 1)
 	{
-        //TextDrawHideForPlayer(playerid, teleportBoxDos);
-		//TextDrawHideForPlayer(playerid, teleportBox);
-		TextDrawDestroy(teleportBoxDos);
-		TextDrawDestroy(teleportBox);
+        //TextDrawHideForPlayer(playerid, BarraInicioDos);
+		//TextDrawHideForPlayer(playerid, BarraInicio);
+		TextDrawDestroy(BarraInicioDos);
+		TextDrawDestroy(BarraInicio);
 		SCM(playerid, 0xAAFFFFAA, "Desactive las barras.");
 	}
-	if (opcion == 0)
+	if (option == 0)
 	{
-		teleportBox = TextDrawCreate(320.0, 0.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
-    	TextDrawAlignment(teleportBox, 2);
-    	TextDrawBackgroundColor(teleportBox, 255);
-    	TextDrawFont(teleportBox, 2);
-    	TextDrawColor(teleportBox, 0xFFFFFF);
-    	TextDrawUseBox(teleportBox, 1);
-    	TextDrawBoxColor(teleportBox, 0x000000AA);
-    	TextDrawSetOutline(teleportBox, 0);
+		BarraInicio = TextDrawCreate(320.0, 0.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
+    	TextDrawAlignment(BarraInicio, 2);
+    	TextDrawBackgroundColor(BarraInicio, 255);
+    	TextDrawFont(BarraInicio, 2);
+    	TextDrawColor(BarraInicio, 0xFFFFFF);
+    	TextDrawUseBox(BarraInicio, 1);
+    	TextDrawBoxColor(BarraInicio, 0x000000AA);
+    	TextDrawSetOutline(BarraInicio, 0);
 
-		teleportBoxDos = TextDrawCreate(320.0, 330.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
-    	TextDrawAlignment(teleportBoxDos, 2);
-    	TextDrawBackgroundColor(teleportBoxDos, 255);
-    	TextDrawFont(teleportBoxDos, 2);
-    	TextDrawColor(teleportBoxDos, 0xFFFFFF);
-	    TextDrawUseBox(teleportBoxDos, 1);
-    	TextDrawBoxColor(teleportBoxDos, 0x000000AA);
-	    TextDrawSetOutline(teleportBoxDos, 0);
+		BarraInicioDos = TextDrawCreate(320.0, 330.0, "~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~~n~");
+    	TextDrawAlignment(BarraInicioDos, 2);
+    	TextDrawBackgroundColor(BarraInicioDos, 255);
+    	TextDrawFont(BarraInicioDos, 2);
+    	TextDrawColor(BarraInicioDos, 0xFFFFFF);
+	    TextDrawUseBox(BarraInicioDos, 1);
+    	TextDrawBoxColor(BarraInicioDos, 0x000000AA);
+	    TextDrawSetOutline(BarraInicioDos, 0);
 
-		TextDrawShowForPlayer(playerid, teleportBox);
-	    TextDrawShowForPlayer(playerid, teleportBoxDos);
+		TextDrawShowForPlayer(playerid, BarraInicio);
+	    TextDrawShowForPlayer(playerid, BarraInicioDos);
 		SCM(playerid, 0xAAFFFFAA, "Active las barras.");
 	}
 	
@@ -428,6 +424,15 @@ function:SkinSelector(playerid)
     SetPlayerCameraLookAt(playerid, -1465.704589, 2637.687988, 76.877052-3);
     
     TogglePlayerControllable(playerid, 0);
+	return 1;
+}
+function:UpdateDataPlayer(playerid)
+{
+	SetPVarString(playerid, "dbNombre", PlayerInfo[playerid][dbNombre]);
+	SetPVarInt(playerid, "dbTrabajoUno", PlayerInfo[playerid][dbTrabajoUno]);
+	SetPVarInt(playerid, "dbVehiculoUno", PlayerInfo[playerid][dbVehiculoUno]);
+	SetPVarInt(playerid, "dbDineroMano", PlayerInfo[playerid][dbDineroMano]);
+	SetPVarInt(playerid, "dbDineroBanco", PlayerInfo[playerid][dbDineroBanco]);
 	return 1;
 }
 
