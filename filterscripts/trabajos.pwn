@@ -16,23 +16,38 @@ CMD:trabajo(playerid, params[])
 {
     if(isnull(params))
     {
-        return SendClientMessage(playerid, -1, "Usa: /trabajo [nombre-del-trabajo]");
+        return SendClientMessage(playerid, -1, "Usá: /trabajo [nombre-del-trabajo]");
     }
-    if (!strcmp(params, "camionero", true))
+    if (GetPVarInt(playerid, "dbTrabajoUno") != 0)
     {
-        if (IsPlayerInRangeOfPoint(playerid, 2,
-         coorPickCamioneros[0],
-         coorPickCamioneros[1],
-         coorPickCamioneros[2]))
+        SendClientMessage(playerid, 0xFF0000, "Error, ya tenés un trabajo. Usá /renunciar.");
+    }
+    else
+    {
+        if (!strcmp(params, "camionero", true))
         {
-            SendClientMessage(playerid, 0xFFFFFF, "Obtuviste el trabajo de camionero.");
- 	        SendClientMessage(playerid, 0xFFFFFF, "Usa /recorrido camionero");
-  	        SendClientMessage(playerid, 0xFFFFFF, "Para empezar a trabajar.");
-            SetPVarInt(playerid, "dbTrabajoUno", 1);
-        }else
-        {
-  	        SendClientMessage(playerid, 0xFFFFFF, "No estás en el lugar adecuado.");
+            if (GetPVarInt(playerid, "dbTrabajoUno") != 1)
+            {
+                if (IsPlayerInRangeOfPoint(playerid, 2,
+                coorPickCamioneros[0],
+                coorPickCamioneros[1],
+                coorPickCamioneros[2]))
+                {
+                    SendClientMessage(playerid, 0xFFFFFF, "Obtuviste el trabajo de camionero.");
+                    SendClientMessage(playerid, 0xFFFFFF, "Usa /recorrido camionero");
+                    SendClientMessage(playerid, 0xFFFFFF, "Para empezar a trabajar.");
+                    SetPVarInt(playerid, "dbTrabajoUno", 1);
+                }else
+                {
+                    SendClientMessage(playerid, 0xFFFFFF, "No estás en el lugar adecuado.");
+                }
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000, "Error, ya tenés el trabajo de camionero. Usá /cuenta");
+            }
         }
+
     }
     return 1;
 }

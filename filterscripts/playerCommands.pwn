@@ -1,6 +1,10 @@
 #include <a_samp>
 #include <sscanf2>
 #include <zcmd>
+#include "../include/utilitis.inc"
+#include "../include/pickups.inc"
+
+new SkinsCamionero[3] = {182,261,100};
 
 public OnFilterScriptInit()
 {
@@ -59,6 +63,62 @@ CMD:renunciar(playerid, params[])
     {
         SendClientMessage(playerid, 0xFFFFAA, "Renunciaste a tu trabajo. Ahora estás desempleado");
         SetPVarInt(playerid, "dbTrabajoUno", 0);
+    }
+    return 1;
+}
+
+CMD:uniforme(playerid, params[])
+{
+    if(isnull(params))
+    {
+        return SendClientMessage(playerid, -1, "Usá: /uniforme [nombre-del-trabajo]");
+    }
+    if (!strcmp(params, "camionero", true))
+    {
+        if(GetPVarInt(playerid, "dbTrabajoUno") == 1)
+        {
+            if (IsPlayerInRangeOfPoint(playerid, 2,
+                    coorPickCamionerosV[0],
+                    coorPickCamionerosV[1],
+                    coorPickCamionerosV[2]))
+            {
+                if (GetPVarInt(playerid, "dbSkinDos") == 0)
+                {
+                    SendClientMessage(playerid, 0x003300, "Se cambió de ropa y está listo para trabajar");
+                    SetPVarInt(playerid, "dbSkinDos", SkinsCamionero[random(3)]);
+                    SetPVarInt(playerid, "dbSkinActual", 1);
+                    SetPlayerSkin(playerid, GetPVarInt(playerid, "dbSkinDos"));
+                }
+                else
+                {
+                    SendClientMessage(playerid, 0xAAFFFFAA, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
+                }
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xAAFFFFAA, "No estás en el lugar adecuado.");
+            }
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xAAFFAA, "No tenés el /trabajo camionero.");
+        }
+    }
+    return 1;
+}
+
+CMD:vestirse(playerid, params[])
+{
+    if (GetPVarInt(playerid, "dbSkinDos") > 0)
+    {
+        SetPVarInt(playerid, "dbSkinDos", 0);
+        SetPVarInt(playerid, "dbSkinActual", 0);
+        SetPlayerSkin(playerid, GetPVarInt(playerid, "dbSkinUno"));
+        SendClientMessage(playerid, 0x003300, "Se cambio de ropa.");
+    }
+    else
+    {
+        SendClientMessage(playerid, 0xAAFFFFAA, "No tenés puesto ningún uniforme.");
     }
     return 1;
 }

@@ -23,6 +23,24 @@ public OnFilterScriptInit()
      coorPickCamioneros[2] + 1, 20, 0, 0);
     print("\n Cree un Text Label \n");
 
+    // ------------------------ CAMIONERO V ---------------------- //
+
+    CreatePickup(1275, 1,
+	 coorPickCamionerosV[0],
+	 coorPickCamionerosV[1],
+	 coorPickCamionerosV[2], -1);
+    print("\n Cree un pickup \n");
+    Create3DTextLabel("Usá el /uniforme camionero", 0xFACC2E,
+     coorPickCamionerosV[0],
+     coorPickCamionerosV[1],
+     55.43478, 20, 0, 0);
+    print("\n Cree un Text Label \n");
+    Create3DTextLabel("Y obtene un extra de $$$", 0xFACC2E,
+     coorPickCamionerosV[0],
+     coorPickCamionerosV[1],
+     coorPickCamionerosV[2] + 1, 20, 0, 0);
+    print("\n Cree un Text Label \n");
+
     // ------------------------ HOSPITAL ------------------------- //
 
     CreatePickup(1240, 1,

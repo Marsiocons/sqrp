@@ -50,6 +50,7 @@ dbDineroBanco,
 dbRango,
 dbSkinUno,
 dbSkinDos,
+dbSkinActual,
 bool:dbLoggedIn
 }
 
@@ -95,8 +96,10 @@ public OnPlayerConnect(playerid)
 public OnPlayerDisconnect(playerid, reason)
 {
 	PlayerInfo[playerid][dbTrabajoUno] = GetPVarInt(playerid, "dbTrabajoUno");
+	PlayerInfo[playerid][dbSkinDos] = GetPVarInt(playerid, "dbSkinDos");
+	PlayerInfo[playerid][dbSkinActual] = GetPVarInt(playerid, "dbSkinActual");
 	new Query[300];
-	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i, `skin_uno` = %i WHERE `id` = %i", PlayerInfo[playerid][dbTrabajoUno], PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbID]);
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i, `skin_uno` = %i, `skin_dos` = %i, `skin_actual` = %i WHERE `id` = %i", PlayerInfo[playerid][dbTrabajoUno], PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbSkinDos], PlayerInfo[playerid][dbSkinActual], PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "PlayerDisconnect", "i", playerid); 
 	ResetPlayer(playerid);
 }
@@ -143,7 +146,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else
 			{
 				new Query[300];
-        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
 	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
 			}
 		}
@@ -280,6 +283,8 @@ function:OnPlayerLoginIn(playerid)
 	PlayerInfo[playerid][dbDineroMano] = cache_get_field_content_int(0, "dinero_mano", db_conn);
 	PlayerInfo[playerid][dbDineroBanco] = cache_get_field_content_int(0, "dinero_banco", db_conn);
 	PlayerInfo[playerid][dbSkinUno] = cache_get_field_content_int(0, "skin_uno", db_conn);
+	PlayerInfo[playerid][dbSkinDos] = cache_get_field_content_int(0, "skin_dos", db_conn);
+	PlayerInfo[playerid][dbSkinActual] = cache_get_field_content_int(0, "skin_actual", db_conn);
 
 	UpdateDataPlayer(playerid);
 	SetRectangle(playerid, 1);
@@ -313,8 +318,14 @@ function:SpawnPlayerPlayer(playerid)
     TextDrawDestroy(iniciar);
     CancelSelectTextDraw(playerid);
     TogglePlayerControllable(playerid, 1);
-
-	SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinUno], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+	if (PlayerInfo[playerid][dbSkinActual] == 0)
+	{
+		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinUno], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+	}
+	else
+	{
+		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinDos], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+	}
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
 	return 1;
@@ -433,6 +444,9 @@ function:UpdateDataPlayer(playerid)
 	SetPVarInt(playerid, "dbVehiculoUno", PlayerInfo[playerid][dbVehiculoUno]);
 	SetPVarInt(playerid, "dbDineroMano", PlayerInfo[playerid][dbDineroMano]);
 	SetPVarInt(playerid, "dbDineroBanco", PlayerInfo[playerid][dbDineroBanco]);
+	SetPVarInt(playerid, "dbSkinUno", PlayerInfo[playerid][dbSkinUno]);
+	SetPVarInt(playerid, "dbSkinDos", PlayerInfo[playerid][dbSkinDos]);
+	SetPVarInt(playerid, "dbSkinActual", PlayerInfo[playerid][dbSkinActual]);
 	return 1;
 }
 
