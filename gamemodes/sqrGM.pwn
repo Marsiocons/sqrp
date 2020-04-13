@@ -47,10 +47,14 @@ dbVehiculoUno,
 dbVehiculoDos,
 dbDineroMano,
 dbDineroBanco,
-dbRango,
 dbSkinUno,
 dbSkinDos,
 dbSkinActual,
+Float:dbX,
+Float:dbY,
+Float:dbZ,
+Float:dbR,
+dbRango,
 bool:dbLoggedIn
 }
 
@@ -95,11 +99,16 @@ public OnPlayerConnect(playerid)
 }
 public OnPlayerDisconnect(playerid, reason)
 {
+	PlayerInfo[playerid][dbX] = GetCoorPlayer(playerid, 0);
+	PlayerInfo[playerid][dbY] = GetCoorPlayer(playerid, 1);
+	PlayerInfo[playerid][dbZ] = GetCoorPlayer(playerid, 2);
+	PlayerInfo[playerid][dbR] = GetCoorPlayer(playerid, 3);
 	PlayerInfo[playerid][dbTrabajoUno] = GetPVarInt(playerid, "dbTrabajoUno");
 	PlayerInfo[playerid][dbSkinDos] = GetPVarInt(playerid, "dbSkinDos");
 	PlayerInfo[playerid][dbSkinActual] = GetPVarInt(playerid, "dbSkinActual");
 	new Query[300];
-	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i, `skin_uno` = %i, `skin_dos` = %i, `skin_actual` = %i WHERE `id` = %i", PlayerInfo[playerid][dbTrabajoUno], PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbSkinDos], PlayerInfo[playerid][dbSkinActual], PlayerInfo[playerid][dbID]);
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i, `skin_uno` = %i, `skin_dos` = %i, `skin_actual` = %i, `posicion_x` = %f, `posicion_y` = %f, `posicion_z` = %f, `posicion_r` = %f WHERE `id` = %i",
+	 PlayerInfo[playerid][dbTrabajoUno], PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbSkinDos], PlayerInfo[playerid][dbSkinActual], PlayerInfo[playerid][dbX], PlayerInfo[playerid][dbY], PlayerInfo[playerid][dbZ], PlayerInfo[playerid][dbR], PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "PlayerDisconnect", "i", playerid); 
 	ResetPlayer(playerid);
 }
@@ -146,7 +155,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else
 			{
 				new Query[300];
-        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
 	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
 			}
 		}
@@ -246,6 +255,10 @@ function:Bienvenida(playerid)
 function:OnPlayerRegister(playerid)
 {	
 	PlayerInfo[playerid][dbID] = cache_insert_id(); //Obtenemos su ID para después manejar los datos del jugador.
+	PlayerInfo[playerid][dbX] = -1465.200683;
+	PlayerInfo[playerid][dbY] = 2608.702148;
+	PlayerInfo[playerid][dbZ] = 55.835937;
+	PlayerInfo[playerid][dbR] = 182.3;
 	PlayerInfo[playerid][dbLoggedIn] = true; //Está logueado.
 	SetRectangle(playerid, 1); // Sacamos las barras de inicio.
 	SkinSelector(playerid); //Llamamos a selector de skins.
@@ -285,6 +298,10 @@ function:OnPlayerLoginIn(playerid)
 	PlayerInfo[playerid][dbSkinUno] = cache_get_field_content_int(0, "skin_uno", db_conn);
 	PlayerInfo[playerid][dbSkinDos] = cache_get_field_content_int(0, "skin_dos", db_conn);
 	PlayerInfo[playerid][dbSkinActual] = cache_get_field_content_int(0, "skin_actual", db_conn);
+	PlayerInfo[playerid][dbX] = cache_get_field_content_int(0, "posicion_x", db_conn);
+	PlayerInfo[playerid][dbY] = cache_get_field_content_int(0, "posicion_y", db_conn);
+	PlayerInfo[playerid][dbZ] = cache_get_field_content_int(0, "posicion_z", db_conn);
+	PlayerInfo[playerid][dbR] = cache_get_field_content_int(0, "posicion_r", db_conn);
 
 	UpdateDataPlayer(playerid);
 	SetRectangle(playerid, 1);
@@ -320,11 +337,11 @@ function:SpawnPlayerPlayer(playerid)
     TogglePlayerControllable(playerid, 1);
 	if (PlayerInfo[playerid][dbSkinActual] == 0)
 	{
-		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinUno], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinUno], PlayerInfo[playerid][dbX],PlayerInfo[playerid][dbY],PlayerInfo[playerid][dbZ], PlayerInfo[playerid][dbR], 0, 0, 0, 0, 0, 0 );
 	}
 	else
 	{
-		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinDos], -1465.200683,2608.702148,55.835937, 65.2418, 0, 0, 0, 0, 0, 0 );
+		SetSpawnInfo(playerid, 0, PlayerInfo[playerid][dbSkinDos], PlayerInfo[playerid][dbX],PlayerInfo[playerid][dbY],PlayerInfo[playerid][dbZ], PlayerInfo[playerid][dbR], 0, 0, 0, 0, 0, 0 );
 	}
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);

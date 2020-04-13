@@ -40,4 +40,5 @@ CMD:rotation(playerid, params[])
     GetPlayerFacingAngle(playerid, Angle);
     format(string, sizeof(string), "tu rotacion es: %0.2f", Angle);
     SendClientMessage(playerid, 0xFFFFFFFF, string);
+    return 1;
 }

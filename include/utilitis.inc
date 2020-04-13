@@ -25,3 +25,32 @@ stock KickEx(playerid)
 {
     return SetTimerEx("KickTimer", 100, false, "i", playerid);
 }
+stock Float:GetCoorPlayer(playerid, position)
+{
+	new Float:x;
+	new Float:y;
+	new Float:z;
+	new Float:Angle;
+	
+	new Float: coor;
+
+    GetPlayerFacingAngle(playerid, Angle);
+	GetPlayerPos(playerid, x, y, z);
+	if (position == 0)
+	{
+		coor= x;
+	}
+	if (position == 1)
+	{
+		coor= y;	
+	}
+	if (position == 2)
+	{
+		coor= z;
+	}
+	if (position == 3)
+	{
+		coor= Angle;
+	}
+	return coor;
+}
