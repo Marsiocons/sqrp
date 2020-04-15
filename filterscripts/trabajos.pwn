@@ -89,8 +89,11 @@ public OnPlayerEnterCheckpoint(playerid) {
         // Si es así, desactivamos cp, respawneamos el vehículo y le decimos al jugador.
         if (RECORRIDOCAMIONERO == 2)
         {
+            new VehID;
+            VehID = GetPlayerVehicleID(playerid);
             DisablePlayerCheckpoint(playerid);
-            SetVehicleToRespawn(GetPlayerVehicleID(playerid));
+            SetVehicleToRespawn(VehID);
+            SetVehicleParamsEx(VehID, 0, 0, 0, 0, 0, 0, 0);
             SendClientMessage(playerid, 0xFFFFFF, "Completaste el trabajo, ac� esta la paga.");
             RECORRIDOCAMIONERO = 0;
 

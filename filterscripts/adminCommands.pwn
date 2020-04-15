@@ -42,3 +42,20 @@ CMD:rotation(playerid, params[])
     SendClientMessage(playerid, 0xFFFFFFFF, string);
     return 1;
 }
+CMD:irv(playerid, params[])
+{
+    if(isnull(params))
+    {
+        return SendClientMessage(playerid, -1, "Usá /irv <ID del vehículo>");
+    }
+    else
+    {
+        new Float:x;
+        new Float:y;
+        new Float:z;
+        GetVehiclePos(0, x, y, z);
+        SetPlayerPos(playerid, x, y, z);
+    }
+
+    return 1;
+}
