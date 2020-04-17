@@ -70,3 +70,7 @@ stock Float:GetArmour(playerid)
 	GetPlayerArmour(playerid, armour);
 	return armour;
 }
+stock MessageP(playerid, color, params[])
+{
+	SendClientMessage(playerid, color, params);
+}

@@ -12,15 +12,15 @@ public OnFilterScriptInit()
 	 coorPickCamioneros[1],
 	 coorPickCamioneros[2], -1);
     print("\n Cree un pickup \n");
-    Create3DTextLabel("/Trabajo camionero", 0xFACC2E,
+    Create3DTextLabel("/Trabajo camionero", 0x008080FF,
      coorPickCamioneros[0],
      coorPickCamioneros[1],
-     55.43478 , 20, 0, 0);
+     54.434780, 20, 0, 0);
     print("\n Cree un Text Label \n");
-    Create3DTextLabel("Para obtener el trabajo.", 0xFACC2E,
+    Create3DTextLabel("Para obtener el trabajo.", 0x008080FF,
      coorPickCamioneros[0],
      coorPickCamioneros[1],
-     coorPickCamioneros[2] + 1, 20, 0, 0);
+     54.284780, 20, 0, 0);
     print("\n Cree un Text Label \n");
 
     // ------------------------ CAMIONERO V ---------------------- //
@@ -30,57 +30,57 @@ public OnFilterScriptInit()
 	 coorPickCamionerosV[1],
 	 coorPickCamionerosV[2], -1);
     print("\n Cree un pickup \n");
-    Create3DTextLabel("Us√° el /uniforme camionero", 0xFACC2E,
+    Create3DTextLabel("Us· el /uniforme camionero", 0x008080FF,
      coorPickCamionerosV[0],
      coorPickCamionerosV[1],
-     55.43478, 20, 0, 0);
+     54.434780, 20, 0, 0);
     print("\n Cree un Text Label \n");
-    Create3DTextLabel("Y obtene un extra de $$$", 0xFACC2E,
+    Create3DTextLabel("Y obtenÈ un extra de $$$", 0x008080FF,
      coorPickCamionerosV[0],
      coorPickCamionerosV[1],
-     coorPickCamionerosV[2] + 1, 20, 0, 0);
+     54.284780, 20, 0, 0);
     print("\n Cree un Text Label \n");
 
-    // ------------------------ MINERO --------------------------- //
+    // ------------------------ OBRERO --------------------------- //
 
     CreatePickup(1210, 1,
-	 coorPickMinero[0],
-	 coorPickMinero[1],
-	 coorPickMinero[2], -1);
+	 coorPickObrero[0],
+	 coorPickObrero[1],
+	 coorPickObrero[2], -1);
     print("\n Cree un pickup \n");
-    Create3DTextLabel("/Trabajo minero", 0xFACC2E,
-     coorPickMinero[0],
-     coorPickMinero[1],
-     10.103454, 20, 0, 0);
+    Create3DTextLabel("/Trabajo obrero", 0x008080FF,
+     coorPickObrero[0],
+     coorPickObrero[1],
+     9.103454, 20, 0, 0);
     print("\n Cree un Text Label \n");
-    Create3DTextLabel("Para obtener el trabajo.", 0xFACC2E,
-     coorPickMinero[0],
-     coorPickMinero[1],
-     coorPickMinero[2] + 1, 20, 0, 0);
+    Create3DTextLabel("Para obtener el trabajo.", 0x008080FF,
+     coorPickObrero[0],
+     coorPickObrero[1],
+     8.953454, 20, 0, 0);
     print("\n Cree un Text Label \n");
 
-    // ------------------------ MINERO V --------------------------- //
+    // ------------------------ OBRERO V --------------------------- //
 
     CreatePickup(1275, 1,
-	 coorPickMineroV[0],
-	 coorPickMineroV[1],
-	 coorPickMineroV[2], -1);
+	 coorPickObreroV[0],
+	 coorPickObreroV[1],
+	 coorPickObreroV[2], -1);
     print("\n Cree un pickup \n");
-    Create3DTextLabel("Us√° el /uniforme minero", 0xFACC2E,
-     coorPickMineroV[0],
-     coorPickMineroV[1],
-     9.808266, 20, 0, 0);
+    Create3DTextLabel("Us· el /uniforme obrero", 0x008080FF,
+     coorPickObreroV[0],
+     coorPickObreroV[1],
+     8.808266, 20, 0, 0);
     print("\n Cree un Text Label \n");
-    Create3DTextLabel("Y obtene un extra de $$$", 0xFACC2E,
-     coorPickMineroV[0],
-     coorPickMineroV[1],
-     coorPickMineroV[2] + 1, 20, 0, 0);
+    Create3DTextLabel("Y obtenÈ un extra de $$$", 0x008080FF,
+     coorPickObreroV[0],
+     coorPickObreroV[1],
+     8.658266, 20, 0, 0);
     print("\n Cree un Text Label \n");
 
     // ------------------------ MINERO T --------------------------- //
 
-    Create3DTextLabel("Us√° /juntar para comenzar a trabajar.", 0x00FF00, -2378.482666, 2371.220947, 5.973837, 10.0, 0, 0);
-
+    Create3DTextLabel("Us· /juntar para comenzar a trabajar.", 0x00FF00FF, coorJobObreroJ[0], coorJobObreroJ[1], 6.973837, 20, 0, 0);
+    Create3DTextLabel("Us· /descartar para deshacerte de los escombros.", 0x00FF00FF, coorJobObreroT[0], coorJobObreroT[1], coorJobObreroT[2], 20, 0, 0);
     // ------------------------ HOSPITAL ------------------------- //
 
     CreatePickup(1240, 1,
@@ -90,12 +90,12 @@ public OnFilterScriptInit()
     Create3DTextLabel("/Donar esperma", 0xAAFFAA,
      coorPickHospital[0],
      coorPickHospital[1],
-     57.337692, 20, 0, 0);
+     56.337692, 20, 0, 0);
     print("\n Cree un Text Label \n");
     Create3DTextLabel("Para obtener experiencia extra.", 0xAAFFAA,
      coorPickHospital[0],
      coorPickHospital[1],
-     coorPickHospital[2] + 1, 20, 0, 0);
+     56.187692, 20, 0, 0);
 
 	return 1;
 }

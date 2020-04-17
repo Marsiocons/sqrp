@@ -4,7 +4,11 @@
 #include "../include/utilitis.inc"
 #include "../include/pickups.inc"
 
+#define   function:%0(%1) forward %0(%1); public %0(%1)
+
+
 new SkinsCamionero[3] = {182,261,100};
+new SkinsObrero[3] = {16,27,153};
 
 public OnFilterScriptInit()
 {
@@ -56,24 +60,59 @@ CMD:uniforme(playerid, params[])
                     CallRemoteFunction("SetSkinsPlayer", "iiii", playerid, 1, skinid, 1);
 
                     format(string, sizeof(string), "%s se cambió de ropa (%i) y está listo para trabajar.", GetName(playerid), skinid);
-                    SendClientMessage(playerid, 0x003300, string);
+                    SendClientMessage(playerid, 0x00FF00FF, string);
                     SetPlayerSkin(playerid, skinid);
                 }
                 else
                 {
-                    SendClientMessage(playerid, 0xAAFFFFAA, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
+                    SendClientMessage(playerid, 0xFF0000, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
                 }
             }
             else
             {
-                SendClientMessage(playerid, 0xAAFFFFAA, "No estás en el lugar adecuado.");
+                SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
             }
         }
         else
         {
-            SendClientMessage(playerid, 0xAAFFAA, "No tenés el /trabajo camionero.");
+            SendClientMessage(playerid, 0xFF0000, "No tenés el /trabajo camionero.");
         }
     }
+    if (!strcmp(params, "obrero", true))
+    {
+        if(CallRemoteFunction("GetJobsPlayer", "i", playerid) == 2)
+        {
+            if (IsPlayerInRangeOfPoint(playerid, 2,
+                    coorPickObreroV[0],
+                    coorPickObreroV[1],
+                    coorPickObreroV[2]))
+            {
+                if (CallRemoteFunction("GetSkinsPlayer", "ii", playerid, 1) == 0)
+                {
+                    new string[128];
+                    new skinid = SkinsObrero[random(3)];
+                    CallRemoteFunction("SetSkinsPlayer", "iiii", playerid, 1, skinid, 1);
+
+                    format(string, sizeof(string), "%s se cambió de ropa (%i) y está listo para trabajar.", GetName(playerid), skinid);
+                    SendClientMessage(playerid, 0x00FF00FF, string);
+                    SetPlayerSkin(playerid, skinid);
+                }
+                else
+                {
+                    SendClientMessage(playerid, 0xFF0000, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
+                }
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
+            }
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000, "No tenés el /trabajo obrero.");
+        }
+    }
+
     return 1;
 }
 
@@ -91,7 +130,7 @@ CMD:vestirse(playerid, params[])
     }
     else
     {
-        SendClientMessage(playerid, 0xAAFFFFAA, "No tenés puesto ningún uniforme.");
+        SendClientMessage(playerid, 0xFF0000, "No tenés puesto ningún uniforme.");
     }
     return 1;
 }
@@ -117,13 +156,13 @@ CMD:trabajo(playerid, params[])
                 coorPickCamioneros[1],
                 coorPickCamioneros[2]))
                 {
-                    SendClientMessage(playerid, 0xFFFFFF, "Obtuviste el trabajo de camionero.");
-                    SendClientMessage(playerid, 0xFFFFFF, "Usa /recorrido camionero");
-                    SendClientMessage(playerid, 0xFFFFFF, "Para empezar a trabajar.");
+                    SendClientMessage(playerid, 0x00FF00, "Obtuviste el trabajo de camionero.");
+                    SendClientMessage(playerid, 0x00FF00, "Usá /recorrido camionero");
+                    SendClientMessage(playerid, 0x00FF00, "Para empezar a trabajar.");
                     CallRemoteFunction("SetJobsPlayer", "ii", playerid, 1);
                 }else
                 {
-                    SendClientMessage(playerid, 0xFFFFFF, "No estás en el lugar adecuado.");
+                    SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
                 }
             }
             else
@@ -135,6 +174,20 @@ CMD:trabajo(playerid, params[])
         {
             if (CallRemoteFunction("GetJobsPlayer", "i", playerid) != 2)
             {
+                if (IsPlayerInRangeOfPoint(playerid, 2,
+                coorPickObrero[0],
+                coorPickObrero[1],
+                coorPickObrero[2]))
+                {
+                    SendClientMessage(playerid, 0x00FF00, "Obtuviste el trabajo de obrero.");
+                    SendClientMessage(playerid, 0x00FF00, "Usá /juntar para empezar a trabajar.");
+                    SendClientMessage(playerid, 0x00FF00, "Para empezar a trabajar.");
+                    CallRemoteFunction("SetJobsPlayer", "ii", playerid, 2);
+                }
+                else
+                {
+                    SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
+                }
 
             }
             else
@@ -169,7 +222,7 @@ CMD:comprar(playerid, params[])
         }
         else
         {
-            SendClientMessage(playerid, 0xFF0000, "No est?s en ning?n veh?culo.")
+            SendClientMessage(playerid, 0xFF0000, "No estás en ningún vehículo.")
         }
     }
     return 1;
@@ -277,4 +330,90 @@ CMD:estacionar(playerid, params[])
         SendClientMessage(playerid, 0x00FF00FF, "No estÃ¡s en ningÃºn vehÃ­culo.")
     }	
 	return 1;
+}
+
+CMD:juntar(playerid, params[])
+{
+    if(isnull(params))
+    {
+        if(CallRemoteFunction("GetJobsPlayer", "i", playerid) == 2)
+        {
+            if (IsPlayerInRangeOfPoint(playerid, 3,
+                    coorJobObreroJ[0],
+                    coorJobObreroJ[1],
+                    coorJobObreroJ[2]))
+            {
+                if(GetPVarInt(playerid, "OnPlayerPickBox") == 0)
+                {
+                    ApplyAnimation(playerid, "BASEBALL", "Bat_4", 1.0, false, 1, 1, 0, 5000, 1);
+                    SetTimerEx("OnPlayerPickBox", 5000, false, "i", playerid);
+                    SetPVarInt(playerid, "OnPlayerPickBox", 1);
+                }
+                else
+                {
+                    SendClientMessage(playerid, 0x00FFFF, "Error, ya juntaste escombros, ahora descartalos en el contenedor")
+                }
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
+            }
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000, "No tenés el /trabajo obrero.");
+        }
+    }
+    else
+    {
+        SendClientMessage(playerid, 0xFF0000, "Utilizá únicamente /juntar");
+    }
+    return 1;
+}
+CMD:descartar(playerid, params[])
+{
+    if(isnull(params))
+    {
+        if(CallRemoteFunction("GetJobsPlayer", "i", playerid) == 2)
+        {
+            if (IsPlayerInRangeOfPoint(playerid, 3,
+                    coorJobObreroT[0],
+                    coorJobObreroT[1],
+                    coorJobObreroT[2]))
+            {
+                if (GetPVarInt(playerid, "OnPlayerPickBox") == 1)
+                {
+                    OnPlayerDropBox(playerid);
+                    SetPVarInt(playerid, "OnPLayerPickBox", 0);
+                }
+            }
+            else
+            {
+                SendClientMessage(playerid, 0xFF0000, "No estás en el lugar adecuado.");
+            }
+        }
+        else
+        {
+            SendClientMessage(playerid, 0xFF0000, "No tenés el /trabajo obrero.");
+        }
+    }
+    else
+    {
+        SendClientMessage(playerid, 0xFF0000, "Utilizá únicamente /descartar");
+    }
+    return 1;
+}
+
+
+function:OnPlayerPickBox(playerid)
+{
+    ClearAnimations(playerid, 1);
+    SetPlayerSpecialAction(playerid, 25);
+    SendClientMessage(playerid, 0x00FF00FF, "Te cargaste con escombros, descartalos en el contenedor para continuar.");
+}
+function:OnPlayerDropBox(playerid)
+{
+    ClearAnimations(playerid, 1);
+    SetPlayerSpecialAction(playerid, 0);
+    SendClientMessage(playerid, 0x00FF00FF, "Bien hecho, recordá usar un /uniforme obrero para obtener extras ($$$, EXP)");
 }
