@@ -4,53 +4,25 @@
 #include "../include/utilitis.inc"
 #include "../include/pickups.inc"
 
+
+#define   function:%0(%1) forward %0(%1); public %0(%1)
+
+
 public OnFilterScriptInit()
 {
     print("\n Trabajos cargados\n");
 	return 1;
 }
 
+public OnGameModeInit()
+{
+    CreateObject(1457, -2408.03345, 2388.98438, 9.00038,   11.28000, 2.52000, -3.72001);
+    CreateObject(1452, -2411.72510, 2388.29053, 8.37882,   7.00000, 0.00000, 0.00000);
+    CreateObject(18862, -2373.41602, 2371.14380, 6.86773,   0.00000, 0.00000, 0.00000);
+}
 new RECORRIDOCAMIONERO;
 
-CMD:trabajo(playerid, params[])
-{
-    if(isnull(params))
-    {
-        return SendClientMessage(playerid, -1, "Usá: /trabajo [nombre-del-trabajo]");
-    }
-    if (GetPVarInt(playerid, "dbTrabajoUno") != 0)
-    {
-        SendClientMessage(playerid, 0xFF0000, "Error, ya tenés un trabajo. Usá /renunciar.");
-    }
-    else
-    {
-        if (!strcmp(params, "camionero", true))
-        {
-            if (GetPVarInt(playerid, "dbTrabajoUno") != 1)
-            {
-                if (IsPlayerInRangeOfPoint(playerid, 2,
-                coorPickCamioneros[0],
-                coorPickCamioneros[1],
-                coorPickCamioneros[2]))
-                {
-                    SendClientMessage(playerid, 0xFFFFFF, "Obtuviste el trabajo de camionero.");
-                    SendClientMessage(playerid, 0xFFFFFF, "Usa /recorrido camionero");
-                    SendClientMessage(playerid, 0xFFFFFF, "Para empezar a trabajar.");
-                    SetPVarInt(playerid, "dbTrabajoUno", 1);
-                }else
-                {
-                    SendClientMessage(playerid, 0xFFFFFF, "No estás en el lugar adecuado.");
-                }
-            }
-            else
-            {
-                SendClientMessage(playerid, 0xFF0000, "Error, ya tenés el trabajo de camionero. Usá /cuenta");
-            }
-        }
 
-    }
-    return 1;
-}
 
 CMD:recorrido(playerid, params[])
 {
@@ -113,4 +85,17 @@ public OnPlayerEnterCheckpoint(playerid) {
             RECORRIDOCAMIONERO = 1;
         }
     }
+}
+
+
+//SetTimerEx("ActivarControl",5000,false,"i",playerid);
+
+
+
+// ======================== FUNCTIONS ========================= //
+
+function:ActivarControl(playerid)
+{
+	TogglePlayerControllable(playerid, 1);
+	return 1;
 }

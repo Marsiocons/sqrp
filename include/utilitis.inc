@@ -54,3 +54,19 @@ stock Float:GetCoorPlayer(playerid, position)
 	}
 	return coor;
 }
+stock GetVehID(playerid)
+{
+	return GetPlayerVehicleID(playerid);
+}
+stock Float:GetHealth(playerid)
+{
+	new Float:health;
+	GetPlayerHealth(playerid, health);
+	return health;
+}
+stock Float:GetArmour(playerid)
+{
+	new Float:armour;
+	GetPlayerArmour(playerid, armour);
+	return armour;
+}

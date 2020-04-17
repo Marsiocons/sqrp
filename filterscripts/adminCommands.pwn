@@ -59,3 +59,9 @@ CMD:irv(playerid, params[])
 
     return 1;
 }
+CMD:anim(playerid, params[])
+{
+    ApplyAnimation(playerid, "baseball", "Bat_4", 1.0, 0, 1, 1, 0, 3000, 1);
+    
+    return 1;
+}

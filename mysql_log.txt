@@ -1,1 +1,10 @@
-[20:20:07 04/12/20] [ERROR] CMySQLQuery::Execute[PlayerDisconnect] - (error #1054) Unknown column 'asdasdasdaspp' in 'where clause' (Query: "UPDATE `usuarios_data` SET `trabajo_uno` = 0, `skin_uno` = 72 WHERE `nombre` = asdasdasdaspp")
+[02:16:03 04/17/20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("vehiculo_uno") (Query: "SELECT id FROM usuarios_data WHERE nombre = 'Piedra' AND password = 'holala'")
+[02:16:03 04/17/20] [ERROR] cache_get_field_content_int - invalid datatype
+[02:16:03 04/17/20] [WARNING] CMySQLResult::GetRowDataByName - field not found ("vehiculo_dos") (Query: "SELECT id FROM usuarios_data WHERE nombre = 'Piedra' AND password = 'holala'")
+[02:16:03 04/17/20] [ERROR] cache_get_field_content_int - invalid datatype
+[03:05:33 04/17/20] [WARNING] cache_get_field_content_int - no active cache
+[03:06:49 04/17/20] [WARNING] cache_get_field_content_int - no active cache
+[03:12:41 04/17/20] [WARNING] cache_get_field_content_int - no active cache
+[10:51:54 04/17/20] [WARNING] cache_get_field_content_int - no active cache
+[11:43:54 04/17/20] [ERROR] CMySQLQuery::Execute[OnPlayerRegister] - (error #1364) Field 'salud' doesn't have a default value (Query: "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, rango) VALUES ('ddde', 'holala', 0,0,0,0,0,0,0,0,0,0,0,0,0,0)")
+[11:46:17 04/17/20] [ERROR] CMySQLQuery::Execute[OnPlayerRegister] - (error #1364) Field 'salud' doesn't have a default value (Query: "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, rango) VALUES ('Marcio_Skeight', 'holala', 0,0,0,0,0,0,0,0,0,0,0,0,0,0)")
