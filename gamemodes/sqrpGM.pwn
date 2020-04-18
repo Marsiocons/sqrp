@@ -69,7 +69,7 @@ public OnGameModeInit()
 		print("No se pudo conectar a la base de datos.");
 	}else
 	{
-		print("Conexión exitosa");
+		print("Conexiï¿½n exitosa");
 	}
 	return 1;
 }
@@ -110,7 +110,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
         {
 			if (!response)
             {
-				SendClientMessage(playerid,0xAA3333AA, "Fuiste expulsado del servidor por evitar el login.")
+				FormatMssg(playerid, 0, "Fuiste expulsado del servidor por evitar el login.")
 				KickEx(playerid);
 			}
 			else
@@ -124,7 +124,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		{
 			if (!response)
 			{
-				SendClientMessage(playerid, 0xAA3333AA, "Fuiste expulsado del servidor por evitar el registro.");
+				FormatMssg(playerid, 0, "Fuiste expulsado del servidor por evitar el registro.");
 				KickEx(playerid);
 			}
 			else
@@ -212,7 +212,7 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
 	if (ispassenger == 0)
 	{
-		if (vehicleid >= 5) //No es un vehículo de concesionaria.
+		if (vehicleid >= 5) //No es un vehï¿½culo de concesionaria.
 		{
 			if (GetVehicleModel(vehicleid) != 481) // No es una bici.
 			{
@@ -224,9 +224,9 @@ public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 				SetVehicleParamsEx(vehicleid, 1, 0, 0, 0, 0, 0, 0);
 			}
 		}
-		else //Es un vehículo de concesionaria, mandamos un msj.
+		else //Es un vehï¿½culo de concesionaria, mandamos un msj.
 		{
-			SendClientMessage(playerid, 0x00FF00, "Usá </comprar vehiculo> para obtener este vehículo.");
+			FormatMssg(playerid, 1, "Usá </comprar vehiculo> para obtener este vehículo.");
 			SetPVarInt(playerid, "VehValido", 0);
 		}
 	}
@@ -243,12 +243,12 @@ function:Bienvenida(playerid)
 	cache_get_data(rows, fields, db_conn);
 	if (rows)
 	{
-		SendClientMessage(playerid, 0xFFFFFA, "Usuario registrado.")	
-		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
+		FormatMssg(playerid, 0, "Usuario registrado.")	
+		ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta estï¿½ registrada.\nTIP: Por favor reportï¿½ los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresï¿½ tu contraseï¿½a:", "Iniciar", "Cancelar");
 	}else
 	{
-		SendClientMessage(playerid, 0xFFFFFF, "Usuario no registrado");
-		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no está registrada.\n\nIngresa una contraseña válida para continuar.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Registrar", "Cancelar");
+		FormatMssg(playerid, 1, "Usuario no registrado");
+		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no estï¿½ registrada.\n\nIngresa una contraseï¿½a vï¿½lida para continuar.\nTIP: Por favor reportï¿½ los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresï¿½ tu contraseï¿½a:", "Registrar", "Cancelar");
 	}
 	SetRectangle(playerid, 0);
 }
@@ -256,7 +256,7 @@ function:Bienvenida(playerid)
 function:OnPlayerRegister(playerid)
 {	
 	PlayerInfo[playerid][dbID] = cache_insert_id(); //Obtenemos su ID para despuï¿½s manejar los datos del jugador.
-	PlayerInfo[playerid][dbLoggedIn] = true; //está logueado.
+	PlayerInfo[playerid][dbLoggedIn] = true; //estï¿½ logueado.
 	SetRectangle(playerid, 1); // Sacamos las barras de inicio.
 	SkinSelector(playerid); //Llamamos a selector de skin.
 }
@@ -275,7 +275,7 @@ function:OnPlayerLoginIn(playerid)
 
 	if (maxErrorPassword == 2)
 	{
-		SendClientMessage(playerid,0xFFFFFC, "Intentaste demasiadas veces.");
+		FormatMssg(playerid, 0, "Intentaste demasiadas veces.");
 		KickEx(playerid);
 	}
 
@@ -287,8 +287,8 @@ function:OnPlayerLoginIn(playerid)
 		new string[128];
 		PlayerInfo[playerid][dbID] = cache_get_field_content_int(0, "id", db_conn);
 		PlayerInfo[playerid][dbLoggedIn] = true;
-		format(string, sizeof(string), "Sesión iniciada. (ID DB = %i", PlayerInfo[playerid][dbID]);
-		SendClientMessage(playerid,0xFFFFFC, string);
+		format(string, sizeof(string), "Sesión iniciada. (ID DB = %i)", PlayerInfo[playerid][dbID]);
+		FormatMssg(playerid, 1, string);
 		if (cache_get_field_content_int(0, "vehiculo_uno", db_conn) == 1) CreateVehiclePlayer(playerid, 0);
 		if (cache_get_field_content_int(0, "vehiculo_dos", db_conn) == 1) SetTimerEx("CreateVehiclePlayer", 400, false, "ii", playerid,1);
 		GetPlayerData(playerid);
@@ -297,9 +297,9 @@ function:OnPlayerLoginIn(playerid)
 	}
 	else
 	{
-		SendClientMessage(playerid,0xAA3333AA, "Contraseña erronea, intente de nuevo.");
+		FormatMssg(playerid, 0, "Contraseña erronea, intente de nuevo.");
 		maxErrorPassword++;
-		return ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta está registrada.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Iniciar", "Cancelar");
+		return ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta estï¿½ registrada.\nTIP: Por favor reportï¿½ los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresï¿½ tu contraseï¿½a:", "Iniciar", "Cancelar");
 	}
 	return 1;
 }
@@ -443,7 +443,6 @@ function:ResetPlayer(playerid)
 	PlayerInfo[playerid][dbR] = 182.3;
 	PlayerInfo[playerid][dbSalud] = 100;
 	PlayerInfo[playerid][dbBlindaje] = 0;
-	SendClientMessage(playerid, 0xf0f0f0, "Limpié los datos del usuario");
 }
 
 function:SetRectangle(playerid, option) // 0 Creamos - 1 Borramos.
@@ -499,7 +498,7 @@ function:CreateVehiclePlayer(playerid, typevehicle)
 			 cache_get_field_content_int(0, "pos_z_uno", db_conn),
 			 cache_get_field_content_int(0, "pos_r_uno", db_conn), -1, -1, -1);
 			SetVehicleParamsEx(PlayerInfo[playerid][dbVehUnoID], cache_get_field_content_int(0, "motor_estado_uno", db_conn), 0, 0, 0, 0, 0, 0);
-			print("Creé un vehículo");
+			print("Creï¿½ un vehï¿½culo");
 		}
 		case 1:
 		{
@@ -509,7 +508,7 @@ function:CreateVehiclePlayer(playerid, typevehicle)
 			 cache_get_field_content_int(0, "pos_z_dos", db_conn),
 			 cache_get_field_content_int(0, "pos_r_dos", db_conn), -1, -1, -1);
 			SetVehicleParamsEx(PlayerInfo[playerid][dbVehDosID], cache_get_field_content_int(0, "motor_estado_dos", db_conn), 0, 0, 0, 0, 0, 0);
-			print("Creé un vehículo");
+			print("Creï¿½ un vehï¿½culo");
 		}
 	}
 	cache_delete(result)
@@ -573,7 +572,7 @@ function:OnPlayerBuyVehicle(playerid,vehiclemodel)
 	}
 	else
 	{
-		SendClientMessage(playerid, 0xF00F00, "Podés comprar hasta dos (2) vehículos. Adquirí VIP para comprar más.");
+		FormatMssg(playerid, 0, "Podés comprar hasta dos (2) vehículos. Adquirí VIP para comprar más.");
 	}
 }
 function:SaveVehicle(playerid)
@@ -581,6 +580,22 @@ function:SaveVehicle(playerid)
 	new string[128];
 	format(string, 128, "Vehículo de %s guardado.", GetName(playerid));
 	print(string);
+}
+function:OnPlayerPickBox(playerid)
+{
+    ClearAnimations(playerid, 1);
+    SetTimerEx("SetAnimationPickBox", 5000, false, "i", playerid);
+    FormatMssg(playerid, 1, "Te cargaste con escombros, descartalos en el contenedor para continuar.");
+}
+function:SetAnimationPickBox(playerid)
+{
+	SetPlayerSpecialAction(playerid, 25);
+}
+function:OnPlayerDropBox(playerid)
+{
+    ClearAnimations(playerid, 1);
+    SetPlayerSpecialAction(playerid, 0);
+    FormatMssg(playerid, 1, "Bien hecho, recordá usar un /uniforme obrero para obtener extras ($$$, EXP)");
 }
 function:SetPlayerCamera(playerid)
 {
@@ -670,7 +685,7 @@ function:SetEngineState(playerid, typevehicle, stateengine)
 function:DataBaseUpdate(playerid)
 {
 	new string[128];
-	format(string, 128, "Actualicé la db (%s)", GetName(playerid));
+	format(string, 128, "Actualicï¿½ la db (%s)", GetName(playerid));
 	print(string);
 }
 function:DataPlayerSaved(playerid)

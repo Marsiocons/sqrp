@@ -70,7 +70,42 @@ stock Float:GetArmour(playerid)
 	GetPlayerArmour(playerid, armour);
 	return armour;
 }
-stock MessageP(playerid, color, params[])
+// ERROR 0 || WELLDONE 1 || ME 2 || DO 3 || $$$ + 4 || %%% - 5 || S 6 || G 7 || I 8 || SMS 9 ||
+stock FormatMssg(playerid, type, string[])
 {
-	SendClientMessage(playerid, color, params);
+	new newString[256];
+	switch(type)
+	{
+		case 0: 
+		{
+			format(newString, 256, "{C0392B}<!>{FFFFFF} %s", string);
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		case 1:
+		{
+			format(newString, 256, "{196D3C}<!>{FFFFFF} %s", string);
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		case 2:
+		{
+			format(newString, 256, "{F1C40F}* %s %s", GetName(playerid), string);
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		case 3:
+		{
+			format(newString, 256, "{F1C40F}* %s ( %s )", string, GetName(playerid));
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		case 4:
+		{
+			format(newString, 256, "{1E8449}<$> {FFFFFF}Se agregaron {1E8449}( %s ) {FFFFFF}a tu cuenta.", string);
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		case 5:
+		{
+			format(newString, 256, "{850A0A}<$> {FFFFFF}Se quitaron {850A0A}( %s ) {FFFFFF}de tu cuenta.", string);
+			SendClientMessage(playerid, 0xFFFFFFFF, newString);
+		}
+		default: print("Es un número no conocido.");
+	}
 }

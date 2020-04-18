@@ -1,6 +1,8 @@
 #include <a_samp>
 #include <sscanf2>
 #include <zcmd>
+#include "../include/utilitis.inc"
+
 
 public OnFilterScriptInit()
 {
@@ -10,7 +12,7 @@ public OnFilterScriptInit()
 
 CMD:vehiculo(playerid, params[])
 {
-    SendClientMessage(playerid, 0xADFFFFAD, "Creaste un vehï¿½culo.");
+    FormatMssg(playerid, 1, "Creaste un vehículo.");
     new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z);
 
@@ -24,7 +26,7 @@ CMD:coor(playerid, params[])
     GetPlayerPos(playerid, x, y, z);
 
     format(string, sizeof(string), "Tu posiciï¿½n es : (%f), (%f), (%f)", x,y,z);
-    SendClientMessage(playerid, 0xFFFFFFF, string);
+    FormatMssg(playerid, 1, string);
     return 1;
 }
 CMD:jetpack(playerid, params[])
@@ -32,21 +34,22 @@ CMD:jetpack(playerid, params[])
     new Float:x, Float:y, Float:z;
     GetPlayerPos(playerid, x, y, z);
     CreatePickup(370, 4, x, y, z);
+    FormatMssg(playerid, 1, "Creaste un jetpack")
     return 1;
 }
 CMD:rotation(playerid, params[])
 {
     new Float:Angle, string[26];
     GetPlayerFacingAngle(playerid, Angle);
-    format(string, sizeof(string), "tu rotacion es: %0.2f", Angle);
-    SendClientMessage(playerid, 0xFFFFFFFF, string);
+    format(string, sizeof(string), "tu rotación es: %0.2f", Angle);
+    FormatMssg(playerid, 1, string);
     return 1;
 }
 CMD:irv(playerid, params[])
 {
     if(isnull(params))
     {
-        return SendClientMessage(playerid, -1, "Usá /irv <ID del vehículo>");
+        FormatMssg(playerid, 1, "Usá /irv <ID del vehículo>");
     }
     else
     {
@@ -57,11 +60,5 @@ CMD:irv(playerid, params[])
         SetPlayerPos(playerid, x, y, z);
     }
 
-    return 1;
-}
-CMD:anim(playerid, params[])
-{
-    ApplyAnimation(playerid, "baseball", "Bat_4", 1.0, 0, 1, 1, 0, 3000, 1);
-    
     return 1;
 }
