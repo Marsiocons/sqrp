@@ -480,3 +480,15 @@ CMD:i(playerid, params[])
     }
     return 1;
 }
+CMD:ayuda(playerid, params[])
+{
+    if(isnull(params))
+    {
+        FormatMssg(playerid, 1, "NIVEL   : </cuenta>, </subirnivel>, </ayuda nivel>"," ");
+        FormatMssg(playerid, 1, "TRABAJO : </cuenta>, </habilidades>, </ayuda trabajo>"," ");
+        FormatMssg(playerid, 1, "VEHíCULO: </cuenta>, </gps>, </ayuda vehiculo>"," ");
+        FormatMssg(playerid, 1, "ROL     : </reglas>, </me>, </do>, </s>, </g>"," ");
+        FormatMssg(playerid, 1, "Para más ayuda, consultá a los jugadores en </i> (información)", " ");
+    }
+    return 1;
+}
