@@ -20,7 +20,7 @@ CMD:cuenta(playerid, params[])
 {
     new string[300];
     format(string, sizeof(string), "Tu trabajo es: %i", CallRemoteFunction("GetJobsPlayer", "i", playerid));
-    FormatMssg(playerid, 1, string);
+    FormatMssg(playerid, 1, string," ");
     return 1;
 }
 
@@ -29,10 +29,10 @@ CMD:renunciar(playerid, params[])
 
     if (CallRemoteFunction("GetJobsPlayer", "i", playerid) == 0)
     {
-        FormatMssg(playerid, 0, "No tenés trabajo al cual renunciar.");
+        FormatMssg(playerid, 0, "No tenés trabajo al cual renunciar."," ");
     }else
     {
-        FormatMssg(playerid, 1, "Renunciaste a tu trabajo. Ahora estás desempleado");
+        FormatMssg(playerid, 1, "Renunciaste a tu trabajo. Ahora estás desempleado."," ");
         CallRemoteFunction("SetJobsPlayer", "ii", playerid, 0);
     }
     return 1;
@@ -42,7 +42,7 @@ CMD:uniforme(playerid, params[])
 {
     if(isnull(params))
     {
-        FormatMssg(playerid, 0, "Usá: /uniforme [nombre-del-trabajo]");
+        FormatMssg(playerid, 0, "Usá: /uniforme [nombre-del-trabajo]"," ");
     }
     if (!strcmp(params, "camionero", true))
     {
@@ -60,22 +60,22 @@ CMD:uniforme(playerid, params[])
                     CallRemoteFunction("SetSkinsPlayer", "iiii", playerid, 1, skinid, 1);
 
                     format(string, sizeof(string), "%s se cambió de ropa (%i) y está listo para trabajar.", GetName(playerid), skinid);
-                    FormatMssg(playerid, 1, string);
+                    FormatMssg(playerid, 1, string," ");
                     SetPlayerSkin(playerid, skinid);
                 }
                 else
                 {
-                    FormatMssg(playerid, 0, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
+                    FormatMssg(playerid, 0, "Error, ya tenes puesto un uniforme. Primero usá /vestirse."," ");
                 }
             }
             else
             {
-                FormatMssg(playerid, 0, "No estás en el lugar adecuado.");
+                FormatMssg(playerid, 0, "No estás en el lugar adecuado."," ");
             }
         }
         else
         {
-            FormatMssg(playerid, 0, "No tenés el /trabajo camionero.");
+            FormatMssg(playerid, 0, "No tenés el /trabajo camionero."," ");
         }
     }
     if (!strcmp(params, "obrero", true))
@@ -94,22 +94,22 @@ CMD:uniforme(playerid, params[])
                     CallRemoteFunction("SetSkinsPlayer", "iiii", playerid, 1, skinid, 1);
 
                     format(string, sizeof(string), "%s se cambió de ropa (%i) y está listo para trabajar.", GetName(playerid), skinid);
-                    FormatMssg(playerid, 1, string);
+                    FormatMssg(playerid, 1, string," ");
                     SetPlayerSkin(playerid, skinid);
                 }
                 else
                 {
-                    FormatMssg(playerid, 0, "Error, ya tenes puesto un uniforme. Primero usá /vestirse.");
+                    FormatMssg(playerid, 0, "Error, ya tenes puesto un uniforme. Primero usá /vestirse."," ");
                 }
             }
             else
             {
-                FormatMssg(playerid, 0, "No estás en el lugar adecuado.");
+                FormatMssg(playerid, 0, "No estás en el lugar adecuado."," ");
             }
         }
         else
         {
-            FormatMssg(playerid, 0, "No tenés el /trabajo obrero.");
+            FormatMssg(playerid, 0, "No tenés el /trabajo obrero."," ");
         }
     }
 
@@ -126,11 +126,11 @@ CMD:vestirse(playerid, params[])
         SetPlayerSkin(playerid, CallRemoteFunction("GetSkinsPlayer", "ii", playerid, 0));
 
         format(string, sizeof(string), "%s se cambió de ropa.", GetName(playerid));
-        FormatMssg(playerid, 1, string);
+        FormatMssg(playerid, 1, string," ");
     }
     else
     {
-        FormatMssg(playerid, 0, "No tenés puesto ningún uniforme.");
+        FormatMssg(playerid, 0, "No tenés puesto ningún uniforme."," ");
     }
     return 1;
 }
@@ -139,11 +139,11 @@ CMD:trabajo(playerid, params[])
 {
     if(isnull(params))
     {
-        FormatMssg(playerid, 0, "Usá: /trabajo [nombre-del-trabajo]");
+        FormatMssg(playerid, 0, "Usá: /trabajo [nombre-del-trabajo]"," ");
     }
     if (CallRemoteFunction("GetJobsPlayer", "i", playerid) != 0)
     {
-        FormatMssg(playerid, 0, "Error, ya tenés un trabajo. Usá /renunciar.");
+        FormatMssg(playerid, 0, "Error, ya tenés un trabajo. Usá /renunciar."," ");
     }
     else
     {
@@ -156,18 +156,18 @@ CMD:trabajo(playerid, params[])
                 coorPickCamioneros[1],
                 coorPickCamioneros[2]))
                 {
-                    FormatMssg(playerid, 1, "Obtuviste el trabajo de camionero.");
-                    FormatMssg(playerid, 1, "Usá /recorrido camionero");
-                    FormatMssg(playerid, 1, "Para empezar a trabajar.");
+                    FormatMssg(playerid, 1, "Obtuviste el trabajo de camionero."," ");
+                    FormatMssg(playerid, 1, "Usá /recorrido camionero"," ");
+                    FormatMssg(playerid, 1, "Para empezar a trabajar."," ");
                     CallRemoteFunction("SetJobsPlayer", "ii", playerid, 1);
                 }else
                 {
-                    FormatMssg(playerid, 0, "No estás en el lugar adecuado.");
+                    FormatMssg(playerid, 0, "No estás en el lugar adecuado."," ");
                 }
             }
             else
             {
-                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de camionero. Usá /cuenta");
+                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de camionero. Usá /cuenta"," ");
             }
         }
         if (!strcmp(params, "obrero", true))
@@ -179,20 +179,20 @@ CMD:trabajo(playerid, params[])
                 coorPickObrero[1],
                 coorPickObrero[2]))
                 {
-                    FormatMssg(playerid, 1, "Obtuviste el trabajo de obrero.");
-                    FormatMssg(playerid, 1, "Usá /juntar para empezar a trabajar.");
-                    FormatMssg(playerid, 1, "Para empezar a trabajar.");
+                    FormatMssg(playerid, 1, "Obtuviste el trabajo de obrero."," ");
+                    FormatMssg(playerid, 1, "Usá /juntar para empezar a trabajar."," ");
+                    FormatMssg(playerid, 1, "Para empezar a trabajar."," ");
                     CallRemoteFunction("SetJobsPlayer", "ii", playerid, 2);
                 }
                 else
                 {
-                    FormatMssg(playerid, 0, "No estás en el lugar adecuado.");
+                    FormatMssg(playerid, 0, "No estás en el lugar adecuado."," ");
                 }
 
             }
             else
             {
-                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de obrero. (/cuenta)");
+                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de obrero. (/cuenta)"," ");
             }
         }
 
@@ -204,7 +204,7 @@ CMD:comprar(playerid, params[])
 {
     if(isnull(params))
     {
-        FormatMssg(playerid, 0, "Usá: /comprar [artículo]");
+        FormatMssg(playerid, 0, "Usá: /comprar [artículo]"," ");
     }
     if (!strcmp(params, "vehiculo", true))
     {
@@ -216,13 +216,13 @@ CMD:comprar(playerid, params[])
             vehiclemodel = GetVehicleModel(vehicleid);
             if (vehicleid <= 4)
             {
-                FormatMssg(playerid, 1, "Felicitaciones, compraste un vehículo!")
+                FormatMssg(playerid, 1, "Felicitaciones, compraste un vehículo!"," ");
                 CallRemoteFunction("OnPlayerBuyVehicle", "ii", playerid,vehiclemodel);
             }
         }
         else
         {
-            FormatMssg(playerid, 0, "No estás en ningún vehículo.")
+            FormatMssg(playerid, 0, "No estás en ningún vehículo."," ");
         }
     }
     return 1;
@@ -241,21 +241,21 @@ CMD:arrancar(playerid, params[])
 			{
                 if(CallRemoteFunction("IsPlayerInHisVehicle", "ii", playerid,vehicleid)) CallRemoteFunction("SetEngineState", "iii", playerid, 0, 1);
 				SetVehicleParamsEx(vehicleid, 1, 1, 0, 0, 0, 0, 0);
-				FormatMssg(playerid, 1, "Arranque exitoso.");
+				FormatMssg(playerid, 1, "Arranque exitoso."," ");
 			}
 			else
 			{
-				FormatMssg(playerid, 0, "El vehículo ya está en marcha.")
+				FormatMssg(playerid, 0, "El vehículo ya está en marcha."," ");
 			}
         }
         else
         {
-            FormatMssg(playerid, 0, "No podés manipular este vehículo.")
+            FormatMssg(playerid, 0, "No podés manipular este vehículo."," ");
         }
     }
     else
     {
-        FormatMssg(playerid, 0, "No estás en ningún vehículo.")
+        FormatMssg(playerid, 0, "No estás en ningún vehículo."," ");
     }
     return 1;
 }
@@ -273,21 +273,21 @@ CMD:detener(playerid, params[])
 			{
 				if(CallRemoteFunction("IsPlayerInHisVehicle", "ii", playerid,vehicleid)) CallRemoteFunction("SetEngineState", "iii", playerid, 0, 0);
 				SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
-	            FormatMssg(playerid, 1, "Vehículo apagado.");
+	            FormatMssg(playerid, 1, "Vehículo apagado."," ");
 			}
 			else
 			{
-				FormatMssg(playerid, 0, "El vehículo ya está apagado.");
+				FormatMssg(playerid, 0, "El vehículo ya está apagado."," ");
 			}
 		}
 		else
         {
-            FormatMssg(playerid, 0, "Este vehículo no se puede manipular.")
+            FormatMssg(playerid, 0, "Este vehículo no se puede manipular."," ");
         }	
 	}
 	else
     {
-        FormatMssg(playerid, 0, "No estás en ningún vehículo.")
+        FormatMssg(playerid, 0, "No estás en ningún vehículo."," ");
     }
 	return 1;
 }
@@ -308,26 +308,26 @@ CMD:estacionar(playerid, params[])
 				{
                     CallRemoteFunction("OnPlayerStopVehicle", "iii", playerid, vehicleid, vehiclemodel);
 					SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
-					FormatMssg(playerid, 1, "Vehículo estacionado.");
+					FormatMssg(playerid, 1, "Vehículo estacionado."," ");
 				}
 				else
 				{
-					FormatMssg(playerid, 0, "Primero tenés que /detener tu vehículo.");
+					FormatMssg(playerid, 0, "Primero tenés que /detener tu vehículo."," ");
 				}
 			}
 			else
 			{
-				FormatMssg(playerid, 0, "Este vehículo no te pertenece.");
+				FormatMssg(playerid, 0, "Este vehículo no te pertenece."," ");
 			}
 		}
 		else
         {
-            FormatMssg(playerid, 0, "Este vehículo no se puede manipular.")
+            FormatMssg(playerid, 0, "Este vehículo no se puede manipular."," ");
         }	
 	}
 	else
     {
-        FormatMssg(playerid, 0, "No estás en ningún vehículo.")
+        FormatMssg(playerid, 0, "No estás en ningún vehículo."," ");
     }	
 	return 1;
 }
@@ -351,22 +351,22 @@ CMD:juntar(playerid, params[])
                 }
                 else
                 {
-                    FormatMssg(playerid, 0,"Error, ya juntaste escombros, ahora descartalos en el contenedor");
+                    FormatMssg(playerid, 0,"Error, ya juntaste escombros, ahora descartalos en el contenedor"," ");
                 }
             }
             else
             {
-                FormatMssg(playerid, 0,"No estás en el lugar adecuado.");
+                FormatMssg(playerid, 0,"No estás en el lugar adecuado."," ");
             }
         }
         else
         {
-            FormatMssg(playerid, 0,"No tenés el /trabajo obrero.");
+            FormatMssg(playerid, 0,"No tenés el /trabajo obrero."," ");
         }
     }
     else
     {
-        FormatMssg(playerid, 0,"Utilizá únicamente /juntar");
+        FormatMssg(playerid, 0,"Utilizá únicamente /juntar"," ");
     }
     return 1;
 }
@@ -385,62 +385,98 @@ CMD:descartar(playerid, params[])
                 {
                     CallRemoteFunction("OnPlayerDropBox", "i", playerid);
                     SetPVarInt(playerid, "OnPLayerPickBox", 0);
-                    FormatMssg(playerid, 4, "150")
+                    FormatMssg(playerid, 4, "150", " ");
                 }
                 else
                 {
-                    FormatMssg(playerid, 0, "Primero tenés que /juntar los escombros");
+                    FormatMssg(playerid, 0, "Primero tenés que /juntar los escombros"," ");
                 }
             }
             else
             {
-                FormatMssg(playerid, 0, "No estás en el lugar adecuado.");
+                FormatMssg(playerid, 0, "No estás en el lugar adecuado."," ");
             }
         }
         else
         {
-            FormatMssg(playerid, 0, "No tenés el /trabajo obrero.");
+            FormatMssg(playerid, 0, "No tenés el /trabajo obrero."," ");
         }
     }
     else
     {
-        FormatMssg(playerid, 0, "Utilizá únicamente /descartar");
+        FormatMssg(playerid, 0, "Utilizá únicamente /descartar"," ");
     }
     return 1;
 }
-CMD:prueba(playerid, params[])
+CMD:me(playerid, params[])
 {
-    new string[128];
     if(isnull(params))
     {
-        format(string, 128, "Utilizá /prueba <texto>");
-        FormatMssg(playerid, 0, string);
-        print("Ejecuté FormatMssg");
+        FormatMssg(playerid, 0, "Error. Usá /me [acción]"," ");
     }
-    if (!strcmp(params, "uno", true))
+    else
     {
-        format(string, 128, "Felicidades, conseguiste un trabajo!");
-        FormatMssg(playerid, 1, string);
+        DetectarProxim(playerid, 20, params, 2);
     }
-    if (!strcmp(params, "dos", true))
+    return 1;
+}
+CMD:do(playerid, params[])
+{
+    if(isnull(params))
     {
-        format(string, 128, "se cae al suelo");
-        FormatMssg(playerid, 2, string);
+        FormatMssg(playerid, 0, "Error. Usá /do [entorno]"," ");
     }
-    if (!strcmp(params, "tres", true))
+    else
     {
-        format(string, 128, "Su ropa ahora estaría toda manchada");
-        FormatMssg(playerid, 3, string);
+        DetectarProxim(playerid, 20, params, 3);
     }
-    if (!strcmp(params, "cuatro", true))
+    return 1;
+}
+CMD:s(playerid, params[])
+{
+    if(isnull(params))
     {
-        format(string, 128, "$1200");
-        FormatMssg(playerid, 4, string);
+        FormatMssg(playerid, 0, "Error. Usá /s [texto] para hablar susurrando."," ");
     }
-    if (!strcmp(params, "cinco", true))
+    else
     {
-        format(string, 128, "$600");
-        FormatMssg(playerid, 5, string);
+        DetectarProxim(playerid, 8, params, 6);
+    }
+    return 1;
+}
+CMD:g(playerid, params[])
+{
+    if(isnull(params))
+    {
+        FormatMssg(playerid, 0, "Error. Usá /g [texto] para gritar."," ");
+    }
+    else
+    {
+        DetectarProxim(playerid, 25, params, 7);
+    }
+    return 1;
+}
+CMD:b(playerid, params[])
+{
+    if(isnull(params))
+    {
+        FormatMssg(playerid, 0, "Error. Usá /b [texto]"," ");
+    }
+    else
+    {
+        DetectarProxim(playerid, 20, params, 8);
+    }
+    return 1;
+}
+CMD:i(playerid, params[])
+{
+    if(isnull(params))
+    {
+        FormatMssg(playerid, 0, "Error. Usá /i [texto]"," ");
+    }
+    else
+    {
+        FormatMssg(playerid, 9, params," ");
     }
     return 1;
 }
