@@ -29,6 +29,9 @@ new Text:BarraInicio;
 new Text:BarraInicioDos;
 new Text:tipoBoton[4]; // ANTERIOR 0, MUJER 1, SISGUIENTE 2, HOMBRE 3
 new Text:iniciar;
+new PlayerText:BorderBarraExp;
+new PlayerText:BarraExp;
+new PlayerText:Experiencia;
 
 new skins[2][4] = {{72,134,188,158},{69,131,192,198}};
 new bool:isWoman;
@@ -130,7 +133,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else
 			{
 				new Query[512];
-        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, salud, blindaje, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", GetName(playerid), inputtext);
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, salud, blindaje, nivel, exp_actual, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0)", GetName(playerid), inputtext);
 	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
 				mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `vehiculos_data` (propietario, modelo_uno, salud_uno, pos_x_uno, pos_y_uno, pos_z_uno, pos_r_uno, seguro_uno, combustible_uno, motor_estado_uno, modelo_dos, salud_dos, pos_x_dos, pos_y_dos, pos_z_dos, pos_r_dos, seguro_dos, combustible_dos, motor_estado_dos) VALUES ('%s',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", GetName(playerid));
 				mysql_tquery(db_conn, Query, "OnVehicleRegister", "i", playerid);
@@ -268,6 +271,7 @@ function:OnPlayerRegister(playerid)
 	PlayerInfo[playerid][dbID] = cache_insert_id(); //Obtenemos su ID para despuís manejar los datos del jugador.
 	PlayerInfo[playerid][dbLoggedIn] = true; //estí logueado.
 	SetRectangle(playerid, 1); // Sacamos las barras de inicio.
+	DrawExp(playerid);
 	SkinSelector(playerid); //Llamamos a selector de skin.
 }
 
@@ -303,6 +307,7 @@ function:OnPlayerLoginIn(playerid)
 		if (cache_get_field_content_int(0, "vehiculo_dos", db_conn) == 1) SetTimerEx("CreateVehiclePlayer", 400, false, "ii", playerid,1);
 		GetPlayerData(playerid);
 		SetRectangle(playerid, 1);
+		DrawExp(playerid);
 		SpawnPlayerPlayer(playerid);
 	}
 	else
@@ -405,9 +410,11 @@ function:SpawnPlayerPlayer(playerid)
 	SetPlayerArmour(playerid, PlayerInfo[playerid][dbBlindaje]);
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
+	CalcularExp(playerid);
+	ShowProgressBar(playerid, 1);
+
 	return 1;
 }
-
 function:SavePlayerData(playerid)
 {
 	PlayerInfo[playerid][dbX] = GetCoorPlayer(playerid, 0);
@@ -422,7 +429,6 @@ function:SavePlayerData(playerid)
 	 PlayerInfo[playerid][dbX], PlayerInfo[playerid][dbY], PlayerInfo[playerid][dbZ], PlayerInfo[playerid][dbR], PlayerInfo[playerid][dbSalud], PlayerInfo[playerid][dbBlindaje], PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "DataPlayerSaved", "i", playerid);
 }
-
 function:GetPlayerData(playerid)
 {
 	new Query[256];
@@ -440,7 +446,6 @@ function:GetPlayerData(playerid)
 
 	cache_delete(result);
 }
-
 function:ResetPlayer(playerid)
 {
 	PlayerInfo[playerid][dbID] = 0;
@@ -454,7 +459,6 @@ function:ResetPlayer(playerid)
 	PlayerInfo[playerid][dbSalud] = 100;
 	PlayerInfo[playerid][dbBlindaje] = 0;
 }
-
 function:SetRectangle(playerid, option) // 0 Creamos - 1 Borramos.
 {
 
@@ -612,7 +616,6 @@ function:SetPlayerCamera(playerid)
 	SetPlayerCameraPos(playerid, 2019.1145, 1202.9185, 42.3246);
     SetPlayerCameraLookAt(playerid, 2019.9889, 1202.4272, 42.2945);
 }
-
 function:GetJobsPlayer(playerid)
 {
 	new Query[256];
@@ -632,7 +635,6 @@ function:SetJobsPlayer(playerid, idjob)
 	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `trabajo_uno` = %i WHERE `id` = %i",idjob,PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
 }
-
 function:GetSkinsPlayer(playerid, typeskin)
 {
 	new Query[256];
@@ -690,6 +692,121 @@ function:SetEngineState(playerid, typevehicle, stateengine)
 	}
 	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
 }
+function:GetLevelPlayer(playerid)
+{
+	new Query[256];
+	new rows, fields;
+	new levelToReturn;
+
+	mysql_format(db_conn, Query, sizeof(Query), "SELECT nivel FROM usuarios_data WHERE id = %i", PlayerInfo[playerid][dbID]);
+	new Cache:result = mysql_query(db_conn, Query);
+	cache_get_data(rows, fields, db_conn);
+	levelToReturn = cache_get_field_content_int(0, "nivel", db_conn);
+	cache_delete(result);
+	return levelToReturn;
+}
+function:GetExpPlayer(playerid)
+{
+	new Query[256];
+	new rows, fields;
+	new expToReturn;
+
+	mysql_format(db_conn, Query, sizeof(Query), "SELECT exp_actual FROM usuarios_data WHERE id = %i", PlayerInfo[playerid][dbID]);
+	new Cache:result = mysql_query(db_conn, Query);
+	cache_get_data(rows, fields, db_conn);
+	expToReturn = cache_get_field_content_int(0, "exp_actual", db_conn);
+	cache_delete(result);
+	return expToReturn;
+}
+function:SetExpPlayer(playerid, newExp)
+{
+	new Query[256], string[128], expOld, expUpd;
+	
+	expOld = GetExpPlayer(playerid);
+	expUpd = expOld + newExp;
+	
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `exp_actual` = %i WHERE `id` = %i", expUpd, PlayerInfo[playerid][dbID]);
+	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
+
+	if (newExp > 0 ) format(string, 128, "Se actualizó tu experiencia. ( %i + %i )", expOld, newExp);
+	if (newExp < 0 ) format(string, 128, "Se actualizó tu experiencia. ( %i - %i )", expOld, newExp);
+
+	FormatMssg(playerid, 1, string, " ");
+}
+function:DrawExp(playerid)
+{
+	BorderBarraExp = CreatePlayerTextDraw(playerid, 519,11, "_");
+	PlayerTextDrawUseBox(playerid, BorderBarraExp, 1);
+	PlayerTextDrawBoxColor(playerid, BorderBarraExp, 0x000000AA);
+	PlayerTextDrawLetterSize(playerid, BorderBarraExp, 0.2, 0.3);
+	PlayerTextDrawTextSize(playerid, BorderBarraExp, 631, 13);
+	print("Cree BorderBarraExp");
+
+	BarraExp = CreatePlayerTextDraw(playerid, 520, 12, "_");
+	PlayerTextDrawUseBox(playerid, BarraExp, 1);
+	PlayerTextDrawBoxColor(playerid, BarraExp, 0xFFFFFFAA);
+	PlayerTextDrawLetterSize(playerid, BarraExp, 0.1, 0.1);
+	PlayerTextDrawTextSize(playerid, BarraExp, 630, 12);
+	print("Cree BarraExp");
+
+	Experiencia = CreatePlayerTextDraw(playerid, 520, 12, "_");
+	PlayerTextDrawUseBox(playerid, Experiencia, 1);
+	PlayerTextDrawBoxColor(playerid, Experiencia, 0x066200FF);
+	PlayerTextDrawLetterSize(playerid, Experiencia, 0.1, 0.1);
+	PlayerTextDrawTextSize(playerid, Experiencia, 630, 12);
+	print("Cree Experiencia");
+}
+function:CalcularExp(playerid)
+{
+	new expActual, expTotal, porcentaje, DrawPorc, nivel;
+	expActual = GetExpPlayer(playerid);
+	nivel = GetLevelPlayer(playerid);
+	expTotal = GetExpTotal(playerid, nivel);
+	porcentaje = (100 / expTotal) * expActual;
+	DrawPorc = (110 / 100) * porcentaje;
+	DrawPorc+= 520;
+	PlayerTextDrawHide(playerid, BorderBarraExp);
+	PlayerTextDrawHide(playerid, BarraExp);
+	PlayerTextDrawHide(playerid, Experiencia);
+
+	PlayerTextDrawTextSize(playerid, Experiencia, floatround(DrawPorc, floatround_round), 12);
+
+	PlayerTextDrawShow(playerid, BorderBarraExp);
+	PlayerTextDrawShow(playerid, BarraExp);
+	PlayerTextDrawShow(playerid, Experiencia);
+}
+function:ShowProgressBar(playerid, show)
+{
+	if (show == 1)
+	{
+		PlayerTextDrawShow(playerid, BorderBarraExp);
+		print("BorderBarraExp está visible");
+		PlayerTextDrawShow(playerid, BarraExp);
+		print("BarraExp está visible");
+		PlayerTextDrawShow(playerid, Experiencia);
+		print("Experiencia está visible");
+	}
+	else
+	{
+		PlayerTextDrawHide(playerid, BorderBarraExp);
+		print("BorderBarraExp está visible");
+		PlayerTextDrawHide(playerid, BarraExp);
+		print("BarraExp está visible");
+		PlayerTextDrawHide(playerid, Experiencia);
+		print("Experiencia está visible");
+	}
+}
+function:GetExpTotal(playerid, level)
+{
+	new ExpTotal, CuadradoAnt;
+	new string[128];
+	CuadradoAnt = level * (level - 1);
+	if (CuadradoAnt == 0) CuadradoAnt = 1;
+	ExpTotal = level * 24 * CuadradoAnt + level;
+	format(string, 128, "Tu experiencia en el nivel %i sería : %i", level, ExpTotal);
+	SendClientMessage(playerid, 0xBAD31BFF, string);
+	return ExpTotal;
+}
 
 
 function:DataBaseUpdate(playerid)
@@ -704,4 +821,21 @@ function:DataPlayerSaved(playerid)
 	format(string, 128, "Se guardaron los datos de: (%s)", GetName(playerid));
 	print(string);
 	ResetPlayer(playerid);
+}
+
+CMD:experiencia(playerid, params[])
+{
+	new cantidad, string[128];
+	if(sscanf(params, "i", cantidad))
+	{
+		SendClientMessage(playerid, -1, "Usá: /experiencia (cantidad)");
+	}
+	else 
+	{
+		SetExpPlayer(playerid, cantidad);
+		format(string, sizeof(string), "Modificaste tu experiencia ( %i )", cantidad);
+		FormatMssg(playerid, 1, string, " ");
+		SetTimerEx("CalcularExp", 600, false, "i", playerid);
+	}
+	return 1;
 }
