@@ -186,3 +186,16 @@ stock DetectarProxim(playerid, Float:radio, string[], type)
 		}
 	}
 }
+
+
+
+/*function:SetLevelPlayer(playerid, newlevel)
+{
+	new Query[256];
+	new oldlevel, levelupdate;
+	levelupdate = oldlevel + newlevel;
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `nivel` = %i WHERE `id` = %i", levelupdate, PlayerInfo[playerid][dbID]);
+	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
+
+	SetTimerEx("CalcularExp", 400, false, "i", playerid);
+}*/

@@ -32,6 +32,7 @@ new Text:iniciar;
 new PlayerText:BorderBarraExp;
 new PlayerText:BarraExp;
 new PlayerText:Experiencia;
+new PlayerText:XPDraw;
 
 new skins[2][4] = {{72,134,188,158},{69,131,192,198}};
 new bool:isWoman;
@@ -133,7 +134,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else
 			{
 				new Query[512];
-        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, salud, blindaje, nivel, exp_actual, rango) VALUES ('%s', '%s', 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0)", GetName(playerid), inputtext);
+        		mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `usuarios_data` (nombre, password, trabajo_uno, trabajo_dos, vehiculo_uno, vehiculo_dos, dinero_mano, dinero_banco, skin_uno, skin_dos, skin_actual, posicion_x, posicion_y, posicion_z, posicion_r, salud, blindaje, nivel, exp_actual, rango) VALUES ('%s', '%s', 0,0,0,0,3000,0,0,0,0,0,0,0,0,0,0,1,0,0)", GetName(playerid), inputtext);
 	    		mysql_tquery(db_conn, Query, "OnPlayerRegister", "i", playerid);
 				mysql_format(db_conn, Query, sizeof(Query), "INSERT INTO `vehiculos_data` (propietario, modelo_uno, salud_uno, pos_x_uno, pos_y_uno, pos_z_uno, pos_r_uno, seguro_uno, combustible_uno, motor_estado_uno, modelo_dos, salud_dos, pos_x_dos, pos_y_dos, pos_z_dos, pos_r_dos, seguro_dos, combustible_dos, motor_estado_dos) VALUES ('%s',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)", GetName(playerid));
 				mysql_tquery(db_conn, Query, "OnVehicleRegister", "i", playerid);
@@ -412,6 +413,9 @@ function:SpawnPlayerPlayer(playerid)
 	SetCameraBehindPlayer(playerid);
 	CalcularExp(playerid);
 	ShowProgressBar(playerid, 1);
+	new money;
+	money = GetMoneyPlayer(playerid, 0);
+	SetMoneyPlayer(playerid, 0, money);
 
 	return 1;
 }
@@ -705,6 +709,19 @@ function:GetLevelPlayer(playerid)
 	cache_delete(result);
 	return levelToReturn;
 }
+function:SetLevelPlayer(playerid, newlevel)
+{
+	new Query[256];
+	new oldlevel, levelupdate;
+	oldlevel = GetLevelPlayer(playerid);
+	levelupdate = oldlevel + newlevel;
+	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `nivel` = %i WHERE `id` = %i", levelupdate, PlayerInfo[playerid][dbID]);
+	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
+
+	FormatMssg(playerid, 1 , "Se actualizó tu nivel capo.", " ");
+
+	SetTimerEx("CalcularExp", 800, false, "i", playerid);
+}
 function:GetExpPlayer(playerid)
 {
 	new Query[256];
@@ -732,6 +749,42 @@ function:SetExpPlayer(playerid, newExp)
 	if (newExp < 0 ) format(string, 128, "Se actualizó tu experiencia. ( %i - %i )", expOld, newExp);
 
 	FormatMssg(playerid, 1, string, " ");
+
+	SetTimerEx("CalcularExp", 800, false, "i", playerid);
+
+}
+function:GetMoneyPlayer(playerid, type)
+{
+	new Query[256];
+	new rows, fields;
+	new moneyToReturn;
+
+	mysql_format(db_conn, Query, sizeof(Query), "SELECT dinero_mano, dinero_banco FROM usuarios_data WHERE id = %i", PlayerInfo[playerid][dbID]);
+	new Cache:result = mysql_query(db_conn, Query);
+	cache_get_data(rows, fields, db_conn);
+	if (type == 0) moneyToReturn = cache_get_field_content_int(0, "dinero_mano", db_conn);
+	if (type == 1) moneyToReturn = cache_get_field_content_int(0, "dinero_banco", db_conn);
+	cache_delete(result);
+	return moneyToReturn;
+}
+function:SetMoneyPlayer(playerid, type, newMoney)
+{
+	new Query[256], oldMoney, moneyUpd;
+	
+	if(type == 0)
+	{
+		oldMoney = GetMoneyPlayer(playerid, 0);
+		moneyUpd = oldMoney + newMoney;
+		mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `dinero_mano` = %i WHERE `id` = %i", moneyUpd, PlayerInfo[playerid][dbID]);
+		GivePlayerMoney(playerid, newMoney);
+	}
+	if(type == 1)
+	{
+		oldMoney = GetMoneyPlayer(playerid, 1);
+		moneyUpd = oldMoney + newMoney;
+		mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `dinero_banco` = %i WHERE `id` = %i", moneyUpd, PlayerInfo[playerid][dbID]);
+	}
+	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
 }
 function:DrawExp(playerid)
 {
@@ -755,25 +808,46 @@ function:DrawExp(playerid)
 	PlayerTextDrawLetterSize(playerid, Experiencia, 0.1, 0.1);
 	PlayerTextDrawTextSize(playerid, Experiencia, 630, 12);
 	print("Cree Experiencia");
+
+	XPDraw = CreatePlayerTextDraw(playerid, 517, 2, "Nivel: X (X / X)");
+	PlayerTextDrawLetterSize(playerid, XPDraw, 0.25, 0.65);
+	//PlayerTextDrawTextSize(playerid, XPDraw, 1.5, 0.08);
+	PlayerTextDrawFont(playerid, XPDraw, 1);
+	PlayerTextDrawSetShadow(playerid, XPDraw, 1);
+	PlayerTextDrawColor(playerid, XPDraw, 0xFFFFFFFF);
 }
 function:CalcularExp(playerid)
 {
-	new expActual, expTotal, porcentaje, DrawPorc, nivel;
+	new expActual, expTotal, porcentaje, DrawPorc, nivel, est[128];
 	expActual = GetExpPlayer(playerid);
 	nivel = GetLevelPlayer(playerid);
 	expTotal = GetExpTotal(playerid, nivel);
-	porcentaje = (100 / expTotal) * expActual;
+
+	format(est, sizeof(est), "Nivel: %i (%i / %i)", nivel, expActual, expTotal);
+
+	porcentaje = 100;
+	porcentaje = porcentaje * expActual;
+	porcentaje = porcentaje / expTotal;
+
 	DrawPorc = (110 / 100) * porcentaje;
 	DrawPorc+= 520;
+	
+
+	if(porcentaje >= 100) DrawPorc = 630;
+	if(porcentaje <= 0) DrawPorc = 520;
+
 	PlayerTextDrawHide(playerid, BorderBarraExp);
 	PlayerTextDrawHide(playerid, BarraExp);
 	PlayerTextDrawHide(playerid, Experiencia);
+	PlayerTextDrawHide(playerid, XPDraw);
 
-	PlayerTextDrawTextSize(playerid, Experiencia, floatround(DrawPorc, floatround_round), 12);
+	PlayerTextDrawTextSize(playerid, Experiencia, floatround(DrawPorc, floatround_floor), 12);
+	PlayerTextDrawSetString(playerid, XPDraw, est)
 
 	PlayerTextDrawShow(playerid, BorderBarraExp);
 	PlayerTextDrawShow(playerid, BarraExp);
 	PlayerTextDrawShow(playerid, Experiencia);
+	PlayerTextDrawShow(playerid, XPDraw);
 }
 function:ShowProgressBar(playerid, show)
 {
@@ -785,15 +859,19 @@ function:ShowProgressBar(playerid, show)
 		print("BarraExp está visible");
 		PlayerTextDrawShow(playerid, Experiencia);
 		print("Experiencia está visible");
+		PlayerTextDrawShow(playerid, XPDraw);
+		print("XPDraw está visible");
 	}
 	else
 	{
 		PlayerTextDrawHide(playerid, BorderBarraExp);
-		print("BorderBarraExp está visible");
+		print("BorderBarraExp está invisible");
 		PlayerTextDrawHide(playerid, BarraExp);
-		print("BarraExp está visible");
+		print("BarraExp está invisible");
 		PlayerTextDrawHide(playerid, Experiencia);
-		print("Experiencia está visible");
+		print("Experiencia está invisible");
+		PlayerTextDrawHide(playerid, XPDraw);
+		print("XPDraw está invisible");
 	}
 }
 function:GetExpTotal(playerid, level)
@@ -821,21 +899,4 @@ function:DataPlayerSaved(playerid)
 	format(string, 128, "Se guardaron los datos de: (%s)", GetName(playerid));
 	print(string);
 	ResetPlayer(playerid);
-}
-
-CMD:experiencia(playerid, params[])
-{
-	new cantidad, string[128];
-	if(sscanf(params, "i", cantidad))
-	{
-		SendClientMessage(playerid, -1, "Usá: /experiencia (cantidad)");
-	}
-	else 
-	{
-		SetExpPlayer(playerid, cantidad);
-		format(string, sizeof(string), "Modificaste tu experiencia ( %i )", cantidad);
-		FormatMssg(playerid, 1, string, " ");
-		SetTimerEx("CalcularExp", 600, false, "i", playerid);
-	}
-	return 1;
 }
