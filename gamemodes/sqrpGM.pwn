@@ -411,11 +411,9 @@ function:SpawnPlayerPlayer(playerid)
 	SetPlayerArmour(playerid, PlayerInfo[playerid][dbBlindaje]);
     SpawnPlayer(playerid);
 	SetCameraBehindPlayer(playerid);
-	CalcularExp(playerid);
+	SetLevelPlayer(playerid, 0);
 	ShowProgressBar(playerid, 1);
-	new money;
-	money = GetMoneyPlayer(playerid, 0);
-	SetMoneyPlayer(playerid, 0, money);
+	SetMoneyPlayer(playerid, 0, 0);
 
 	return 1;
 }
@@ -718,6 +716,8 @@ function:SetLevelPlayer(playerid, newlevel)
 	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `nivel` = %i WHERE `id` = %i", levelupdate, PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
 
+	SetPlayerScore(playerid, levelupdate);
+
 	FormatMssg(playerid, 1 , "Se actualizó tu nivel capo.", " ");
 
 	SetTimerEx("CalcularExp", 800, false, "i", playerid);
@@ -776,7 +776,8 @@ function:SetMoneyPlayer(playerid, type, newMoney)
 		oldMoney = GetMoneyPlayer(playerid, 0);
 		moneyUpd = oldMoney + newMoney;
 		mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `dinero_mano` = %i WHERE `id` = %i", moneyUpd, PlayerInfo[playerid][dbID]);
-		GivePlayerMoney(playerid, newMoney);
+		ResetPlayerMoney(playerid);
+		GivePlayerMoney(playerid, moneyUpd);
 	}
 	if(type == 1)
 	{
