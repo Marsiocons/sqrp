@@ -28,7 +28,7 @@ CMD:recorrido(playerid, params[])
 {
     if(isnull(params))
     {
-        FormatMssg(playerid, 0, "Usa: /recorrido [nombre-del-trabajo]");
+        FormatMssg(playerid, 0, "Usa: /recorrido [nombre-del-trabajo]", " ");
     }
     if (!strcmp(params, "camionero", true))
     {
@@ -36,16 +36,16 @@ CMD:recorrido(playerid, params[])
         {
             if (isVehicleCamionero(playerid) == 1)
             {
-  	            FormatMssg(playerid, 1, "Dirigete al punto para cagar el camión.");
+  	            FormatMssg(playerid, 1, "Dirigete al punto para cagar el camión.", " ");
                 SetPlayerCheckpoint(playerid, -554.442199, 2617.287841, 53.515625, 10);
                 RECORRIDOCAMIONERO = 0;
             }else
             {
-                FormatMssg(playerid, 0, "No estás en el vehículo adecuado.");
+                FormatMssg(playerid, 0, "No estás en el vehículo adecuado.", " ");
 	        }
         }else
         {
-            FormatMssg(playerid, 0, "No tenés el trabajo de camionero.");
+            FormatMssg(playerid, 0, "No tenés el trabajo de camionero.", " ");
         }
     }
     return 1;
@@ -66,7 +66,10 @@ public OnPlayerEnterCheckpoint(playerid) {
             DisablePlayerCheckpoint(playerid);
             SetVehicleToRespawn(VehID);
             SetVehicleParamsEx(VehID, 0, 0, 0, 0, 0, 0, 0);
-            FormatMssg(playerid, 1, "Completaste el trabajo, acá esta la paga.");
+            FormatMssg(playerid, 1, "Completaste el trabajo, acá está la paga.", " ");
+            CallRemoteFunction("CalcularDineroJob", "i", playerid);
+            
+            
             RECORRIDOCAMIONERO = 0;
 
         // Comprobamos si ya cargÃ³ el camiÃ³n. Desactivamos cp anterior y le decimos al jugador.
@@ -74,14 +77,14 @@ public OnPlayerEnterCheckpoint(playerid) {
         {
             DisablePlayerCheckpoint(playerid);
             SetPlayerCheckpoint(playerid, -554.442199, 2617.287841, 53.515625, 10);
-            FormatMssg(playerid, 1, "Bien hecho!, volvé a la sucursal para devolver el camión y obtener tu paga.");
+            FormatMssg(playerid, 1, "Bien hecho!, volvé a la sucursal para devolver el camión y obtener tu paga.", " ");
             RECORRIDOCAMIONERO = 2;
         }else
         {
             // AcÃ¡ empieza todo.
             DisablePlayerCheckpoint(playerid);
             SetPlayerCheckpoint(playerid, -1519.365844, 2572.802490, 55.835937, 10);
-            FormatMssg(playerid, 1, "Vehículo cargado. Ve al punto para entregar la carga.");
+            FormatMssg(playerid, 1, "Vehículo cargado. Ve al punto para entregar la carga.", " ");
             RECORRIDOCAMIONERO = 1;
         }
     }

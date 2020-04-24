@@ -1,5 +1,9 @@
 #include <foreach>
 
+new SkinsCamionero[3] = {182,261,100};
+new SkinsObrero[3] = {16,27,153};
+
+
 stock GetName(playerid)
 {
 	new name[MAX_PLAYER_NAME + 1];
@@ -100,12 +104,12 @@ stock FormatMssg(playerid, type, string[], playername[])
 		}
 		case 4:
 		{
-			format(newString, 256, "{1E8449}<$> {FFFFFF}Se agregaron {1E8449}( %s ) {FFFFFF}a tu cuenta.", string);
+			format(newString, 256, "{1E8449}<$> {FFFFFF}Se agregaron {1E8449}( $%s ) {FFFFFF}a tu cuenta.", string);
 			SendClientMessage(playerid, 0xFFFFFFFF, newString);
 		}
 		case 5:
 		{
-			format(newString, 256, "{850A0A}<$> {FFFFFF}Se quitaron {850A0A}( %s ) {FFFFFF}de tu cuenta.", string);
+			format(newString, 256, "{850A0A}<$> {FFFFFF}Se quitaron {850A0A}( $%s ) {FFFFFF}de tu cuenta.", string);
 			SendClientMessage(playerid, 0xFFFFFFFF, newString);
 		}
 		case 6:
@@ -187,6 +191,47 @@ stock DetectarProxim(playerid, Float:radio, string[], type)
 	}
 }
 
+stock IsPlayerSkinJob(playerid)
+{
+	new skinID, jobID, bool:skinJob;
+	skinID = CallRemoteFunction("GetSkinsPlayer", "ii", playerid, 1);
+	jobID  = CallRemoteFunction("GetJobsPlayer", "i", playerid);
+
+	switch(jobID)
+	{
+		case 0:
+		{
+			skinJob = false;
+		}
+		case 1:
+		{
+			if (skinID == SkinsCamionero[0]
+			 || skinID == SkinsCamionero[1]
+			 || skinID == SkinsCamionero[2])
+			{
+				skinJob = true;
+			}
+			else
+			{
+				skinJob = false;
+			}
+		}
+		case 2:
+		{
+			if (skinID == SkinsObrero[0]
+			 || skinID == SkinsObrero[1]
+			 || skinID == SkinsObrero[2])
+			{
+				skinJob = true;
+			}
+			else
+			{
+				skinJob = false;
+			}
+		}
+	}
+	return skinJob;
+}
 
 
 /*function:SetLevelPlayer(playerid, newlevel)

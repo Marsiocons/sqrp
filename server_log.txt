@@ -8124,3 +8124,3750 @@ Console input: exit
 
 [22:41:28]  ===============================
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:06:06] 
+[00:06:06] Server Plugins
+[00:06:06] --------------
+[00:06:06]  Loading plugin: mysql
+[00:06:06]  >> plugin.mysql: R39-6 successfully loaded.
+[00:06:06]   Loaded.
+[00:06:06]  Loading plugin: sscanf
+[00:06:06] 
+
+[00:06:06]  ===============================
+
+[00:06:06]       sscanf plugin loaded.     
+
+[00:06:06]          Version:  2.8.2        
+
+[00:06:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:06:06]  ===============================
+
+[00:06:06]   Loaded.
+[00:06:06]  Loaded 2 plugins.
+
+[00:06:06] 
+[00:06:06] Filterscripts
+[00:06:06] ---------------
+[00:06:06]   Loading filterscript 'adminCommands.amx'...
+[00:06:06] 
+ Comandos de administrador cargados.
+
+[00:06:06]   Loading filterscript 'playerCommands.amx'...
+[00:06:06] 
+ Comandos de jugadores cargados.
+
+[00:06:06]   Loading filterscript 'pickup.amx'...
+[00:06:06] 
+ Pickups cargados
+
+[00:06:06] 
+ Cree un pickup 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un pickup 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un pickup 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un pickup 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06] 
+ Cree un Text Label 
+
+[00:06:06]   Loading filterscript 'trabajos.amx'...
+[00:06:06] 
+ Trabajos cargados
+
+[00:06:06]   Loading filterscript 'vehiculos.amx'...
+[00:06:06] 
+ Vehículos cargados
+
+[00:06:06]   Loaded 5 filterscripts.
+
+[00:06:06] Conexión exitosa
+[00:06:06] Cargué 26 vehículos.
+[00:06:06] 
+----------------------------------
+[00:06:06] San Quebrado V Beta 0.03
+[00:06:06] ----------------------------------
+
+[00:06:06] Number of vehicle models: 10
+Console input: exit
+[00:06:08] --- Server Shutting Down.
+[00:06:08] plugin.mysql: Unloading plugin...
+[00:06:08] plugin.mysql: Plugin unloaded.
+[00:06:08] 
+
+[00:06:08]  ===============================
+
+[00:06:08]      sscanf plugin unloaded.    
+
+[00:06:08]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:17:24] 
+[22:17:24] Server Plugins
+[22:17:24] --------------
+[22:17:24]  Loading plugin: mysql
+[22:17:24]  >> plugin.mysql: R39-6 successfully loaded.
+[22:17:24]   Loaded.
+[22:17:24]  Loading plugin: sscanf
+[22:17:24] 
+
+[22:17:24]  ===============================
+
+[22:17:24]       sscanf plugin loaded.     
+
+[22:17:24]          Version:  2.8.2        
+
+[22:17:24]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:17:24]  ===============================
+
+[22:17:24]   Loaded.
+[22:17:24]  Loaded 2 plugins.
+
+[22:17:24] 
+[22:17:24] Filterscripts
+[22:17:24] ---------------
+[22:17:24]   Loading filterscript 'adminCommands.amx'...
+[22:17:24] 
+ Comandos de administrador cargados.
+
+[22:17:24]   Loading filterscript 'playerCommands.amx'...
+[22:17:24] 
+ Comandos de jugadores cargados.
+
+[22:17:25]   Loading filterscript 'pickup.amx'...
+[22:17:25] 
+ Pickups cargados
+
+[22:17:25] 
+ Cree un pickup 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un pickup 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un pickup 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un pickup 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25] 
+ Cree un Text Label 
+
+[22:17:25]   Loading filterscript 'trabajos.amx'...
+[22:17:25] 
+ Trabajos cargados
+
+[22:17:25]   Loading filterscript 'vehiculos.amx'...
+[22:17:25] 
+ Vehículos cargados
+
+[22:17:25]   Loaded 5 filterscripts.
+
+[22:17:25] Conexión exitosa
+[22:17:25] Cargué 26 vehículos.
+[22:17:25] 
+----------------------------------
+[22:17:25] San Quebrado V Beta 0.03
+[22:17:25] ----------------------------------
+
+[22:17:25] Number of vehicle models: 10
+Console input: exit
+[22:17:28] --- Server Shutting Down.
+[22:17:28] plugin.mysql: Unloading plugin...
+[22:17:28] plugin.mysql: Plugin unloaded.
+[22:17:28] 
+
+[22:17:28]  ===============================
+
+[22:17:28]      sscanf plugin unloaded.    
+
+[22:17:28]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:18:52] 
+[22:18:52] Server Plugins
+[22:18:52] --------------
+[22:18:52]  Loading plugin: mysql
+[22:18:52]  >> plugin.mysql: R39-6 successfully loaded.
+[22:18:52]   Loaded.
+[22:18:52]  Loading plugin: sscanf
+[22:18:52] 
+
+[22:18:52]  ===============================
+
+[22:18:52]       sscanf plugin loaded.     
+
+[22:18:52]          Version:  2.8.2        
+
+[22:18:52]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:18:52]  ===============================
+
+[22:18:52]   Loaded.
+[22:18:52]  Loaded 2 plugins.
+
+[22:18:52] 
+[22:18:52] Filterscripts
+[22:18:52] ---------------
+[22:18:52]   Loading filterscript 'adminCommands.amx'...
+[22:18:52] 
+ Comandos de administrador cargados.
+
+[22:18:52]   Loading filterscript 'playerCommands.amx'...
+[22:18:52] 
+ Comandos de jugadores cargados.
+
+[22:18:52]   Loading filterscript 'pickup.amx'...
+[22:18:52] 
+ Pickups cargados
+
+[22:18:52] 
+ Cree un pickup 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un pickup 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un pickup 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un pickup 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52] 
+ Cree un Text Label 
+
+[22:18:52]   Loading filterscript 'trabajos.amx'...
+[22:18:52] 
+ Trabajos cargados
+
+[22:18:52]   Loading filterscript 'vehiculos.amx'...
+[22:18:52] 
+ Vehículos cargados
+
+[22:18:52]   Loaded 5 filterscripts.
+
+[22:18:52] Conexión exitosa
+[22:18:52] Cargué 26 vehículos.
+[22:18:52] 
+----------------------------------
+[22:18:52] San Quebrado V Beta 0.03
+[22:18:52] ----------------------------------
+
+[22:18:52] Number of vehicle models: 10
+[22:19:51] [connection] 127.0.0.1:57922 requests connection cookie.
+[22:19:52] [connection] incoming connection: 127.0.0.1:57922 id: 0
+[22:19:53] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:19:56] Creí un vehículo
+[22:19:56] Cree BorderBarraExp
+[22:19:56] Cree BarraExp
+[22:19:56] Cree Experiencia
+[22:19:56] BorderBarraExp está visible
+[22:19:56] BarraExp está visible
+[22:19:56] Experiencia está visible
+[22:19:56] XPDraw está visible
+[22:19:56] Actualicí la db (Marcio_Skeight)
+[22:19:56] Actualicí la db (Marcio_Skeight)
+[22:21:21] Actualicí la db (Marcio_Skeight)
+[22:21:25] Vehículo de Marcio_Skeight guardado.
+[22:21:43] Actualicí la db (Marcio_Skeight)
+[22:21:48] Actualicí la db (Marcio_Skeight)
+Console input: exit
+[22:24:50] --- Server Shutting Down.
+[22:24:50] [part] Marcio_Skeight has left the server (0:0)
+[22:24:51] plugin.mysql: Unloading plugin...
+[22:24:51] plugin.mysql: Plugin unloaded.
+[22:24:51] 
+
+[22:24:51]  ===============================
+
+[22:24:51]      sscanf plugin unloaded.    
+
+[22:24:51]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:24:52] 
+[22:24:52] Server Plugins
+[22:24:52] --------------
+[22:24:52]  Loading plugin: mysql
+[22:24:52]  >> plugin.mysql: R39-6 successfully loaded.
+[22:24:52]   Loaded.
+[22:24:52]  Loading plugin: sscanf
+[22:24:52] 
+
+[22:24:52]  ===============================
+
+[22:24:52]       sscanf plugin loaded.     
+
+[22:24:52]          Version:  2.8.2        
+
+[22:24:52]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:24:52]  ===============================
+
+[22:24:52]   Loaded.
+[22:24:52]  Loaded 2 plugins.
+
+[22:24:52] 
+[22:24:52] Filterscripts
+[22:24:52] ---------------
+[22:24:52]   Loading filterscript 'adminCommands.amx'...
+[22:24:52] 
+ Comandos de administrador cargados.
+
+[22:24:52]   Loading filterscript 'playerCommands.amx'...
+[22:24:52] 
+ Comandos de jugadores cargados.
+
+[22:24:52]   Loading filterscript 'pickup.amx'...
+[22:24:52] 
+ Pickups cargados
+
+[22:24:52] 
+ Cree un pickup 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un pickup 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un pickup 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un pickup 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52] 
+ Cree un Text Label 
+
+[22:24:52]   Loading filterscript 'trabajos.amx'...
+[22:24:52] 
+ Trabajos cargados
+
+[22:24:52]   Loading filterscript 'vehiculos.amx'...
+[22:24:52] 
+ Vehículos cargados
+
+[22:24:52]   Loaded 5 filterscripts.
+
+[22:24:52] Conexión exitosa
+[22:24:52] Cargué 26 vehículos.
+[22:24:52] 
+----------------------------------
+[22:24:52] San Quebrado V Beta 0.03
+[22:24:52] ----------------------------------
+
+[22:24:52] Number of vehicle models: 10
+[22:25:17] [connection] 127.0.0.1:59251 requests connection cookie.
+[22:25:18] [connection] incoming connection: 127.0.0.1:59251 id: 0
+[22:25:19] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:25:23] Creí un vehículo
+[22:25:23] Cree BorderBarraExp
+[22:25:23] Cree BarraExp
+[22:25:23] Cree Experiencia
+[22:25:23] BorderBarraExp está visible
+[22:25:23] BarraExp está visible
+[22:25:23] Experiencia está visible
+[22:25:23] XPDraw está visible
+[22:25:24] Actualicí la db (Marcio_Skeight)
+[22:25:24] Actualicí la db (Marcio_Skeight)
+[22:25:40] Actualicí la db (Marcio_Skeight)
+[22:26:38] Actualicí la db (Marcio_Skeight)
+[22:28:33] [part] Marcio_Skeight has left the server (0:1)
+[22:28:33] Se guardaron los datos de: ()
+Console input: exit
+[22:28:36] --- Server Shutting Down.
+[22:28:37] plugin.mysql: Unloading plugin...
+[22:28:37] plugin.mysql: Plugin unloaded.
+[22:28:37] 
+
+[22:28:37]  ===============================
+
+[22:28:37]      sscanf plugin unloaded.    
+
+[22:28:37]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:28:43] 
+[22:28:43] Server Plugins
+[22:28:43] --------------
+[22:28:43]  Loading plugin: mysql
+[22:28:43]  >> plugin.mysql: R39-6 successfully loaded.
+[22:28:43]   Loaded.
+[22:28:43]  Loading plugin: sscanf
+[22:28:43] 
+
+[22:28:43]  ===============================
+
+[22:28:43]       sscanf plugin loaded.     
+
+[22:28:43]          Version:  2.8.2        
+
+[22:28:43]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:28:43]  ===============================
+
+[22:28:43]   Loaded.
+[22:28:43]  Loaded 2 plugins.
+
+[22:28:44] 
+[22:28:44] Filterscripts
+[22:28:44] ---------------
+[22:28:44]   Loading filterscript 'adminCommands.amx'...
+[22:28:44] 
+ Comandos de administrador cargados.
+
+[22:28:44]   Loading filterscript 'playerCommands.amx'...
+[22:28:44] 
+ Comandos de jugadores cargados.
+
+[22:28:44]   Loading filterscript 'pickup.amx'...
+[22:28:44] 
+ Pickups cargados
+
+[22:28:44] 
+ Cree un pickup 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un pickup 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un pickup 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un pickup 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44] 
+ Cree un Text Label 
+
+[22:28:44]   Loading filterscript 'trabajos.amx'...
+[22:28:44] 
+ Trabajos cargados
+
+[22:28:44]   Loading filterscript 'vehiculos.amx'...
+[22:28:44] 
+ Vehículos cargados
+
+[22:28:44]   Loaded 5 filterscripts.
+
+[22:28:44] Conexión exitosa
+[22:28:44] Cargué 26 vehículos.
+[22:28:44] 
+----------------------------------
+[22:28:44] San Quebrado V Beta 0.03
+[22:28:44] ----------------------------------
+
+[22:28:44] Number of vehicle models: 10
+[22:29:03] [connection] 127.0.0.1:55716 requests connection cookie.
+[22:29:04] [connection] incoming connection: 127.0.0.1:55716 id: 0
+[22:29:04] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:29:10] Creí un vehículo
+[22:29:10] Cree BorderBarraExp
+[22:29:10] Cree BarraExp
+[22:29:10] Cree Experiencia
+[22:29:10] BorderBarraExp está visible
+[22:29:10] BarraExp está visible
+[22:29:10] Experiencia está visible
+[22:29:10] XPDraw está visible
+[22:29:10] Actualicí la db (Marcio_Skeight)
+[22:29:10] Actualicí la db (Marcio_Skeight)
+[22:31:06] Actualicí la db (Marcio_Skeight)
+[22:31:18] Actualicí la db (Marcio_Skeight)
+[22:31:20] [part] Marcio_Skeight has left the server (0:1)
+[22:31:20] Se guardaron los datos de: ()
+Console input: exit
+[22:33:11] --- Server Shutting Down.
+[22:33:11] plugin.mysql: Unloading plugin...
+[22:33:11] plugin.mysql: Plugin unloaded.
+[22:33:11] 
+
+[22:33:11]  ===============================
+
+[22:33:11]      sscanf plugin unloaded.    
+
+[22:33:11]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:33:12] 
+[22:33:12] Server Plugins
+[22:33:12] --------------
+[22:33:12]  Loading plugin: mysql
+[22:33:12]  >> plugin.mysql: R39-6 successfully loaded.
+[22:33:12]   Loaded.
+[22:33:12]  Loading plugin: sscanf
+[22:33:12] 
+
+[22:33:12]  ===============================
+
+[22:33:12]       sscanf plugin loaded.     
+
+[22:33:12]          Version:  2.8.2        
+
+[22:33:12]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:33:12]  ===============================
+
+[22:33:12]   Loaded.
+[22:33:12]  Loaded 2 plugins.
+
+[22:33:12] 
+[22:33:12] Filterscripts
+[22:33:12] ---------------
+[22:33:12]   Loading filterscript 'adminCommands.amx'...
+[22:33:12] 
+ Comandos de administrador cargados.
+
+[22:33:12]   Loading filterscript 'playerCommands.amx'...
+[22:33:12] 
+ Comandos de jugadores cargados.
+
+[22:33:12]   Loading filterscript 'pickup.amx'...
+[22:33:12] 
+ Pickups cargados
+
+[22:33:12] 
+ Cree un pickup 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un pickup 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un pickup 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un pickup 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12] 
+ Cree un Text Label 
+
+[22:33:12]   Loading filterscript 'trabajos.amx'...
+[22:33:12] 
+ Trabajos cargados
+
+[22:33:12]   Loading filterscript 'vehiculos.amx'...
+[22:33:12] 
+ Vehículos cargados
+
+[22:33:12]   Loaded 5 filterscripts.
+
+[22:33:12] Conexión exitosa
+[22:33:12] Cargué 26 vehículos.
+[22:33:12] 
+----------------------------------
+[22:33:12] San Quebrado V Beta 0.03
+[22:33:12] ----------------------------------
+
+[22:33:12] Number of vehicle models: 10
+[22:33:32] [connection] 127.0.0.1:51944 requests connection cookie.
+[22:33:33] [connection] incoming connection: 127.0.0.1:51944 id: 0
+[22:33:33] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:33:45] Creí un vehículo
+[22:33:45] Cree BorderBarraExp
+[22:33:45] Cree BarraExp
+[22:33:45] Cree Experiencia
+[22:33:45] BorderBarraExp está visible
+[22:33:45] BarraExp está visible
+[22:33:45] Experiencia está visible
+[22:33:45] XPDraw está visible
+[22:33:45] Actualicí la db (Marcio_Skeight)
+[22:33:46] Actualicí la db (Marcio_Skeight)
+[22:34:35] [part] Marcio_Skeight has left the server (0:1)
+[22:34:35] Se guardaron los datos de: ()
+Console input: exit
+[22:36:33] --- Server Shutting Down.
+[22:36:33] plugin.mysql: Unloading plugin...
+[22:36:33] plugin.mysql: Plugin unloaded.
+[22:36:33] 
+
+[22:36:33]  ===============================
+
+[22:36:33]      sscanf plugin unloaded.    
+
+[22:36:33]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:36:34] 
+[22:36:34] Server Plugins
+[22:36:34] --------------
+[22:36:34]  Loading plugin: mysql
+[22:36:34]  >> plugin.mysql: R39-6 successfully loaded.
+[22:36:34]   Loaded.
+[22:36:34]  Loading plugin: sscanf
+[22:36:34] 
+
+[22:36:34]  ===============================
+
+[22:36:34]       sscanf plugin loaded.     
+
+[22:36:34]          Version:  2.8.2        
+
+[22:36:34]    (c) 2012 Alex "Y_Less" Cole  
+
+[22:36:34]  ===============================
+
+[22:36:34]   Loaded.
+[22:36:34]  Loaded 2 plugins.
+
+[22:36:34] 
+[22:36:34] Filterscripts
+[22:36:34] ---------------
+[22:36:34]   Loading filterscript 'adminCommands.amx'...
+[22:36:34] 
+ Comandos de administrador cargados.
+
+[22:36:34]   Loading filterscript 'playerCommands.amx'...
+[22:36:34] 
+ Comandos de jugadores cargados.
+
+[22:36:34]   Loading filterscript 'pickup.amx'...
+[22:36:34] 
+ Pickups cargados
+
+[22:36:34] 
+ Cree un pickup 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un pickup 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un pickup 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un pickup 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34] 
+ Cree un Text Label 
+
+[22:36:34]   Loading filterscript 'trabajos.amx'...
+[22:36:34] 
+ Trabajos cargados
+
+[22:36:34]   Loading filterscript 'vehiculos.amx'...
+[22:36:34] 
+ Vehículos cargados
+
+[22:36:34]   Loaded 5 filterscripts.
+
+[22:36:34] Conexión exitosa
+[22:36:34] Cargué 26 vehículos.
+[22:36:34] 
+----------------------------------
+[22:36:34] San Quebrado V Beta 0.03
+[22:36:34] ----------------------------------
+
+[22:36:34] Number of vehicle models: 10
+[22:36:58] [connection] 127.0.0.1:53080 requests connection cookie.
+[22:36:59] [connection] incoming connection: 127.0.0.1:53080 id: 0
+[22:36:59] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[22:39:21] Creí un vehículo
+[22:39:21] Cree BorderBarraExp
+[22:39:21] Cree BarraExp
+[22:39:21] Cree Experiencia
+[22:39:21] BorderBarraExp está visible
+[22:39:21] BarraExp está visible
+[22:39:21] Experiencia está visible
+[22:39:21] XPDraw está visible
+[22:39:21] Actualicí la db (Marcio_Skeight)
+[22:39:21] Actualicí la db (Marcio_Skeight)
+[22:39:23] ¶dKickTimer
+[22:39:23] dKickTimer
+[22:39:23] dKickTimer
+[22:40:19] [part] Marcio_Skeight has left the server (0:1)
+[22:40:19] Se guardaron los datos de: ()
+Console input: exit
+[22:40:22] --- Server Shutting Down.
+[22:40:22] plugin.mysql: Unloading plugin...
+[22:40:22] plugin.mysql: Plugin unloaded.
+[22:40:22] 
+
+[22:40:22]  ===============================
+
+[22:40:22]      sscanf plugin unloaded.    
+
+[22:40:22]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:51:12] 
+[23:51:12] Server Plugins
+[23:51:12] --------------
+[23:51:12]  Loading plugin: mysql
+[23:51:12]  >> plugin.mysql: R39-6 successfully loaded.
+[23:51:12]   Loaded.
+[23:51:12]  Loading plugin: sscanf
+[23:51:12] 
+
+[23:51:12]  ===============================
+
+[23:51:12]       sscanf plugin loaded.     
+
+[23:51:12]          Version:  2.8.2        
+
+[23:51:12]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:51:12]  ===============================
+
+[23:51:12]   Loaded.
+[23:51:12]  Loaded 2 plugins.
+
+[23:51:13] 
+[23:51:13] Filterscripts
+[23:51:13] ---------------
+[23:51:13]   Loading filterscript 'adminCommands.amx'...
+[23:51:13] 
+ Comandos de administrador cargados.
+
+[23:51:13]   Loading filterscript 'playerCommands.amx'...
+[23:51:13] 
+ Comandos de jugadores cargados.
+
+[23:51:13]   Loading filterscript 'pickup.amx'...
+[23:51:13] 
+ Pickups cargados
+
+[23:51:13] 
+ Cree un pickup 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un pickup 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un pickup 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un pickup 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13] 
+ Cree un Text Label 
+
+[23:51:13]   Loading filterscript 'trabajos.amx'...
+[23:51:13] 
+ Trabajos cargados
+
+[23:51:13]   Loading filterscript 'vehiculos.amx'...
+[23:51:13] 
+ Vehículos cargados
+
+[23:51:13]   Loaded 5 filterscripts.
+
+[23:51:13] Conexión exitosa
+[23:51:13] Cargué 26 vehículos.
+[23:51:13] 
+----------------------------------
+[23:51:13] San Quebrado V Beta 0.03
+[23:51:13] ----------------------------------
+
+[23:51:13] Number of vehicle models: 10
+[23:51:54] [connection] 127.0.0.1:49618 requests connection cookie.
+[23:51:55] [connection] incoming connection: 127.0.0.1:49618 id: 0
+[23:51:55] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:51:57] Creí un vehículo
+[23:51:57] Cree BorderBarraExp
+[23:51:57] Cree BarraExp
+[23:51:57] Cree Experiencia
+[23:51:57] BorderBarraExp está visible
+[23:51:57] BarraExp está visible
+[23:51:57] Experiencia está visible
+[23:51:57] XPDraw está visible
+[23:51:58] Actualicí la db (Marcio_Skeight)
+[23:51:58] Actualicí la db (Marcio_Skeight)
+[23:52:05] El sujeto tiene un skin de camionero
+[23:52:58] [part] Marcio_Skeight has left the server (0:1)
+[23:52:58] Se guardaron los datos de: ()
+Console input: exit
+[23:53:45] --- Server Shutting Down.
+[23:53:45] plugin.mysql: Unloading plugin...
+[23:53:45] plugin.mysql: Plugin unloaded.
+[23:53:45] 
+
+[23:53:45]  ===============================
+
+[23:53:45]      sscanf plugin unloaded.    
+
+[23:53:45]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:53:59] 
+[23:53:59] Server Plugins
+[23:53:59] --------------
+[23:53:59]  Loading plugin: mysql
+[23:53:59]  >> plugin.mysql: R39-6 successfully loaded.
+[23:53:59]   Loaded.
+[23:53:59]  Loading plugin: sscanf
+[23:53:59] 
+
+[23:53:59]  ===============================
+
+[23:53:59]       sscanf plugin loaded.     
+
+[23:53:59]          Version:  2.8.2        
+
+[23:53:59]    (c) 2012 Alex "Y_Less" Cole  
+
+[23:53:59]  ===============================
+
+[23:53:59]   Loaded.
+[23:53:59]  Loaded 2 plugins.
+
+[23:53:59] 
+[23:53:59] Filterscripts
+[23:53:59] ---------------
+[23:53:59]   Loading filterscript 'adminCommands.amx'...
+[23:53:59] 
+ Comandos de administrador cargados.
+
+[23:53:59]   Loading filterscript 'playerCommands.amx'...
+[23:53:59] 
+ Comandos de jugadores cargados.
+
+[23:53:59]   Loading filterscript 'pickup.amx'...
+[23:53:59] 
+ Pickups cargados
+
+[23:53:59] 
+ Cree un pickup 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un pickup 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un pickup 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un pickup 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59] 
+ Cree un Text Label 
+
+[23:53:59]   Loading filterscript 'trabajos.amx'...
+[23:53:59] 
+ Trabajos cargados
+
+[23:53:59]   Loading filterscript 'vehiculos.amx'...
+[23:53:59] 
+ Vehículos cargados
+
+[23:53:59]   Loaded 5 filterscripts.
+
+[23:53:59] Conexión exitosa
+[23:53:59] Cargué 26 vehículos.
+[23:53:59] 
+----------------------------------
+[23:53:59] San Quebrado V Beta 0.03
+[23:53:59] ----------------------------------
+
+[23:53:59] Number of vehicle models: 10
+[23:54:19] [connection] 127.0.0.1:56583 requests connection cookie.
+[23:54:20] [connection] incoming connection: 127.0.0.1:56583 id: 0
+[23:54:20] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[23:54:23] Creí un vehículo
+[23:54:23] Cree BorderBarraExp
+[23:54:23] Cree BarraExp
+[23:54:23] Cree Experiencia
+[23:54:23] BorderBarraExp está visible
+[23:54:23] BarraExp está visible
+[23:54:23] Experiencia está visible
+[23:54:23] XPDraw está visible
+[23:54:23] Actualicí la db (Marcio_Skeight)
+[23:54:23] Actualicí la db (Marcio_Skeight)
+[23:54:25] El sujeto tiene un skin de camionero
+[23:54:52] [part] Marcio_Skeight has left the server (0:1)
+[23:54:53] Se guardaron los datos de: ()
+Console input: exit
+[00:10:14] --- Server Shutting Down.
+[00:10:14] plugin.mysql: Unloading plugin...
+[00:10:14] plugin.mysql: Plugin unloaded.
+[00:10:14] 
+
+[00:10:14]  ===============================
+
+[00:10:14]      sscanf plugin unloaded.    
+
+[00:10:14]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:10:15] 
+[00:10:15] Server Plugins
+[00:10:15] --------------
+[00:10:15]  Loading plugin: mysql
+[00:10:15]  >> plugin.mysql: R39-6 successfully loaded.
+[00:10:15]   Loaded.
+[00:10:15]  Loading plugin: sscanf
+[00:10:15] 
+
+[00:10:15]  ===============================
+
+[00:10:15]       sscanf plugin loaded.     
+
+[00:10:15]          Version:  2.8.2        
+
+[00:10:15]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:10:15]  ===============================
+
+[00:10:15]   Loaded.
+[00:10:15]  Loaded 2 plugins.
+
+[00:10:15] 
+[00:10:15] Filterscripts
+[00:10:15] ---------------
+[00:10:15]   Loading filterscript 'adminCommands.amx'...
+[00:10:15] 
+ Comandos de administrador cargados.
+
+[00:10:15]   Loading filterscript 'playerCommands.amx'...
+[00:10:15] 
+ Comandos de jugadores cargados.
+
+[00:10:15]   Loading filterscript 'pickup.amx'...
+[00:10:15] 
+ Pickups cargados
+
+[00:10:15] 
+ Cree un pickup 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un pickup 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un pickup 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un pickup 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15] 
+ Cree un Text Label 
+
+[00:10:15]   Loading filterscript 'trabajos.amx'...
+[00:10:15] 
+ Trabajos cargados
+
+[00:10:15]   Loading filterscript 'vehiculos.amx'...
+[00:10:15] 
+ Vehículos cargados
+
+[00:10:15]   Loaded 5 filterscripts.
+
+[00:10:15] Conexión exitosa
+[00:10:15] Cargué 26 vehículos.
+[00:10:15] 
+----------------------------------
+[00:10:15] San Quebrado V Beta 0.03
+[00:10:15] ----------------------------------
+
+[00:10:15] Number of vehicle models: 10
+[00:10:34] [connection] 127.0.0.1:57370 requests connection cookie.
+[00:10:35] [connection] incoming connection: 127.0.0.1:57370 id: 0
+[00:10:36] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:10:38] Creí un vehículo
+[00:10:38] Cree BorderBarraExp
+[00:10:38] Cree BarraExp
+[00:10:38] Cree Experiencia
+[00:10:38] BorderBarraExp está visible
+[00:10:38] BarraExp está visible
+[00:10:38] Experiencia está visible
+[00:10:38] XPDraw está visible
+[00:10:38] Actualicí la db (Marcio_Skeight)
+[00:10:38] Actualicí la db (Marcio_Skeight)
+[00:12:48] [part] Marcio_Skeight has left the server (0:1)
+[00:12:48] Se guardaron los datos de: ()
+Console input: exit
+[00:12:55] --- Server Shutting Down.
+[00:12:55] plugin.mysql: Unloading plugin...
+[00:12:55] plugin.mysql: Plugin unloaded.
+[00:12:55] 
+
+[00:12:55]  ===============================
+
+[00:12:55]      sscanf plugin unloaded.    
+
+[00:12:55]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:12:57] 
+[00:12:57] Server Plugins
+[00:12:57] --------------
+[00:12:57]  Loading plugin: mysql
+[00:12:57]  >> plugin.mysql: R39-6 successfully loaded.
+[00:12:57]   Loaded.
+[00:12:57]  Loading plugin: sscanf
+[00:12:57] 
+
+[00:12:57]  ===============================
+
+[00:12:57]       sscanf plugin loaded.     
+
+[00:12:57]          Version:  2.8.2        
+
+[00:12:57]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:12:57]  ===============================
+
+[00:12:57]   Loaded.
+[00:12:57]  Loaded 2 plugins.
+
+[00:12:57] 
+[00:12:57] Filterscripts
+[00:12:57] ---------------
+[00:12:57]   Loading filterscript 'adminCommands.amx'...
+[00:12:57] 
+ Comandos de administrador cargados.
+
+[00:12:57]   Loading filterscript 'playerCommands.amx'...
+[00:12:57] 
+ Comandos de jugadores cargados.
+
+[00:12:57]   Loading filterscript 'pickup.amx'...
+[00:12:57] 
+ Pickups cargados
+
+[00:12:57] 
+ Cree un pickup 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un pickup 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un pickup 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un pickup 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57] 
+ Cree un Text Label 
+
+[00:12:57]   Loading filterscript 'trabajos.amx'...
+[00:12:57] 
+ Trabajos cargados
+
+[00:12:57]   Loading filterscript 'vehiculos.amx'...
+[00:12:57] 
+ Vehículos cargados
+
+[00:12:57]   Loaded 5 filterscripts.
+
+[00:12:57] Conexión exitosa
+[00:12:57] Cargué 26 vehículos.
+[00:12:57] 
+----------------------------------
+[00:12:57] San Quebrado V Beta 0.03
+[00:12:57] ----------------------------------
+
+[00:12:57] Number of vehicle models: 10
+[00:13:19] [connection] 127.0.0.1:60916 requests connection cookie.
+[00:13:20] [connection] incoming connection: 127.0.0.1:60916 id: 0
+[00:13:20] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:13:23] Creí un vehículo
+[00:13:23] Cree BorderBarraExp
+[00:13:23] Cree BarraExp
+[00:13:23] Cree Experiencia
+[00:13:23] BorderBarraExp está visible
+[00:13:23] BarraExp está visible
+[00:13:23] Experiencia está visible
+[00:13:23] XPDraw está visible
+[00:13:23] Actualicí la db (Marcio_Skeight)
+[00:13:23] Actualicí la db (Marcio_Skeight)
+[00:13:26] entré al for
+[00:13:26] salí del for
+[00:13:26] entré al for
+[00:13:26] salí del for
+[00:13:26] entré al for
+[00:13:26] salí del for
+[00:13:38] entré al for
+[00:13:38] salí del for
+[00:13:38] entré al for
+[00:13:38] salí del for
+[00:13:38] entré al for
+[00:13:38] salí del for
+[00:15:19] [part] Marcio_Skeight has left the server (0:1)
+[00:15:19] Se guardaron los datos de: ()
+Console input: exit
+[00:15:27] --- Server Shutting Down.
+[00:15:27] plugin.mysql: Unloading plugin...
+[00:15:27] plugin.mysql: Plugin unloaded.
+[00:15:27] 
+
+[00:15:27]  ===============================
+
+[00:15:27]      sscanf plugin unloaded.    
+
+[00:15:27]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:15:28] 
+[00:15:28] Server Plugins
+[00:15:28] --------------
+[00:15:28]  Loading plugin: mysql
+[00:15:28]  >> plugin.mysql: R39-6 successfully loaded.
+[00:15:28]   Loaded.
+[00:15:28]  Loading plugin: sscanf
+[00:15:28] 
+
+[00:15:28]  ===============================
+
+[00:15:28]       sscanf plugin loaded.     
+
+[00:15:28]          Version:  2.8.2        
+
+[00:15:28]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:15:28]  ===============================
+
+[00:15:28]   Loaded.
+[00:15:28]  Loaded 2 plugins.
+
+[00:15:28] 
+[00:15:28] Filterscripts
+[00:15:28] ---------------
+[00:15:28]   Loading filterscript 'adminCommands.amx'...
+[00:15:28] 
+ Comandos de administrador cargados.
+
+[00:15:28]   Loading filterscript 'playerCommands.amx'...
+[00:15:28] 
+ Comandos de jugadores cargados.
+
+[00:15:28]   Loading filterscript 'pickup.amx'...
+[00:15:28] 
+ Pickups cargados
+
+[00:15:28] 
+ Cree un pickup 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un pickup 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un pickup 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un pickup 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28] 
+ Cree un Text Label 
+
+[00:15:28]   Loading filterscript 'trabajos.amx'...
+[00:15:28] 
+ Trabajos cargados
+
+[00:15:28]   Loading filterscript 'vehiculos.amx'...
+[00:15:28] 
+ Vehículos cargados
+
+[00:15:28]   Loaded 5 filterscripts.
+
+[00:15:28] Conexión exitosa
+[00:15:28] Cargué 26 vehículos.
+[00:15:28] 
+----------------------------------
+[00:15:28] San Quebrado V Beta 0.03
+[00:15:28] ----------------------------------
+
+[00:15:28] Number of vehicle models: 10
+[00:15:49] [connection] 127.0.0.1:58212 requests connection cookie.
+[00:15:50] [connection] incoming connection: 127.0.0.1:58212 id: 0
+[00:15:50] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:15:54] Creí un vehículo
+[00:15:55] Cree BorderBarraExp
+[00:15:55] Cree BarraExp
+[00:15:55] Cree Experiencia
+[00:15:55] BorderBarraExp está visible
+[00:15:55] BarraExp está visible
+[00:15:55] Experiencia está visible
+[00:15:55] XPDraw está visible
+[00:15:55] Actualicí la db (Marcio_Skeight)
+[00:15:55] Actualicí la db (Marcio_Skeight)
+[00:15:57] entré al for
+[00:15:57] salí del for
+[00:15:57] entré al for
+[00:15:57] salí del for
+[00:15:57] entré al for
+[00:15:57] salí del for
+Console input: exit
+[00:20:16] --- Server Shutting Down.
+[00:20:17] [part] Marcio_Skeight has left the server (0:0)
+[00:20:17] plugin.mysql: Unloading plugin...
+[00:20:17] plugin.mysql: Plugin unloaded.
+[00:20:17] 
+
+[00:20:17]  ===============================
+
+[00:20:17]      sscanf plugin unloaded.    
+
+[00:20:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:20:23] 
+[00:20:23] Server Plugins
+[00:20:23] --------------
+[00:20:23]  Loading plugin: mysql
+[00:20:23]  >> plugin.mysql: R39-6 successfully loaded.
+[00:20:23]   Loaded.
+[00:20:23]  Loading plugin: sscanf
+[00:20:23] 
+
+[00:20:23]  ===============================
+
+[00:20:23]       sscanf plugin loaded.     
+
+[00:20:23]          Version:  2.8.2        
+
+[00:20:23]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:20:23]  ===============================
+
+[00:20:23]   Loaded.
+[00:20:23]  Loaded 2 plugins.
+
+[00:20:23] 
+[00:20:23] Filterscripts
+[00:20:23] ---------------
+[00:20:23]   Loading filterscript 'adminCommands.amx'...
+[00:20:23] 
+ Comandos de administrador cargados.
+
+[00:20:23]   Loading filterscript 'playerCommands.amx'...
+[00:20:23] 
+ Comandos de jugadores cargados.
+
+[00:20:23]   Loading filterscript 'pickup.amx'...
+[00:20:23] 
+ Pickups cargados
+
+[00:20:23] 
+ Cree un pickup 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un pickup 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un pickup 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un pickup 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23] 
+ Cree un Text Label 
+
+[00:20:23]   Loading filterscript 'trabajos.amx'...
+[00:20:23] 
+ Trabajos cargados
+
+[00:20:23]   Loading filterscript 'vehiculos.amx'...
+[00:20:23] 
+ Vehículos cargados
+
+[00:20:23]   Loaded 5 filterscripts.
+
+[00:20:23] Conexión exitosa
+[00:20:23] Cargué 26 vehículos.
+[00:20:23] 
+----------------------------------
+[00:20:23] San Quebrado V Beta 0.03
+[00:20:23] ----------------------------------
+
+[00:20:23] Number of vehicle models: 10
+[00:20:44] [connection] 127.0.0.1:56713 requests connection cookie.
+[00:20:45] [connection] incoming connection: 127.0.0.1:56713 id: 0
+[00:20:45] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:20:48] Creí un vehículo
+[00:20:48] Cree BorderBarraExp
+[00:20:48] Cree BarraExp
+[00:20:48] Cree Experiencia
+[00:20:48] BorderBarraExp está visible
+[00:20:48] BarraExp está visible
+[00:20:48] Experiencia está visible
+[00:20:48] XPDraw está visible
+[00:20:48] Actualicí la db (Marcio_Skeight)
+[00:20:48] Actualicí la db (Marcio_Skeight)
+[00:20:50] entré al for
+[00:20:50] salí del for
+[00:20:50] entré al for
+[00:20:50] salí del for
+[00:20:50] entré al for
+[00:20:50] salí del for
+[00:21:00] [part] Marcio_Skeight has left the server (0:1)
+[00:21:00] Se guardaron los datos de: ()
+Console input: exit
+[00:21:57] --- Server Shutting Down.
+[00:21:57] plugin.mysql: Unloading plugin...
+[00:21:57] plugin.mysql: Plugin unloaded.
+[00:21:57] 
+
+[00:21:57]  ===============================
+
+[00:21:57]      sscanf plugin unloaded.    
+
+[00:21:57]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:21:58] 
+[00:21:58] Server Plugins
+[00:21:58] --------------
+[00:21:58]  Loading plugin: mysql
+[00:21:58]  >> plugin.mysql: R39-6 successfully loaded.
+[00:21:58]   Loaded.
+[00:21:58]  Loading plugin: sscanf
+[00:21:58] 
+
+[00:21:58]  ===============================
+
+[00:21:58]       sscanf plugin loaded.     
+
+[00:21:58]          Version:  2.8.2        
+
+[00:21:58]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:21:58]  ===============================
+
+[00:21:58]   Loaded.
+[00:21:58]  Loaded 2 plugins.
+
+[00:21:58] 
+[00:21:58] Filterscripts
+[00:21:58] ---------------
+[00:21:58]   Loading filterscript 'adminCommands.amx'...
+[00:21:58] 
+ Comandos de administrador cargados.
+
+[00:21:58]   Loading filterscript 'playerCommands.amx'...
+[00:21:58] 
+ Comandos de jugadores cargados.
+
+[00:21:58]   Loading filterscript 'pickup.amx'...
+[00:21:58] 
+ Pickups cargados
+
+[00:21:58] 
+ Cree un pickup 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un pickup 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un pickup 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un pickup 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58] 
+ Cree un Text Label 
+
+[00:21:58]   Loading filterscript 'trabajos.amx'...
+[00:21:58] 
+ Trabajos cargados
+
+[00:21:58]   Loading filterscript 'vehiculos.amx'...
+[00:21:58] 
+ Vehículos cargados
+
+[00:21:58]   Loaded 5 filterscripts.
+
+[00:21:58] Conexión exitosa
+[00:21:58] Cargué 26 vehículos.
+[00:21:58] 
+----------------------------------
+[00:21:58] San Quebrado V Beta 0.03
+[00:21:58] ----------------------------------
+
+[00:21:58] Number of vehicle models: 10
+[00:22:19] [connection] 127.0.0.1:53600 requests connection cookie.
+[00:22:20] [connection] incoming connection: 127.0.0.1:53600 id: 0
+[00:22:20] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:22:23] Creí un vehículo
+[00:22:23] Cree BorderBarraExp
+[00:22:23] Cree BarraExp
+[00:22:23] Cree Experiencia
+[00:22:23] BorderBarraExp está visible
+[00:22:23] BarraExp está visible
+[00:22:23] Experiencia está visible
+[00:22:23] XPDraw está visible
+[00:22:23] Actualicí la db (Marcio_Skeight)
+[00:22:23] Actualicí la db (Marcio_Skeight)
+[00:22:25] 182
+[00:22:25] entré al for
+[00:22:25] salí del for
+[00:22:25] 261
+[00:22:25] entré al for
+[00:22:25] salí del for
+[00:22:25] 100
+[00:22:25] entré al for
+[00:22:25] salí del for
+[00:22:29] [part] Marcio_Skeight has left the server (0:1)
+[00:22:29] Se guardaron los datos de: ()
+Console input: exit
+[00:22:42] --- Server Shutting Down.
+[00:22:42] plugin.mysql: Unloading plugin...
+[00:22:42] plugin.mysql: Plugin unloaded.
+[00:22:42] 
+
+[00:22:42]  ===============================
+
+[00:22:42]      sscanf plugin unloaded.    
+
+[00:22:42]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:26:52] 
+[00:26:52] Server Plugins
+[00:26:52] --------------
+[00:26:52]  Loading plugin: mysql
+[00:26:52]  >> plugin.mysql: R39-6 successfully loaded.
+[00:26:52]   Loaded.
+[00:26:52]  Loading plugin: sscanf
+[00:26:52] 
+
+[00:26:52]  ===============================
+
+[00:26:52]       sscanf plugin loaded.     
+
+[00:26:52]          Version:  2.8.2        
+
+[00:26:52]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:26:52]  ===============================
+
+[00:26:52]   Loaded.
+[00:26:52]  Loaded 2 plugins.
+
+[00:26:52] 
+[00:26:52] Filterscripts
+[00:26:52] ---------------
+[00:26:52]   Loading filterscript 'adminCommands.amx'...
+[00:26:52] 
+ Comandos de administrador cargados.
+
+[00:26:52]   Loading filterscript 'playerCommands.amx'...
+[00:26:52] 
+ Comandos de jugadores cargados.
+
+[00:26:52]   Loading filterscript 'pickup.amx'...
+[00:26:52] 
+ Pickups cargados
+
+[00:26:52] 
+ Cree un pickup 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un pickup 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un pickup 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un Text Label 
+
+[00:26:52] 
+ Cree un pickup 
+
+[00:26:53] 
+ Cree un Text Label 
+
+[00:26:53] 
+ Cree un Text Label 
+
+[00:26:53] 
+ Cree un Text Label 
+
+[00:26:53]   Loading filterscript 'trabajos.amx'...
+[00:26:53] 
+ Trabajos cargados
+
+[00:26:53]   Loading filterscript 'vehiculos.amx'...
+[00:26:53] 
+ Vehículos cargados
+
+[00:26:53]   Loaded 5 filterscripts.
+
+[00:26:53] Conexión exitosa
+[00:26:53] Cargué 26 vehículos.
+[00:26:53] 
+----------------------------------
+[00:26:53] San Quebrado V Beta 0.03
+[00:26:53] ----------------------------------
+
+[00:26:53] Number of vehicle models: 10
+[00:27:14] [connection] 127.0.0.1:57834 requests connection cookie.
+[00:27:15] [connection] incoming connection: 127.0.0.1:57834 id: 0
+[00:27:15] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:27:23] Creí un vehículo
+[00:27:23] Cree BorderBarraExp
+[00:27:23] Cree BarraExp
+[00:27:23] Cree Experiencia
+[00:27:23] BorderBarraExp está visible
+[00:27:23] BarraExp está visible
+[00:27:23] Experiencia está visible
+[00:27:23] XPDraw está visible
+[00:27:23] Actualicí la db (Marcio_Skeight)
+[00:27:24] Actualicí la db (Marcio_Skeight)
+[00:27:26] 182
+[00:27:26] entré al for
+[00:27:26] salí del for
+[00:27:26] 261
+[00:27:26] entré al for
+[00:27:26] salí del for
+[00:27:26] 100
+[00:27:26] entré al for
+[00:27:26] entré al if
+[00:27:31] [part] Marcio_Skeight has left the server (0:1)
+[00:27:31] Se guardaron los datos de: ()
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57837 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:28:57] [connection] 127.0.0.1:57838 requests connection cookie.
+[00:29:00] [connection] incoming connection: 127.0.0.1:57839 id: 0
+[00:29:01] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:29:03] Creí un vehículo
+[00:29:03] Cree BorderBarraExp
+[00:29:03] Cree BarraExp
+[00:29:03] Cree Experiencia
+[00:29:03] BorderBarraExp está visible
+[00:29:03] BarraExp está visible
+[00:29:03] Experiencia está visible
+[00:29:03] XPDraw está visible
+[00:29:03] Actualicí la db (Marcio_Skeight)
+[00:29:03] Actualicí la db (Marcio_Skeight)
+[00:29:04] 182
+[00:29:04] entré al for
+[00:29:04] salí del for
+[00:29:04] 261
+[00:29:04] entré al for
+[00:29:04] salí del for
+[00:29:04] 100
+[00:29:04] entré al for
+[00:29:04] salí del for
+[00:29:11] 182
+[00:29:11] entré al for
+[00:29:11] salí del for
+[00:29:11] 261
+[00:29:11] entré al for
+[00:29:11] salí del for
+[00:29:11] 100
+[00:29:11] entré al for
+[00:29:11] salí del for
+[00:29:19] 182
+[00:29:19] entré al for
+[00:29:19] salí del for
+[00:29:19] 261
+[00:29:19] entré al for
+[00:29:19] salí del for
+[00:29:19] 100
+[00:29:19] entré al for
+[00:29:19] salí del for
+[00:29:23] Actualicí la db (Marcio_Skeight)
+[00:29:24] 182
+[00:29:24] entré al for
+[00:29:24] salí del for
+[00:29:24] 261
+[00:29:24] entré al for
+[00:29:24] salí del for
+[00:29:24] 100
+[00:29:24] entré al for
+[00:29:24] salí del for
+[00:29:32] Actualicí la db (Marcio_Skeight)
+[00:29:35] 182
+[00:29:35] entré al for
+[00:29:35] salí del for
+[00:29:35] 261
+[00:29:35] entré al for
+[00:29:35] entré al if
+[00:29:39] 182
+[00:29:39] entré al for
+[00:29:39] salí del for
+[00:29:39] 261
+[00:29:39] entré al for
+[00:29:39] entré al if
+[00:29:40] 182
+[00:29:40] entré al for
+[00:29:40] salí del for
+[00:29:40] 261
+[00:29:40] entré al for
+[00:29:40] entré al if
+[00:29:40] 182
+[00:29:40] entré al for
+[00:29:40] salí del for
+[00:29:40] 261
+[00:29:40] entré al for
+[00:29:40] entré al if
+[00:29:41] 182
+[00:29:41] entré al for
+[00:29:41] salí del for
+[00:29:41] 261
+[00:29:41] entré al for
+[00:29:41] entré al if
+[00:29:41] 182
+[00:29:41] entré al for
+[00:29:41] salí del for
+[00:29:41] 261
+[00:29:41] entré al for
+[00:29:41] entré al if
+[00:29:42] 182
+[00:29:42] entré al for
+[00:29:42] salí del for
+[00:29:42] 261
+[00:29:42] entré al for
+[00:29:42] entré al if
+[00:29:42] 182
+[00:29:42] entré al for
+[00:29:42] salí del for
+[00:29:42] 261
+[00:29:42] entré al for
+[00:29:42] entré al if
+[00:29:43] 182
+[00:29:43] entré al for
+[00:29:43] salí del for
+[00:29:43] 261
+[00:29:43] entré al for
+[00:29:43] entré al if
+[00:29:43] 182
+[00:29:43] entré al for
+[00:29:43] salí del for
+[00:29:43] 261
+[00:29:43] entré al for
+[00:29:43] entré al if
+[00:29:43] 182
+[00:29:43] entré al for
+[00:29:43] salí del for
+[00:29:43] 261
+[00:29:43] entré al for
+[00:29:43] entré al if
+[00:29:44] 182
+[00:29:44] entré al for
+[00:29:44] salí del for
+[00:29:44] 261
+[00:29:44] entré al for
+[00:29:44] entré al if
+[00:29:44] 182
+[00:29:44] entré al for
+[00:29:44] salí del for
+[00:29:44] 261
+[00:29:44] entré al for
+[00:29:44] entré al if
+[00:29:47] 182
+[00:29:47] entré al for
+[00:29:47] salí del for
+[00:29:47] 261
+[00:29:47] entré al for
+[00:29:47] entré al if
+[00:29:55] Actualicí la db (Marcio_Skeight)
+[00:29:56] 182
+[00:29:56] entré al for
+[00:29:56] salí del for
+[00:29:56] 261
+[00:29:56] entré al for
+[00:29:56] salí del for
+[00:29:56] 100
+[00:29:56] entré al for
+[00:29:56] salí del for
+[00:29:57] 182
+[00:29:57] entré al for
+[00:29:57] salí del for
+[00:29:57] 261
+[00:29:57] entré al for
+[00:29:57] salí del for
+[00:29:57] 100
+[00:29:57] entré al for
+[00:29:57] salí del for
+[00:30:04] Actualicí la db (Marcio_Skeight)
+[00:30:05] 182
+[00:30:05] entré al for
+[00:30:05] salí del for
+[00:30:05] 261
+[00:30:05] entré al for
+[00:30:05] entré al if
+[00:30:07] 182
+[00:30:07] entré al for
+[00:30:07] salí del for
+[00:30:07] 261
+[00:30:07] entré al for
+[00:30:07] entré al if
+[00:30:11] Actualicí la db (Marcio_Skeight)
+[00:30:14] Actualicí la db (Marcio_Skeight)
+[00:30:16] 182
+[00:30:16] entré al for
+[00:30:16] salí del for
+[00:30:16] 261
+[00:30:16] entré al for
+[00:30:16] salí del for
+[00:30:16] 100
+[00:30:16] entré al for
+[00:30:16] entré al if
+[00:30:18] [part] Marcio_Skeight has left the server (0:1)
+[00:30:18] Se guardaron los datos de: ()
+Console input: exit
+[00:31:17] --- Server Shutting Down.
+[00:31:17] plugin.mysql: Unloading plugin...
+[00:31:17] plugin.mysql: Plugin unloaded.
+[00:31:17] 
+
+[00:31:17]  ===============================
+
+[00:31:17]      sscanf plugin unloaded.    
+
+[00:31:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:31:27] 
+[00:31:27] Server Plugins
+[00:31:27] --------------
+[00:31:27]  Loading plugin: mysql
+[00:31:27]  >> plugin.mysql: R39-6 successfully loaded.
+[00:31:27]   Loaded.
+[00:31:27]  Loading plugin: sscanf
+[00:31:27] 
+
+[00:31:27]  ===============================
+
+[00:31:27]       sscanf plugin loaded.     
+
+[00:31:27]          Version:  2.8.2        
+
+[00:31:27]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:31:27]  ===============================
+
+[00:31:27]   Loaded.
+[00:31:27]  Loaded 2 plugins.
+
+[00:31:27] 
+[00:31:27] Filterscripts
+[00:31:27] ---------------
+[00:31:27]   Loading filterscript 'adminCommands.amx'...
+[00:31:27] 
+ Comandos de administrador cargados.
+
+[00:31:27]   Loading filterscript 'playerCommands.amx'...
+[00:31:27] 
+ Comandos de jugadores cargados.
+
+[00:31:27]   Loading filterscript 'pickup.amx'...
+[00:31:27] 
+ Pickups cargados
+
+[00:31:27] 
+ Cree un pickup 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un pickup 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un pickup 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un pickup 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27] 
+ Cree un Text Label 
+
+[00:31:27]   Loading filterscript 'trabajos.amx'...
+[00:31:27] 
+ Trabajos cargados
+
+[00:31:27]   Loading filterscript 'vehiculos.amx'...
+[00:31:27] 
+ Vehículos cargados
+
+[00:31:27]   Loaded 5 filterscripts.
+
+[00:31:27] Conexión exitosa
+[00:31:27] Cargué 26 vehículos.
+[00:31:27] 
+----------------------------------
+[00:31:27] San Quebrado V Beta 0.03
+[00:31:27] ----------------------------------
+
+[00:31:27] Number of vehicle models: 10
+[00:31:47] [connection] 127.0.0.1:60397 requests connection cookie.
+[00:31:48] [connection] incoming connection: 127.0.0.1:60397 id: 0
+[00:31:48] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:31:50] Creí un vehículo
+[00:31:50] Cree BorderBarraExp
+[00:31:50] Cree BarraExp
+[00:31:50] Cree Experiencia
+[00:31:50] BorderBarraExp está visible
+[00:31:50] BarraExp está visible
+[00:31:50] Experiencia está visible
+[00:31:50] XPDraw está visible
+[00:31:50] Actualicí la db (Marcio_Skeight)
+[00:31:50] Actualicí la db (Marcio_Skeight)
+[00:31:51] entré al for
+[00:31:51] entré al if
+[00:32:00] entré al for
+[00:32:00] entré al if
+[00:32:12] [part] Marcio_Skeight has left the server (0:1)
+[00:32:12] Se guardaron los datos de: ()
+Console input: exit
+[00:32:17] --- Server Shutting Down.
+[00:32:17] plugin.mysql: Unloading plugin...
+[00:32:17] plugin.mysql: Plugin unloaded.
+[00:32:17] 
+
+[00:32:17]  ===============================
+
+[00:32:17]      sscanf plugin unloaded.    
+
+[00:32:17]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:41:49] 
+[00:41:49] Server Plugins
+[00:41:49] --------------
+[00:41:49]  Loading plugin: mysql
+[00:41:49]  >> plugin.mysql: R39-6 successfully loaded.
+[00:41:49]   Loaded.
+[00:41:49]  Loading plugin: sscanf
+[00:41:49] 
+
+[00:41:49]  ===============================
+
+[00:41:49]       sscanf plugin loaded.     
+
+[00:41:49]          Version:  2.8.2        
+
+[00:41:49]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:41:49]  ===============================
+
+[00:41:49]   Loaded.
+[00:41:49]  Loaded 2 plugins.
+
+[00:41:49] 
+[00:41:49] Filterscripts
+[00:41:49] ---------------
+[00:41:49]   Loading filterscript 'adminCommands.amx'...
+[00:41:49] 
+ Comandos de administrador cargados.
+
+[00:41:49]   Loading filterscript 'playerCommands.amx'...
+[00:41:49] 
+ Comandos de jugadores cargados.
+
+[00:41:49]   Loading filterscript 'pickup.amx'...
+[00:41:49] 
+ Pickups cargados
+
+[00:41:49] 
+ Cree un pickup 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un pickup 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un pickup 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un pickup 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49] 
+ Cree un Text Label 
+
+[00:41:49]   Loading filterscript 'trabajos.amx'...
+[00:41:49] 
+ Trabajos cargados
+
+[00:41:49]   Loading filterscript 'vehiculos.amx'...
+[00:41:49] 
+ Vehículos cargados
+
+[00:41:49]   Loaded 5 filterscripts.
+
+[00:41:49] Conexión exitosa
+[00:41:49] Cargué 26 vehículos.
+[00:41:49] 
+----------------------------------
+[00:41:49] San Quebrado V Beta 0.03
+[00:41:49] ----------------------------------
+
+[00:41:49] Number of vehicle models: 10
+[00:43:02] [connection] 127.0.0.1:55580 requests connection cookie.
+[00:43:03] [connection] incoming connection: 127.0.0.1:55580 id: 0
+[00:43:03] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:43:06] Creí un vehículo
+[00:43:06] Cree BorderBarraExp
+[00:43:06] Cree BarraExp
+[00:43:06] Cree Experiencia
+[00:43:06] BorderBarraExp está visible
+[00:43:06] BarraExp está visible
+[00:43:06] Experiencia está visible
+[00:43:06] XPDraw está visible
+[00:43:06] Actualicí la db (Marcio_Skeight)
+[00:43:06] Actualicí la db (Marcio_Skeight)
+[00:43:15] entré al if
+[00:43:15] Actualicí la db (Marcio_Skeight)
+[00:43:58] [part] Marcio_Skeight has left the server (0:1)
+[00:43:58] Se guardaron los datos de: ()
+Console input: exit
+[00:44:19] --- Server Shutting Down.
+[00:44:19] plugin.mysql: Unloading plugin...
+[00:44:19] plugin.mysql: Plugin unloaded.
+[00:44:19] 
+
+[00:44:19]  ===============================
+
+[00:44:19]      sscanf plugin unloaded.    
+
+[00:44:19]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:50:21] 
+[00:50:21] Server Plugins
+[00:50:21] --------------
+[00:50:21]  Loading plugin: mysql
+[00:50:21]  >> plugin.mysql: R39-6 successfully loaded.
+[00:50:21]   Loaded.
+[00:50:21]  Loading plugin: sscanf
+[00:50:21] 
+
+[00:50:21]  ===============================
+
+[00:50:21]       sscanf plugin loaded.     
+
+[00:50:21]          Version:  2.8.2        
+
+[00:50:21]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:50:21]  ===============================
+
+[00:50:21]   Loaded.
+[00:50:21]  Loaded 2 plugins.
+
+[00:50:21] 
+[00:50:21] Filterscripts
+[00:50:21] ---------------
+[00:50:21]   Loading filterscript 'adminCommands.amx'...
+[00:50:21] 
+ Comandos de administrador cargados.
+
+[00:50:21]   Loading filterscript 'playerCommands.amx'...
+[00:50:21] 
+ Comandos de jugadores cargados.
+
+[00:50:21]   Loading filterscript 'pickup.amx'...
+[00:50:21] 
+ Pickups cargados
+
+[00:50:21] 
+ Cree un pickup 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un pickup 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un pickup 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un pickup 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21] 
+ Cree un Text Label 
+
+[00:50:21]   Loading filterscript 'trabajos.amx'...
+[00:50:21] 
+ Trabajos cargados
+
+[00:50:21]   Loading filterscript 'vehiculos.amx'...
+[00:50:21] 
+ Vehículos cargados
+
+[00:50:21]   Loaded 5 filterscripts.
+
+[00:50:21] Conexión exitosa
+[00:50:21] Cargué 26 vehículos.
+[00:50:21] 
+----------------------------------
+[00:50:21] San Quebrado V Beta 0.03
+[00:50:21] ----------------------------------
+
+[00:50:21] Number of vehicle models: 10
+[00:51:14] [connection] 127.0.0.1:49924 requests connection cookie.
+[00:51:15] [connection] incoming connection: 127.0.0.1:49924 id: 0
+[00:51:15] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[00:51:17] Creí un vehículo
+[00:51:17] Cree BorderBarraExp
+[00:51:17] Cree BarraExp
+[00:51:17] Cree Experiencia
+[00:51:17] BorderBarraExp está visible
+[00:51:17] BarraExp está visible
+[00:51:17] Experiencia está visible
+[00:51:17] XPDraw está visible
+[00:51:17] Actualicí la db (Marcio_Skeight)
+[00:51:17] Actualicí la db (Marcio_Skeight)
+[00:51:23] Actualicí la db (Marcio_Skeight)
+[00:51:29] Actualicí la db (Marcio_Skeight)
+[00:53:38] Actualicí la db (Marcio_Skeight)
+[00:54:27] Actualicí la db (Marcio_Skeight)
+[00:54:32] Actualicí la db (Marcio_Skeight)
+[00:56:32] Actualicí la db (Marcio_Skeight)
+[00:56:54] [part] Marcio_Skeight has left the server (0:1)
+[00:56:54] Se guardaron los datos de: ()
+Console input: exit
+[00:59:57] --- Server Shutting Down.
+[00:59:58] plugin.mysql: Unloading plugin...
+[00:59:58] plugin.mysql: Plugin unloaded.
+[00:59:58] 
+
+[00:59:58]  ===============================
+
+[00:59:58]      sscanf plugin unloaded.    
+
+[00:59:58]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:00:11] 
+[01:00:11] Server Plugins
+[01:00:11] --------------
+[01:00:11]  Loading plugin: mysql
+[01:00:11]  >> plugin.mysql: R39-6 successfully loaded.
+[01:00:11]   Loaded.
+[01:00:11]  Loading plugin: sscanf
+[01:00:11] 
+
+[01:00:11]  ===============================
+
+[01:00:11]       sscanf plugin loaded.     
+
+[01:00:11]          Version:  2.8.2        
+
+[01:00:11]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:00:11]  ===============================
+
+[01:00:11]   Loaded.
+[01:00:11]  Loaded 2 plugins.
+
+[01:00:11] 
+[01:00:11] Filterscripts
+[01:00:11] ---------------
+[01:00:11]   Loading filterscript 'adminCommands.amx'...
+[01:00:11] 
+ Comandos de administrador cargados.
+
+[01:00:11]   Loading filterscript 'playerCommands.amx'...
+[01:00:11] 
+ Comandos de jugadores cargados.
+
+[01:00:11]   Loading filterscript 'pickup.amx'...
+[01:00:11] 
+ Pickups cargados
+
+[01:00:11] 
+ Cree un pickup 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un pickup 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un pickup 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un pickup 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11] 
+ Cree un Text Label 
+
+[01:00:11]   Loading filterscript 'trabajos.amx'...
+[01:00:11] 
+ Trabajos cargados
+
+[01:00:11]   Loading filterscript 'vehiculos.amx'...
+[01:00:11] 
+ Vehículos cargados
+
+[01:00:11]   Loaded 5 filterscripts.
+
+[01:00:11] Conexión exitosa
+[01:00:11] Cargué 26 vehículos.
+[01:00:11] 
+----------------------------------
+[01:00:11] San Quebrado V Beta 0.03
+[01:00:11] ----------------------------------
+
+[01:00:11] Number of vehicle models: 10
+[01:00:38] [connection] 127.0.0.1:50671 requests connection cookie.
+[01:00:39] [connection] incoming connection: 127.0.0.1:50671 id: 0
+[01:00:40] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[01:00:42] Creí un vehículo
+[01:00:42] Cree BorderBarraExp
+[01:00:42] Cree BarraExp
+[01:00:42] Cree Experiencia
+[01:00:42] BorderBarraExp está visible
+[01:00:42] BarraExp está visible
+[01:00:42] Experiencia está visible
+[01:00:42] XPDraw está visible
+[01:00:42] Actualicí la db (Marcio_Skeight)
+[01:00:42] Actualicí la db (Marcio_Skeight)
+[01:02:37] Actualicí la db (Marcio_Skeight)
+[01:03:02] [part] Marcio_Skeight has left the server (0:1)
+[01:03:02] Se guardaron los datos de: ()
+Console input: exit
+[01:03:22] --- Server Shutting Down.
+[01:03:22] plugin.mysql: Unloading plugin...
+[01:03:22] plugin.mysql: Plugin unloaded.
+[01:03:22] 
+
+[01:03:22]  ===============================
+
+[01:03:22]      sscanf plugin unloaded.    
+
+[01:03:22]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:29:32] 
+[16:29:32] Server Plugins
+[16:29:32] --------------
+[16:29:32]  Loading plugin: mysql
+[16:29:32]  >> plugin.mysql: R39-6 successfully loaded.
+[16:29:32]   Loaded.
+[16:29:32]  Loading plugin: sscanf
+[16:29:32] 
+
+[16:29:32]  ===============================
+
+[16:29:32]       sscanf plugin loaded.     
+
+[16:29:32]          Version:  2.8.2        
+
+[16:29:32]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:29:32]  ===============================
+
+[16:29:32]   Loaded.
+[16:29:32]  Loaded 2 plugins.
+
+[16:29:32] 
+[16:29:32] Filterscripts
+[16:29:32] ---------------
+[16:29:32]   Loading filterscript 'adminCommands.amx'...
+[16:29:32] 
+ Comandos de administrador cargados.
+
+[16:29:32]   Loading filterscript 'playerCommands.amx'...
+[16:29:32] 
+ Comandos de jugadores cargados.
+
+[16:29:32]   Loading filterscript 'pickup.amx'...
+[16:29:32] 
+ Pickups cargados
+
+[16:29:32] 
+ Cree un pickup 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un pickup 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un pickup 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un pickup 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32] 
+ Cree un Text Label 
+
+[16:29:32]   Loading filterscript 'trabajos.amx'...
+[16:29:32] 
+ Trabajos cargados
+
+[16:29:32]   Loading filterscript 'vehiculos.amx'...
+[16:29:32] 
+ Vehículos cargados
+
+[16:29:32]   Loaded 5 filterscripts.
+
+[16:29:32] Conexión exitosa
+[16:29:32] Cargué 26 vehículos.
+[16:29:32] 
+----------------------------------
+[16:29:32] San Quebrado V Beta 0.03
+[16:29:32] ----------------------------------
+
+[16:29:32] Number of vehicle models: 10
+Console input: exit
+[16:29:58] --- Server Shutting Down.
+[16:29:58] plugin.mysql: Unloading plugin...
+[16:29:58] plugin.mysql: Plugin unloaded.
+[16:29:58] 
+
+[16:29:58]  ===============================
+
+[16:29:58]      sscanf plugin unloaded.    
+
+[16:29:58]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:30:05] 
+[16:30:05] Server Plugins
+[16:30:05] --------------
+[16:30:05]  Loading plugin: mysql
+[16:30:05]  >> plugin.mysql: R39-6 successfully loaded.
+[16:30:05]   Loaded.
+[16:30:05]  Loading plugin: sscanf
+[16:30:05] 
+
+[16:30:05]  ===============================
+
+[16:30:05]       sscanf plugin loaded.     
+
+[16:30:05]          Version:  2.8.2        
+
+[16:30:05]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:30:05]  ===============================
+
+[16:30:05]   Loaded.
+[16:30:05]  Loaded 2 plugins.
+
+[16:30:05] 
+[16:30:05] Filterscripts
+[16:30:05] ---------------
+[16:30:05]   Loading filterscript 'adminCommands.amx'...
+[16:30:05] 
+ Comandos de administrador cargados.
+
+[16:30:05]   Loading filterscript 'playerCommands.amx'...
+[16:30:05] 
+ Comandos de jugadores cargados.
+
+[16:30:05]   Loading filterscript 'pickup.amx'...
+[16:30:05] 
+ Pickups cargados
+
+[16:30:05] 
+ Cree un pickup 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un pickup 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un pickup 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un pickup 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05] 
+ Cree un Text Label 
+
+[16:30:05]   Loading filterscript 'trabajos.amx'...
+[16:30:05] 
+ Trabajos cargados
+
+[16:30:05]   Loading filterscript 'vehiculos.amx'...
+[16:30:05] 
+ Vehículos cargados
+
+[16:30:05]   Loaded 5 filterscripts.
+
+[16:30:05] Conexión exitosa
+[16:30:05] Cargué 26 vehículos.
+[16:30:05] 
+----------------------------------
+[16:30:05] San Quebrado V Beta 0.03
+[16:30:05] ----------------------------------
+
+[16:30:05] Number of vehicle models: 10
+Console input: gmx
+Console input: gmx
+[16:33:45] Conexión exitosa
+[16:33:45] Cargué 52 vehículos.
+[16:33:45] 
+----------------------------------
+[16:33:45] San Quebrado V Beta 0.03
+[16:33:45] ----------------------------------
+
+[16:33:45] Number of vehicle models: 10
+[16:35:10] [connection] 127.0.0.1:51643 requests connection cookie.
+[16:35:11] [connection] incoming connection: 127.0.0.1:51643 id: 0
+[16:35:11] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[16:35:28] Creí un vehículo
+[16:35:28] Cree BorderBarraExp
+[16:35:28] Cree BarraExp
+[16:35:28] Cree Experiencia
+[16:35:28] BorderBarraExp está visible
+[16:35:28] BarraExp está visible
+[16:35:28] Experiencia está visible
+[16:35:28] XPDraw está visible
+[16:35:28] Actualicí la db (Marcio_Skeight)
+[16:35:28] Actualicí la db (Marcio_Skeight)
+[16:37:35] entré al if
+[16:37:35] Actualicí la db (Marcio_Skeight)
+[16:38:09] [part] Marcio_Skeight has left the server (0:1)
+[16:38:09] Se guardaron los datos de: ()
+Console input: exit
+[16:38:30] --- Server Shutting Down.
+[16:38:30] plugin.mysql: Unloading plugin...
+[16:38:30] plugin.mysql: Plugin unloaded.
+[16:38:30] 
+
+[16:38:30]  ===============================
+
+[16:38:30]      sscanf plugin unloaded.    
+
+[16:38:30]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:41:09] 
+[16:41:09] Server Plugins
+[16:41:09] --------------
+[16:41:09]  Loading plugin: mysql
+[16:41:09]  >> plugin.mysql: R39-6 successfully loaded.
+[16:41:09]   Loaded.
+[16:41:09]  Loading plugin: sscanf
+[16:41:09] 
+
+[16:41:09]  ===============================
+
+[16:41:09]       sscanf plugin loaded.     
+
+[16:41:09]          Version:  2.8.2        
+
+[16:41:09]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:41:09]  ===============================
+
+[16:41:09]   Loaded.
+[16:41:09]  Loaded 2 plugins.
+
+[16:41:09] 
+[16:41:09] Filterscripts
+[16:41:09] ---------------
+[16:41:09]   Loading filterscript 'adminCommands.amx'...
+[16:41:09] 
+ Comandos de administrador cargados.
+
+[16:41:09]   Loading filterscript 'playerCommands.amx'...
+[16:41:09] 
+ Comandos de jugadores cargados.
+
+[16:41:09]   Loading filterscript 'pickup.amx'...
+[16:41:09] 
+ Pickups cargados
+
+[16:41:09] 
+ Cree un pickup 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un pickup 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un pickup 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un pickup 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09] 
+ Cree un Text Label 
+
+[16:41:09]   Loading filterscript 'trabajos.amx'...
+[16:41:09] 
+ Trabajos cargados
+
+[16:41:09]   Loading filterscript 'vehiculos.amx'...
+[16:41:09] 
+ Vehículos cargados
+
+[16:41:09]   Loaded 5 filterscripts.
+
+[16:41:09] Conexión exitosa
+[16:41:09] Cargué 26 vehículos.
+[16:41:09] 
+----------------------------------
+[16:41:09] San Quebrado V Beta 0.03
+[16:41:09] ----------------------------------
+
+[16:41:09] Number of vehicle models: 10
+Console input: EXIT
+[16:41:22] --- Server Shutting Down.
+[16:41:22] plugin.mysql: Unloading plugin...
+[16:41:22] plugin.mysql: Plugin unloaded.
+[16:41:22] 
+
+[16:41:22]  ===============================
+
+[16:41:22]      sscanf plugin unloaded.    
+
+[16:41:22]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:41:25] 
+[16:41:25] Server Plugins
+[16:41:25] --------------
+[16:41:25]  Loading plugin: mysql
+[16:41:25]  >> plugin.mysql: R39-6 successfully loaded.
+[16:41:25]   Loaded.
+[16:41:25]  Loading plugin: sscanf
+[16:41:25] 
+
+[16:41:25]  ===============================
+
+[16:41:25]       sscanf plugin loaded.     
+
+[16:41:25]          Version:  2.8.2        
+
+[16:41:25]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:41:25]  ===============================
+
+[16:41:25]   Loaded.
+[16:41:25]  Loaded 2 plugins.
+
+[16:41:26] 
+[16:41:26] Filterscripts
+[16:41:26] ---------------
+[16:41:26]   Loading filterscript 'adminCommands.amx'...
+[16:41:26] 
+ Comandos de administrador cargados.
+
+[16:41:26]   Loading filterscript 'playerCommands.amx'...
+[16:41:26] 
+ Comandos de jugadores cargados.
+
+[16:41:26]   Loading filterscript 'pickup.amx'...
+[16:41:26] 
+ Pickups cargados
+
+[16:41:26] 
+ Cree un pickup 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un pickup 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un pickup 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un pickup 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26] 
+ Cree un Text Label 
+
+[16:41:26]   Loading filterscript 'trabajos.amx'...
+[16:41:26] 
+ Trabajos cargados
+
+[16:41:26]   Loading filterscript 'vehiculos.amx'...
+[16:41:26] 
+ Vehículos cargados
+
+[16:41:26]   Loaded 5 filterscripts.
+
+[16:41:26] Conexión exitosa
+[16:41:26] Cargué 26 vehículos.
+[16:41:26] 
+----------------------------------
+[16:41:26] San Quebrado V Beta 0.03
+[16:41:26] ----------------------------------
+
+[16:41:26] Number of vehicle models: 10
+Console input: exit
+[16:41:30] --- Server Shutting Down.
+[16:41:30] plugin.mysql: Unloading plugin...
+[16:41:30] plugin.mysql: Plugin unloaded.
+[16:41:30] 
+
+[16:41:30]  ===============================
+
+[16:41:30]      sscanf plugin unloaded.    
+
+[16:41:30]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[16:43:00] 
+[16:43:00] Server Plugins
+[16:43:00] --------------
+[16:43:00]  Loading plugin: mysql
+[16:43:00]  >> plugin.mysql: R39-6 successfully loaded.
+[16:43:00]   Loaded.
+[16:43:00]  Loading plugin: sscanf
+[16:43:00] 
+
+[16:43:00]  ===============================
+
+[16:43:00]       sscanf plugin loaded.     
+
+[16:43:00]          Version:  2.8.2        
+
+[16:43:00]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:43:00]  ===============================
+
+[16:43:00]   Loaded.
+[16:43:00]  Loaded 2 plugins.
+
+[16:43:00] 
+[16:43:00] Filterscripts
+[16:43:00] ---------------
+[16:43:00]   Loading filterscript 'adminCommands.amx'...
+[16:43:00] 
+ Comandos de administrador cargados.
+
+[16:43:00]   Loading filterscript 'playerCommands.amx'...
+[16:43:00] 
+ Comandos de jugadores cargados.
+
+[16:43:00]   Loading filterscript 'pickup.amx'...
+[16:43:00] 
+ Pickups cargados
+
+[16:43:00] 
+ Cree un pickup 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un pickup 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un pickup 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un pickup 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00] 
+ Cree un Text Label 
+
+[16:43:00]   Loading filterscript 'trabajos.amx'...
+[16:43:00] 
+ Trabajos cargados
+
+[16:43:00]   Loading filterscript 'vehiculos.amx'...
+[16:43:00] 
+ Vehículos cargados
+
+[16:43:00]   Loaded 5 filterscripts.
+
+[16:43:00] Conexión exitosa
+[16:43:00] Cargué 26 vehículos.
+[16:43:00] 
+----------------------------------
+[16:43:00] San Quebrado V Beta 0.03
+[16:43:00] ----------------------------------
+
+[16:43:00] Number of vehicle models: 10
+[16:43:24] [connection] 127.0.0.1:50615 requests connection cookie.
+[16:43:25] [connection] incoming connection: 127.0.0.1:50615 id: 0
+[16:43:25] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[16:43:31] Creí un vehículo
+[16:43:31] Cree BorderBarraExp
+[16:43:31] Cree BarraExp
+[16:43:31] Cree Experiencia
+[16:43:31] BorderBarraExp está visible
+[16:43:31] BarraExp está visible
+[16:43:31] Experiencia está visible
+[16:43:31] XPDraw está visible
+[16:43:32] Actualicí la db (Marcio_Skeight)
+[16:43:32] Actualicí la db (Marcio_Skeight)
+[16:43:41] Actualicí la db (Marcio_Skeight)
+[16:47:21] Actualicí la db (Marcio_Skeight)
+[16:47:34] Actualicí la db (Marcio_Skeight)
+[16:49:40] Actualicí la db (Marcio_Skeight)
+[16:50:29] [part] Marcio_Skeight has left the server (0:1)
+[16:50:29] Se guardaron los datos de: ()
+Console input: exit
+[16:51:59] --- Server Shutting Down.
+[16:51:59] plugin.mysql: Unloading plugin...
+[16:51:59] plugin.mysql: Plugin unloaded.
+[16:51:59] 
+
+[16:51:59]  ===============================
+
+[16:51:59]      sscanf plugin unloaded.    
+
+[16:51:59]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:24:38] 
+[20:24:38] Server Plugins
+[20:24:38] --------------
+[20:24:38]  Loading plugin: mysql
+[20:24:38]  >> plugin.mysql: R39-6 successfully loaded.
+[20:24:38]   Loaded.
+[20:24:38]  Loading plugin: sscanf
+[20:24:38] 
+
+[20:24:38]  ===============================
+
+[20:24:38]       sscanf plugin loaded.     
+
+[20:24:38]          Version:  2.8.2        
+
+[20:24:38]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:24:38]  ===============================
+
+[20:24:38]   Loaded.
+[20:24:38]  Loaded 2 plugins.
+
+[20:24:38] 
+[20:24:38] Filterscripts
+[20:24:38] ---------------
+[20:24:38]   Loading filterscript 'adminCommands.amx'...
+[20:24:38] 
+ Comandos de administrador cargados.
+
+[20:24:38]   Loading filterscript 'playerCommands.amx'...
+[20:24:38] 
+ Comandos de jugadores cargados.
+
+[20:24:38]   Loading filterscript 'pickup.amx'...
+[20:24:38] 
+ Pickups cargados
+
+[20:24:38] 
+ Cree un pickup 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un pickup 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un pickup 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un pickup 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38] 
+ Cree un Text Label 
+
+[20:24:38]   Loading filterscript 'trabajos.amx'...
+[20:24:38] 
+ Trabajos cargados
+
+[20:24:38]   Loading filterscript 'vehiculos.amx'...
+[20:24:38] 
+ Vehículos cargados
+
+[20:24:38]   Loaded 5 filterscripts.
+
+[20:24:38] Conexión exitosa
+[20:24:38] Cargué 26 vehículos.
+[20:24:38] 
+----------------------------------
+[20:24:38] San Quebrado V Beta 0.03
+[20:24:38] ----------------------------------
+
+[20:24:38] Number of vehicle models: 10
+[20:25:00] [connection] 127.0.0.1:56855 requests connection cookie.
+[20:25:01] [connection] incoming connection: 127.0.0.1:56855 id: 0
+[20:25:01] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[20:25:11] Creí un vehículo
+[20:25:11] Cree BorderBarraExp
+[20:25:11] Cree BarraExp
+[20:25:11] Cree Experiencia
+[20:25:11] BorderBarraExp está visible
+[20:25:11] BarraExp está visible
+[20:25:11] Experiencia está visible
+[20:25:11] XPDraw está visible
+[20:25:11] Actualicí la db (Marcio_Skeight)
+[20:25:11] Actualicí la db (Marcio_Skeight)
+[20:27:38] Actualicí la db (Marcio_Skeight)
+[20:28:09] Actualicí la db (Marcio_Skeight)
+[20:29:51] Actualicí la db (Marcio_Skeight)
+[20:29:55] [part] Marcio_Skeight has left the server (0:1)
+[20:29:55] Se guardaron los datos de: ()
+Console input: exit
+[20:45:26] --- Server Shutting Down.
+[20:45:26] plugin.mysql: Unloading plugin...
+[20:45:26] plugin.mysql: Plugin unloaded.
+[20:45:26] 
+
+[20:45:26]  ===============================
+
+[20:45:26]      sscanf plugin unloaded.    
+
+[20:45:26]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:45:28] 
+[20:45:28] Server Plugins
+[20:45:28] --------------
+[20:45:28]  Loading plugin: mysql
+[20:45:28]  >> plugin.mysql: R39-6 successfully loaded.
+[20:45:28]   Loaded.
+[20:45:28]  Loading plugin: sscanf
+[20:45:28] 
+
+[20:45:28]  ===============================
+
+[20:45:28]       sscanf plugin loaded.     
+
+[20:45:28]          Version:  2.8.2        
+
+[20:45:28]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:45:28]  ===============================
+
+[20:45:28]   Loaded.
+[20:45:28]  Loaded 2 plugins.
+
+[20:45:28] 
+[20:45:28] Filterscripts
+[20:45:28] ---------------
+[20:45:28]   Loading filterscript 'adminCommands.amx'...
+[20:45:28] 
+ Comandos de administrador cargados.
+
+[20:45:28]   Loading filterscript 'playerCommands.amx'...
+[20:45:28] 
+ Comandos de jugadores cargados.
+
+[20:45:28]   Loading filterscript 'pickup.amx'...
+[20:45:28] 
+ Pickups cargados
+
+[20:45:28] 
+ Cree un pickup 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un pickup 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un pickup 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un pickup 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28] 
+ Cree un Text Label 
+
+[20:45:28]   Loading filterscript 'trabajos.amx'...
+[20:45:28] 
+ Trabajos cargados
+
+[20:45:28]   Loading filterscript 'vehiculos.amx'...
+[20:45:28] 
+ Vehículos cargados
+
+[20:45:28]   Loaded 5 filterscripts.
+
+[20:45:28] Conexión exitosa
+[20:45:28] Cargué 26 vehículos.
+[20:45:28] 
+----------------------------------
+[20:45:28] San Quebrado V Beta 0.03
+[20:45:28] ----------------------------------
+
+[20:45:28] Number of vehicle models: 10
+[20:45:57] [connection] 127.0.0.1:64204 requests connection cookie.
+[20:45:58] [connection] incoming connection: 127.0.0.1:64204 id: 0
+[20:45:58] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[20:46:18] Creí un vehículo
+[20:46:18] Cree BorderBarraExp
+[20:46:18] Cree BarraExp
+[20:46:18] Cree Experiencia
+[20:46:18] BorderBarraExp está visible
+[20:46:18] BarraExp está visible
+[20:46:18] Experiencia está visible
+[20:46:18] XPDraw está visible
+[20:46:18] Actualicí la db (Marcio_Skeight)
+[20:46:18] Actualicí la db (Marcio_Skeight)
+[20:46:28] Actualicí la db (Marcio_Skeight)
+[20:46:33] Actualicí la db (Marcio_Skeight)
+[20:48:38] Actualicí la db (Marcio_Skeight)
+[20:48:40] Vehículo de Marcio_Skeight guardado.
+[20:48:53] Actualicí la db (Marcio_Skeight)
+[20:49:01] Actualicí la db (Marcio_Skeight)
+[20:49:16] Actualicí la db (Marcio_Skeight)
+[20:49:34] Actualicí la db (Marcio_Skeight)
+[20:49:50] Actualicí la db (Marcio_Skeight)
+[20:50:01] Actualicí la db (Marcio_Skeight)
+[20:50:20] Actualicí la db (Marcio_Skeight)
+[20:50:32] Actualicí la db (Marcio_Skeight)
+[20:50:58] [part] Marcio_Skeight has left the server (0:1)
+[20:50:58] Se guardaron los datos de: ()
+[20:53:00] [connection] 127.0.0.1:51615 requests connection cookie.
+[20:53:01] [connection] incoming connection: 127.0.0.1:51615 id: 0
+[20:53:02] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[20:53:07] Creí un vehículo
+[20:53:07] Cree BorderBarraExp
+[20:53:07] Cree BarraExp
+[20:53:07] Cree Experiencia
+[20:53:07] BorderBarraExp está visible
+[20:53:07] BarraExp está visible
+[20:53:07] Experiencia está visible
+[20:53:07] XPDraw está visible
+[20:53:07] Actualicí la db (Marcio_Skeight)
+[20:53:07] Actualicí la db (Marcio_Skeight)
+[20:53:23] Actualicí la db (Marcio_Skeight)
+[20:53:42] Actualicí la db (Marcio_Skeight)
+[20:53:50] Actualicí la db (Marcio_Skeight)
+[20:54:04] Actualicí la db (Marcio_Skeight)
+[20:54:07] [part] Marcio_Skeight has left the server (0:1)
+[20:54:07] Se guardaron los datos de: ()
+Console input: exit
+[20:55:23] --- Server Shutting Down.
+[20:55:23] plugin.mysql: Unloading plugin...
+[20:55:23] plugin.mysql: Plugin unloaded.
+[20:55:23] 
+
+[20:55:23]  ===============================
+
+[20:55:23]      sscanf plugin unloaded.    
+
+[20:55:23]  ===============================
+
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:55:26] 
+[20:55:26] Server Plugins
+[20:55:26] --------------
+[20:55:26]  Loading plugin: mysql
+[20:55:26]  >> plugin.mysql: R39-6 successfully loaded.
+[20:55:26]   Loaded.
+[20:55:26]  Loading plugin: sscanf
+[20:55:26] 
+
+[20:55:26]  ===============================
+
+[20:55:26]       sscanf plugin loaded.     
+
+[20:55:26]          Version:  2.8.2        
+
+[20:55:26]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:55:26]  ===============================
+
+[20:55:26]   Loaded.
+[20:55:26]  Loaded 2 plugins.
+
+[20:55:26] 
+[20:55:26] Filterscripts
+[20:55:26] ---------------
+[20:55:26]   Loading filterscript 'adminCommands.amx'...
+[20:55:26] 
+ Comandos de administrador cargados.
+
+[20:55:26]   Loading filterscript 'playerCommands.amx'...
+[20:55:26] 
+ Comandos de jugadores cargados.
+
+[20:55:26]   Loading filterscript 'pickup.amx'...
+[20:55:26] 
+ Pickups cargados
+
+[20:55:26] 
+ Cree un pickup 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un pickup 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un pickup 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un pickup 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26] 
+ Cree un Text Label 
+
+[20:55:26]   Loading filterscript 'trabajos.amx'...
+[20:55:26] 
+ Trabajos cargados
+
+[20:55:26]   Loading filterscript 'vehiculos.amx'...
+[20:55:26] 
+ Vehículos cargados
+
+[20:55:26]   Loaded 5 filterscripts.
+
+[20:55:26] Conexión exitosa
+[20:55:26] Cargué 26 vehículos.
+[20:55:26] 
+----------------------------------
+[20:55:26] San Quebrado V Beta 0.03
+[20:55:26] ----------------------------------
+
+[20:55:26] Number of vehicle models: 10
+[20:55:48] [connection] 127.0.0.1:53219 requests connection cookie.
+[20:55:49] [connection] incoming connection: 127.0.0.1:53219 id: 0
+[20:55:49] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[20:55:52] Creí un vehículo
+[20:55:52] Cree BorderBarraExp
+[20:55:52] Cree BarraExp
+[20:55:52] Cree Experiencia
+[20:55:52] BorderBarraExp está visible
+[20:55:52] BarraExp está visible
+[20:55:52] Experiencia está visible
+[20:55:52] XPDraw está visible
+[20:55:53] Actualicí la db (Marcio_Skeight)
+[20:55:53] Actualicí la db (Marcio_Skeight)
+[20:56:09] Actualicí la db (Marcio_Skeight)
+[20:56:21] Actualicí la db (Marcio_Skeight)
+[20:56:45] Actualicí la db (Marcio_Skeight)
+[20:56:59] Actualicí la db (Marcio_Skeight)
+[20:57:11] Actualicí la db (Marcio_Skeight)
+[20:57:18] [part] Marcio_Skeight has left the server (0:1)
+[20:57:18] Se guardaron los datos de: ()
+Console input: exit
+[20:57:29] --- Server Shutting Down.
+[20:57:29] plugin.mysql: Unloading plugin...
+[20:57:29] plugin.mysql: Plugin unloaded.
+[20:57:29] 
+
+[20:57:29]  ===============================
+
+[20:57:29]      sscanf plugin unloaded.    
+
+[20:57:29]  ===============================
+

@@ -7,9 +7,6 @@
 #define   function:%0(%1) forward %0(%1); public %0(%1)
 
 
-new SkinsCamionero[3] = {182,261,100};
-new SkinsObrero[3] = {16,27,153};
-
 public OnFilterScriptInit()
 {
     print("\n Comandos de jugadores cargados.\n");
@@ -109,7 +106,7 @@ CMD:uniforme(playerid, params[])
         }
         else
         {
-            FormatMssg(playerid, 0, "No tenés el /trabajo obrero."," ");
+            FormatMssg(playerid, 0, "No tené el /trabajo obrero."," ");
         }
     }
 
@@ -125,7 +122,7 @@ CMD:vestirse(playerid, params[])
         CallRemoteFunction("SetSkinsPlayer", "iiii", playerid, 1, 0, 0);
         SetPlayerSkin(playerid, CallRemoteFunction("GetSkinsPlayer", "ii", playerid, 0));
 
-        format(string, sizeof(string), "%s se cambió de ropa.", GetName(playerid));
+        format(string, sizeof(string), "%s se cambié de ropa.", GetName(playerid));
         FormatMssg(playerid, 1, string," ");
     }
     else
@@ -158,7 +155,7 @@ CMD:trabajo(playerid, params[])
                 {
                     FormatMssg(playerid, 1, "Obtuviste el trabajo de camionero."," ");
                     FormatMssg(playerid, 1, "Usá /recorrido camionero"," ");
-                    FormatMssg(playerid, 1, "Para empezar a trabajar."," ");
+                    FormatMssg(playerid, 1, "Para comenzar a trabajar."," ");
                     CallRemoteFunction("SetJobsPlayer", "ii", playerid, 1);
                 }else
                 {
@@ -167,7 +164,7 @@ CMD:trabajo(playerid, params[])
             }
             else
             {
-                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de camionero. Usá /cuenta"," ");
+                FormatMssg(playerid, 0, "Error, ya tenés el trabajo de camionero.(/cuenta)"," ");
             }
         }
         if (!strcmp(params, "obrero", true))
@@ -273,7 +270,7 @@ CMD:detener(playerid, params[])
 			{
 				if(CallRemoteFunction("IsPlayerInHisVehicle", "ii", playerid,vehicleid)) CallRemoteFunction("SetEngineState", "iii", playerid, 0, 0);
 				SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
-	            FormatMssg(playerid, 1, "Vehículo apagado."," ");
+	            FormatMssg(playerid, 1, "vehículo apagado."," ");
 			}
 			else
 			{
@@ -308,7 +305,7 @@ CMD:estacionar(playerid, params[])
 				{
                     CallRemoteFunction("OnPlayerStopVehicle", "iii", playerid, vehicleid, vehiclemodel);
 					SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
-					FormatMssg(playerid, 1, "Vehículo estacionado."," ");
+					FormatMssg(playerid, 1, "vehículo estacionado."," ");
 				}
 				else
 				{
@@ -385,7 +382,8 @@ CMD:descartar(playerid, params[])
                 {
                     CallRemoteFunction("OnPlayerDropBox", "i", playerid);
                     SetPVarInt(playerid, "OnPLayerPickBox", 0);
-                    FormatMssg(playerid, 4, "150", " ");
+                    FormatMssg(playerid, 1, "Completaste el trabajo, acá está la paga.", " ");
+                    CallRemoteFunction("CalcularDineroJob", "i", playerid);
                 }
                 else
                 {
@@ -486,7 +484,7 @@ CMD:ayuda(playerid, params[])
     {
         FormatMssg(playerid, 1, "NIVEL   : </cuenta>, </subirnivel>, </ayuda nivel>"," ");
         FormatMssg(playerid, 1, "TRABAJO : </cuenta>, </habilidades>, </ayuda trabajo>"," ");
-        FormatMssg(playerid, 1, "VEHíCULO: </cuenta>, </gps>, </ayuda vehiculo>"," ");
+        FormatMssg(playerid, 1, "vehículo: </cuenta>, </gps>, </ayuda vehiculo>"," ");
         FormatMssg(playerid, 1, "ROL     : </reglas>, </me>, </do>, </s>, </g>"," ");
         FormatMssg(playerid, 1, "Para más ayuda, consultá a los jugadores en </i> (información)", " ");
     }

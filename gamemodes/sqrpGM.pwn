@@ -886,6 +886,51 @@ function:GetExpTotal(playerid, level)
 	SendClientMessage(playerid, 0xBAD31BFF, string);
 	return ExpTotal;
 }
+function:CalcularDineroJob(playerid)
+{
+	new dineroPlus, dineroBase, dineroLevel, dineroTotal, level, jobID, moneyString[128];
+
+	level = GetLevelPlayer(playerid);
+	jobID = GetJobsPlayer(playerid);
+
+	switch(jobID)
+	{
+		case 1:
+		{
+			dineroBase = 790 + level*10;
+		}
+		case 2:
+		{
+			dineroBase = 100 + level*10;
+			dineroBase = dineroBase * random(3);
+			if (dineroBase == 0) dineroBase = 110;
+		}
+	}
+	dineroLevel = level * 12 + level;
+	dineroTotal = dineroBase + dineroLevel;
+	
+    if (IsPlayerSkinJob(playerid))
+	{
+    	dineroPlus = floatround(dineroTotal/20, floatround_floor);
+		dineroTotal+= dineroPlus;
+    }
+
+	if(dineroPlus > 0)
+	{
+		new string[128];
+		format(string, 128, "Ganaste $%i ( $%i + $%i + $%i )", dineroTotal, dineroBase, dineroLevel, dineroPlus);
+		FormatMssg(playerid, 1, string, " ");
+	}
+	else
+	{
+		new string[128];
+		format(string, 128, "Ganaste $%i ( $%i + $%i )", dineroTotal, dineroBase, dineroLevel);
+		FormatMssg(playerid, 1, string, " ");
+	}
+	format(moneyString, 128, "%i", dineroTotal);
+	FormatMssg(playerid, 4, moneyString, " ");
+	SetMoneyPlayer(playerid, 0, dineroTotal);
+}
 
 
 function:DataBaseUpdate(playerid)
