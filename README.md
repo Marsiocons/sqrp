@@ -14,13 +14,13 @@
 
 ![72](https://wiki.sa-mp.com/wroot/images2/9/91/Skin_72.png)
 
-    
+    Siempre viviste de acá para allá, saltando de trabajo en trabajo, de ciudad en ciudad. Pero llegaste acá esperando una nueva oportunidad, un nuevo trabajo; una nueva vida.
 ---
 ### N° 134 - M - El sergio.
 
 ![134](https://wiki.sa-mp.com/wroot/images2/8/85/Skin_134.png)
 
-    
+    Nunca trabajaste, nunca estudiaste. Te echaron de casa muy chico y por alguna razón seguís vivo. Hace poco saliste de rehabilitación. ¿Será que en esta ocación todo va a salir bien?
 
     
 ---
@@ -28,13 +28,13 @@
 
 ![188](https://wiki.sa-mp.com/wroot/images2/d/d7/Skin_188.png)
 
-    
+    Tuviste la suerte de nacer en cuna de oro. Tuviste la oportunidad de estudiar lo que querías. Crees que sabés lo necesario para sobrevivir solo, pero no es así. ¿o si?
 ---
 ### N° 158 - M - El tipo laburador.
 
 ![158](https://wiki.sa-mp.com/wroot/images2/b/be/Skin_158.png)
 
-
+    Te enseñaron a obrar desde chico. Sabés como ganarte la vida pero estás en busca de algo más. ¿Lo vas a encontrar acá?
 ---
 ---
 * ## Skins Femeninos
