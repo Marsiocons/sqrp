@@ -11871,3 +11871,175 @@ Console input: exit
 
 [20:57:29]  ===============================
 
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[02:11:04] 
+[02:11:04] Server Plugins
+[02:11:04] --------------
+[02:11:04]  Loading plugin: mysql
+[02:11:05]  >> plugin.mysql: R39-6 successfully loaded.
+[02:11:05]   Loaded.
+[02:11:05]  Loading plugin: sscanf
+[02:11:05] 
+
+[02:11:05]  ===============================
+
+[02:11:05]       sscanf plugin loaded.     
+
+[02:11:05]          Version:  2.8.2        
+
+[02:11:05]    (c) 2012 Alex "Y_Less" Cole  
+
+[02:11:05]  ===============================
+
+[02:11:05]   Loaded.
+[02:11:05]  Loaded 2 plugins.
+
+[02:11:05] 
+[02:11:05] Filterscripts
+[02:11:05] ---------------
+[02:11:05]   Loading filterscript 'adminCommands.amx'...
+[02:11:05] 
+ Comandos de administrador cargados.
+
+[02:11:05]   Loading filterscript 'playerCommands.amx'...
+[02:11:05] 
+ Comandos de jugadores cargados.
+
+[02:11:05]   Loading filterscript 'pickup.amx'...
+[02:11:05] 
+ Pickups cargados
+
+[02:11:05] 
+ Cree un pickup 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un pickup 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un pickup 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un pickup 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05] 
+ Cree un Text Label 
+
+[02:11:05]   Loading filterscript 'trabajos.amx'...
+[02:11:05] 
+ Trabajos cargados
+
+[02:11:05]   Loading filterscript 'vehiculos.amx'...
+[02:11:05] 
+ Vehículos cargados
+
+[02:11:05]   Loaded 5 filterscripts.
+
+[02:11:05] Conexión exitosa
+[02:11:05] Cargué 26 vehículos.
+[02:11:05] 
+----------------------------------
+[02:11:05] San Quebrado V Beta 0.03
+[02:11:05] ----------------------------------
+
+[02:11:05] Number of vehicle models: 10
+[02:11:34] [connection] 127.0.0.1:59044 requests connection cookie.
+[02:11:35] [connection] incoming connection: 127.0.0.1:59044 id: 0
+[02:11:35] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[02:11:38] Creí un vehículo
+[02:11:38] Cree BorderBarraExp
+[02:11:38] Cree BarraExp
+[02:11:38] Cree Experiencia
+[02:11:38] BorderBarraExp está visible
+[02:11:38] BarraExp está visible
+[02:11:38] Experiencia está visible
+[02:11:38] XPDraw está visible
+[02:11:38] Actualicí la db (Marcio_Skeight)
+[02:11:38] Actualicí la db (Marcio_Skeight)
+[02:11:55] Actualicí la db (Marcio_Skeight)
+[02:11:55] Actualicí la db (Marcio_Skeight)
+[02:12:21] Actualicí la db (Marcio_Skeight)
+[02:12:21] Actualicí la db (Marcio_Skeight)
+[02:12:32] Actualicí la db (Marcio_Skeight)
+[02:12:37] Actualicí la db (Marcio_Skeight)
+[02:13:54] Actualicí la db (Marcio_Skeight)
+[02:13:57] Vehículo de Marcio_Skeight guardado.
+[02:16:13] Actualicí la db (Marcio_Skeight)
+[02:16:24] Actualicí la db (Marcio_Skeight)
+[02:18:11] Actualicí la db (Marcio_Skeight)
+[02:18:11] Actualicí la db (Marcio_Skeight)
+[02:18:34] Actualicí la db (Marcio_Skeight)
+[02:18:49] Actualicí la db (Marcio_Skeight)
+[02:20:25] Actualicí la db (Marcio_Skeight)
+[02:20:25] Actualicí la db (Marcio_Skeight)
+[02:20:33] Actualicí la db (Marcio_Skeight)
+[02:24:22] Actualicí la db (Marcio_Skeight)
+[02:24:22] Actualicí la db (Marcio_Skeight)
+[02:24:58] Actualicí la db (Marcio_Skeight)
+[02:25:25] [part] Marcio_Skeight has left the server (0:1)
+[02:25:25] Se guardaron los datos de: ()
+[02:26:05] [connection] 127.0.0.1:59215 requests connection cookie.
+[02:26:06] [connection] incoming connection: 127.0.0.1:59215 id: 0
+[02:26:06] [join] Marcio_Skeight has joined the server (0:127.0.0.1)
+[02:26:08] Creí un vehículo
+[02:26:08] Cree BorderBarraExp
+[02:26:08] Cree BarraExp
+[02:26:08] Cree Experiencia
+[02:26:08] BorderBarraExp está visible
+[02:26:08] BarraExp está visible
+[02:26:08] Experiencia está visible
+[02:26:08] XPDraw está visible
+[02:26:09] Actualicí la db (Marcio_Skeight)
+[02:26:09] Actualicí la db (Marcio_Skeight)
+[02:30:08] Actualicí la db (Marcio_Skeight)
+[02:30:11] Actualicí la db (Marcio_Skeight)
+[02:30:17] Actualicí la db (Marcio_Skeight)
+[02:30:31] Actualicí la db (Marcio_Skeight)
+[02:30:31] Actualicí la db (Marcio_Skeight)
+[02:30:54] Actualicí la db (Marcio_Skeight)
+[02:30:54] Actualicí la db (Marcio_Skeight)
+[02:31:08] [part] Marcio_Skeight has left the server (0:1)
+[02:31:08] Se guardaron los datos de: ()
+Console input: exit
+[02:31:20] --- Server Shutting Down.
+[02:31:20] plugin.mysql: Unloading plugin...
+[02:31:20] plugin.mysql: Plugin unloaded.
+[02:31:20] 
+
+[02:31:20]  ===============================
+
+[02:31:20]      sscanf plugin unloaded.    
+
+[02:31:20]  ===============================
+

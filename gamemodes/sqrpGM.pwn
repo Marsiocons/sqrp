@@ -737,18 +737,13 @@ function:GetExpPlayer(playerid)
 }
 function:SetExpPlayer(playerid, newExp)
 {
-	new Query[256], string[128], expOld, expUpd;
+	new Query[256], expOld, expUpd;
 	
 	expOld = GetExpPlayer(playerid);
 	expUpd = expOld + newExp;
 	
 	mysql_format(db_conn, Query, sizeof(Query), "UPDATE `usuarios_data` SET `exp_actual` = %i WHERE `id` = %i", expUpd, PlayerInfo[playerid][dbID]);
 	mysql_tquery(db_conn, Query, "DataBaseUpdate", "i", playerid);
-
-	if (newExp > 0 ) format(string, 128, "Se actualizó tu experiencia. ( %i + %i )", expOld, newExp);
-	if (newExp < 0 ) format(string, 128, "Se actualizó tu experiencia. ( %i - %i )", expOld, newExp);
-
-	FormatMssg(playerid, 1, string, " ");
 
 	SetTimerEx("CalcularExp", 800, false, "i", playerid);
 
@@ -895,10 +890,7 @@ function:CalcularDineroJob(playerid)
 
 	switch(jobID)
 	{
-		case 1:
-		{
-			dineroBase = 790 + level*10;
-		}
+		case 1: dineroBase = 790 + level*10;
 		case 2:
 		{
 			dineroBase = 100 + level*10;
@@ -930,6 +922,39 @@ function:CalcularDineroJob(playerid)
 	format(moneyString, 128, "%i", dineroTotal);
 	FormatMssg(playerid, 4, moneyString, " ");
 	SetMoneyPlayer(playerid, 0, dineroTotal);
+}
+function:CalcularExpJob(playerid)
+{
+	new expBase, expLevel, expPlus, expTotal, level, jobID;
+
+	level = GetLevelPlayer(playerid);
+	jobID = GetJobsPlayer(playerid);
+
+	switch(jobID)
+	{
+		case 1: expBase = 24*level*2;
+		case 2: expBase = 18*level*2;
+	}
+	expLevel = level * 10 + level;
+	expTotal = expBase + expLevel;
+	if (IsPlayerSkinJob(playerid))
+	{
+		expPlus = floatround(expTotal/20, floatround_floor);
+		expTotal += expPlus;
+	}
+	if(expPlus > 0)
+	{
+		new string[128];
+		format(string, 128, "Se actualizó tu experiencia: %i ( %i + %i + %i )", expTotal, expBase, expLevel, expPlus);
+		FormatMssg(playerid, 1, string, " ");
+	}
+	else
+	{
+		new string[128];
+		format(string, 128, "Se actualizó tu experiencia: %i ( %i + %i )", expTotal, expBase, expLevel);
+		FormatMssg(playerid, 1, string, " ");
+	}
+	SetExpPlayer(playerid, expTotal);
 }
 
 

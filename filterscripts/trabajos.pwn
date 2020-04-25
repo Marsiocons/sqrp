@@ -68,7 +68,7 @@ public OnPlayerEnterCheckpoint(playerid) {
             SetVehicleParamsEx(VehID, 0, 0, 0, 0, 0, 0, 0);
             FormatMssg(playerid, 1, "Completaste el trabajo, acá está la paga.", " ");
             CallRemoteFunction("CalcularDineroJob", "i", playerid);
-            
+            CallRemoteFunction("CalcularExpJob", "i", playerid);
             
             RECORRIDOCAMIONERO = 0;
 

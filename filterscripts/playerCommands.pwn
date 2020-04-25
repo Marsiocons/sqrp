@@ -384,6 +384,7 @@ CMD:descartar(playerid, params[])
                     SetPVarInt(playerid, "OnPLayerPickBox", 0);
                     FormatMssg(playerid, 1, "Completaste el trabajo, acá está la paga.", " ");
                     CallRemoteFunction("CalcularDineroJob", "i", playerid);
+                    CallRemoteFunction("CalcularExpJob", "i", playerid);
                 }
                 else
                 {
