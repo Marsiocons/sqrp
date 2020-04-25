@@ -239,6 +239,7 @@ CMD:arrancar(playerid, params[])
                 if(CallRemoteFunction("IsPlayerInHisVehicle", "ii", playerid,vehicleid)) CallRemoteFunction("SetEngineState", "iii", playerid, 0, 1);
 				SetVehicleParamsEx(vehicleid, 1, 1, 0, 0, 0, 0, 0);
 				FormatMssg(playerid, 1, "Arranque exitoso."," ");
+                DetectarProxim(playerid, 20, "arrancó el motor del vehículo sin problemas.", 2);
 			}
 			else
 			{
@@ -271,6 +272,8 @@ CMD:detener(playerid, params[])
 				if(CallRemoteFunction("IsPlayerInHisVehicle", "ii", playerid,vehicleid)) CallRemoteFunction("SetEngineState", "iii", playerid, 0, 0);
 				SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
 	            FormatMssg(playerid, 1, "vehículo apagado."," ");
+                DetectarProxim(playerid, 20, "detuvo el motor del vehículo.", 2);
+
 			}
 			else
 			{
@@ -306,6 +309,7 @@ CMD:estacionar(playerid, params[])
                     CallRemoteFunction("OnPlayerStopVehicle", "iii", playerid, vehicleid, vehiclemodel);
 					SetVehicleParamsEx(vehicleid, 0, 0, 0, 0, 0, 0, 0);
 					FormatMssg(playerid, 1, "vehículo estacionado."," ");
+                    DetectarProxim(playerid, 20, "estacionó su vehículo.", 2);
 				}
 				else
 				{
@@ -345,6 +349,7 @@ CMD:juntar(playerid, params[])
                     ApplyAnimation(playerid, "BASEBALL", "Bat_4", 1.0, false, 1, 1, 0, 5000, 1);
                     CallRemoteFunction("OnPlayerPickBox", "i", playerid);
                     SetPVarInt(playerid, "OnPlayerPickBox", 1);
+                    DetectarProxim(playerid, 20, "se cargó con escombros.", 2);
                 }
                 else
                 {
@@ -382,13 +387,14 @@ CMD:descartar(playerid, params[])
                 {
                     CallRemoteFunction("OnPlayerDropBox", "i", playerid);
                     SetPVarInt(playerid, "OnPLayerPickBox", 0);
+                    DetectarProxim(playerid, 20, "descartó los escombros en el contenedor.", 2);
                     FormatMssg(playerid, 1, "Completaste el trabajo, acá está la paga.", " ");
                     CallRemoteFunction("CalcularDineroJob", "i", playerid);
                     CallRemoteFunction("CalcularExpJob", "i", playerid);
                 }
                 else
                 {
-                    FormatMssg(playerid, 0, "Primero tenés que /juntar los escombros"," ");
+                    FormatMssg(playerid, 0, "Primero tenés que /juntar los escombros."," ");
                 }
             }
             else

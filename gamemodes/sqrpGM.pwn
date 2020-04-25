@@ -945,13 +945,13 @@ function:CalcularExpJob(playerid)
 	if(expPlus > 0)
 	{
 		new string[128];
-		format(string, 128, "Se actualizó tu experiencia: %i ( %i + %i + %i )", expTotal, expBase, expLevel, expPlus);
+		format(string, 128, "Se actualizó tu experiencia: {00FF00}%i{FFFFFF} ( %i + %i + %i )", expTotal, expBase, expLevel, expPlus);
 		FormatMssg(playerid, 1, string, " ");
 	}
 	else
 	{
 		new string[128];
-		format(string, 128, "Se actualizó tu experiencia: %i ( %i + %i )", expTotal, expBase, expLevel);
+		format(string, 128, "Se actualizó tu experiencia: {00FF00}%i{FFFFFF} ( %i + %i )", expTotal, expBase, expLevel);
 		FormatMssg(playerid, 1, string, " ");
 	}
 	SetExpPlayer(playerid, expTotal);
@@ -961,7 +961,7 @@ function:CalcularExpJob(playerid)
 function:DataBaseUpdate(playerid)
 {
 	new string[128];
-	format(string, 128, "Actualicí la db (%s)", GetName(playerid));
+	format(string, 128, "Actualicé la db (%s)", GetName(playerid));
 	print(string);
 }
 function:DataPlayerSaved(playerid)
