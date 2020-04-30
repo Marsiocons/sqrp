@@ -54,7 +54,7 @@
 
 ![131](https://wiki.sa-mp.com/wroot/images2/f/f2/Skin_131.png)
 
-    Nunca trabajaste, nunca estudiaste. Te echaron de casa muy chica y por alguna razón seguís viva. Hace poco saliste de rehabilitación. ¿Será que en esta ocación todo va a salir bien?
+    Nunca trabajaste, nunca estudiaste. Te echaron de casa muy chica y por alguna razón seguís viva. Hace poco saliste de rehabilitación. ¿Será que en esta ocación todo va a salir bien? La gente te grita "La Marta" porque en épocas anteriores te la pasabas de gira entre boliches.
 
 ---
 ### N° 192 - F
