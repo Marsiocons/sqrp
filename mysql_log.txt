@@ -34,3 +34,26 @@
 [02:11:38 04/25/20] [WARNING] cache_get_field_content_int - no active cache
 [02:26:08 04/25/20] [WARNING] cache_get_field_content_int - no active cache
 [13:06:14 04/25/20] [WARNING] cache_get_field_content_int - no active cache
+[17:19:34 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:19:34 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:19:34 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:19:34 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:53:58 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:53:58 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:53:58 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[17:53:58 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[18:15:22 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[18:15:22 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[18:15:22 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[18:15:22 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[23:02:54 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[23:02:54 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[23:02:54 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[23:02:54 04/26/20] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on 'localhost' (10061)
+[21:11:57 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:22:50 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:28:36 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:30:02 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:31:08 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:32:13 04/29/20] [WARNING] cache_get_field_content_int - no active cache
+[21:35:55 04/29/20] [WARNING] cache_get_field_content_int - no active cache

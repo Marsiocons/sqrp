@@ -27,6 +27,8 @@ new db_conn;
 
 new Text:BarraInicio;
 new Text:BarraInicioDos;
+new Text:TitleUno;
+new Text:TitleDos;
 new Text:tipoBoton[4]; // ANTERIOR 0, MUJER 1, SISGUIENTE 2, HOMBRE 3
 new Text:iniciar;
 new PlayerText:BorderBarraExp;
@@ -264,14 +266,15 @@ function:Bienvenida(playerid)
 		FormatMssg(playerid, 1, "Usuario no registrado", " ");
 		ShowPlayerDialog(playerid, DIALOG_REGISTER, DIALOG_STYLE_PASSWORD, "           San Quebrados Roleplay", "Tu cuenta no está registrada.\n\nIngresá una contraseña válida para continuar.\nTIP: Por favor reportá los bugs que encuentres.\nGracias por contribuir con SQRP!\n\n           Ingresá tu contraseña:", "Registrar", "Cancelar");
 	}
-	SetRectangle(playerid, 0);
+	ShowRectangle(playerid, 0);
+	ShowTitle(playerid, 0);
 }
 
 function:OnPlayerRegister(playerid)
 {	
 	PlayerInfo[playerid][dbID] = cache_insert_id(); //Obtenemos su ID para despuís manejar los datos del jugador.
 	PlayerInfo[playerid][dbLoggedIn] = true; //estí logueado.
-	SetRectangle(playerid, 1); // Sacamos las barras de inicio.
+	ShowRectangle(playerid, 1); // Sacamos las barras de inicio.
 	DrawExp(playerid);
 	SkinSelector(playerid); //Llamamos a selector de skin.
 }
@@ -307,7 +310,8 @@ function:OnPlayerLoginIn(playerid)
 		if (cache_get_field_content_int(0, "vehiculo_uno", db_conn) == 1) CreateVehiclePlayer(playerid, 0);
 		if (cache_get_field_content_int(0, "vehiculo_dos", db_conn) == 1) SetTimerEx("CreateVehiclePlayer", 400, false, "ii", playerid,1);
 		GetPlayerData(playerid);
-		SetRectangle(playerid, 1);
+		ShowRectangle(playerid, 1);
+		ShowTitle(playerid, 1);
 		DrawExp(playerid);
 		SpawnPlayerPlayer(playerid);
 	}
@@ -461,7 +465,7 @@ function:ResetPlayer(playerid)
 	PlayerInfo[playerid][dbSalud] = 100;
 	PlayerInfo[playerid][dbBlindaje] = 0;
 }
-function:SetRectangle(playerid, option) // 0 Creamos - 1 Borramos.
+function:ShowRectangle(playerid, option) // 0 Creamos - 1 Borramos.
 {
 
 	if (option == 1)
@@ -496,6 +500,34 @@ function:SetRectangle(playerid, option) // 0 Creamos - 1 Borramos.
 	}
 	
 	return 1;
+}
+
+
+
+
+function:ShowTitle(playerid, option)
+{
+	if (option == 1)
+	{
+		TextDrawDestroy(TitleUno);
+		TextDrawDestroy(TitleDos);
+	}
+	else
+	{
+		TitleUno = TextDrawCreate(320.0, 40.0, "San Quebrados");
+		TextDrawAlignment(TitleUno, 2);
+		TextDrawFont(TitleUno, 0);
+		TextDrawLetterSize(TitleUno, 3.0, 5.0);
+
+		TitleDos = TextDrawCreate(320.0, 350.0, "Roleplay");
+		TextDrawAlignment(TitleDos, 2);
+		TextDrawFont(TitleDos, 0);
+		TextDrawLetterSize(TitleDos, 3.0, 5.0);
+
+		TextDrawShowForPlayer(playerid, TitleUno);
+		TextDrawShowForPlayer(playerid, TitleDos);
+	}
+	SendClientMessage(playerid, 0x00FF0FFF, "ShowTitle ejecutándose.");
 }
 function:CreateVehiclePlayer(playerid, typevehicle)
 {
